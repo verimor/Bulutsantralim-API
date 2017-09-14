@@ -14,9 +14,12 @@ Birinci aşama için; HTTP POST metodu ile api.bulutsantralim.com adresine aşa�
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
   
 **URL İSTEME ÖRNEĞİ** 
-
->http://api.bulutsantralim.com/recording_url?key=K12345678-1234-5678-4321-123456789012&call_uuid=12345678-1234-5678-4321-123456789012
-
+```json
+POST http://api.bulutsantralim.com/recording_url/
+Host: api.bulutsantralim.com
+Accept: */*
+key=K12345678-1234-5678-4321-123456789012&call_uuid=12345678-1234-5678-4321-123456789012
+```
 **BAŞARILI CEVAP** 
 
 ```json
