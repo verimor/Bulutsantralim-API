@@ -8,23 +8,24 @@
   
 **ÇAĞRI BAŞLATMA ÖRNEĞİ**
 
-http://api.bulutsantralim.com/originate?key=K12345678-1234-5678-4321-123456789012&extension=1001&destination=908505320000
+>http://api.bulutsantralim.com/originate?key=K12345678-1234-5678-4321-123456789012&extension=1001&destination=908505320000
 
-* **BAŞARILI CEVAP:**
+**BAŞARILI CEVAP:**
 
-  * **Code:** HTTP/1.1 200 OK <br />
-    **Content:** `{ 358c20bc-fd86-11e5-87a2-157d41a07454 }`
+```json
+HTTP/1.1 200 OK 
+358c20bc-fd86-11e5-87a2-157d41a07454
+```
+**BAŞARISIZ CEVAP:**
 
-* **BAŞARISIZ CEVAP:**
-
-  * **Code:** HTTP/1.1 400 Bad Request <br />
-    **Content:** `{extension 1005 not found }`
-    
-* **PARAMETRELER** <br />
-   Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir. <br />
-  * **key** = Size özel oluşturulmuş API anahtarınızdır. <br />
-  * **extension** = Aramanın bağlanacağı dahili numaradır. <br />
-  * **destination** = Aranacak olan numara. (908505320000 formatında olmalı.) <br />
-  * caller_id = Aramada kullanılacak olan dış numara. (908505320000 formatında olmalı. Kullanılacak dış numaranın mutlaka en az bir           dahilide seçili olması gerekir. Bu parametre verilmezse dahilide seçili olan dış no kullanılacaktır.) <br />
-  * manual_answer = Değeri true olarak gönderilirse dahilinin telefonu açmasını bekler. (Normalde otomatik olarak dahili açılır ve karşı    numara aranır.)
-
+```json
+HTTP/1.1 400 Bad Request 
+extension 1005 not found
+```
+**PARAMETRELER** 
+   Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir. 
+  * **key** = Size özel oluşturulmuş API anahtarınızdır. 
+  * **extension** = Aramanın bağlanacağı dahili numaradır.
+  * **destination** = Aranacak olan numara (908505320000 formatında olmalı).
+  * caller_id = Aramada kullanılacak olan dış numara (908505320000 formatında olmalı. Kullanılacak dış numaranın mutlaka en az bir           dahilide seçili olması gerekir. Bu parametre verilmezse dahilide seçili olan dış no kullanılacaktır).
+  * manual_answer = Değeri true olarak gönderilirse dahilinin telefonu açmasını bekler (Normalde otomatik olarak dahili açılır ve karşı    numara aranır).
