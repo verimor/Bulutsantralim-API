@@ -13,12 +13,13 @@ kodu ile mesajın Body’sinde hata mesajı döner.
   
 **UYGULAMANIZA GÖNDERİLECEK BİLDİRİM ÖRNEĞİ**
 
->POST http://musteri.adresi.com.tr/event/ <br />
->Host: musteri.adresi.com.tr <br />
->Accept: */* <br />
->event_type=ringing&domain_id=101&direction=inbound&caller_id_number=02123205062&outbound_caller_id_number=&destination_number=1001&dialed_user=1001&call_uuid=1234&start_stamp=2016-01-01 00:00:00
- 
-**PARAMETRELER** <br />
+```json
+POST http://musteri.adresi.com.tr/event/ 
+Host: musteri.adresi.com.tr 
+Accept: */* 
+event_type=ringing&domain_id=101&direction=inbound&caller_id_number=02123205062&outbound_caller_id_number=&destination_number=1001&dialed_user=1001&call_uuid=1234&start_stamp=2016-01-01 00:00:00
+``` 
+**PARAMETRELER** 
   * event_type (ringing, answer, hangup)
   * domain_id
   * direction (internal, inbound, outbound)
