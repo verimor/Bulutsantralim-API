@@ -9,26 +9,29 @@ Birinci aşama için; HTTP POST metodu ile api.bulutsantralim.com adresine aşa�
 
 İkinci aşamada ise elde ettiğiniz URL bir player’a verilip dinleme yaptırılır veya direkt indirebilir. URL yaşam süresi 1 saattir.
 
-**HAZIRLIK** <br/>
+**HAZIRLIK** 
 ----
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
   
-**URL İSTEME ÖRNEĞİ** <br/>
+**URL İSTEME ÖRNEĞİ** 
 
 >http://api.bulutsantralim.com/recording_url?key=K12345678-1234-5678-4321-123456789012&call_uuid=12345678-1234-5678-4321-123456789012
 
-**BAŞARILI CEVAP** <br/>
+**BAŞARILI CEVAP** 
 
->HTTP/1.1 200 OK <br/>
->http://api.bulutsantralim.com/recording/Rbb9d6f36-d1a7-46f5-961e-4be2e2ba1b8e
+```json
+HTTP/1.1 200 OK 
+http://api.bulutsantralim.com/recording/Rbb9d6f36-d1a7-46f5-961e-4be2e2ba1b8e
+```
 
-**BAŞARISIZ CEVAP** <br/>
+**BAŞARISIZ CEVAP** 
 
->HTTP/1.1 400 Bad Request <br/>
->cannot find call with call_uuid 12345678-1234-5678-4321-123456789012
+```json
+HTTP/1.1 400 Bad Request 
+cannot find call with call_uuid 12345678-1234-5678-4321-123456789012
+```
+**PARAMETRELER** 
+Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir. 
 
-**PARAMETRELER** <br/>
-Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir. <br/>
-
-* **key** = Size özel oluşturulmuş API anahtarınızdır. <br/>
+* **key** = Size özel oluşturulmuş API anahtarınızdır. 
 * **call_uuid** = URL’ini istediğiniz ses kaydına ait uuid.
