@@ -77,7 +77,7 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 * page = Liste limite göre sayfalanıyor. “total_pages” değerinden maksimum kaç sayfa olduğunu belirleyerek görmek istediyiniz sayfanın numarasını girebilirsiniz. <br/>
 
 **ARAMA KAYDININ DETAYINA ERİŞME ÖRNEĞİ** <br/>
-Detayına erişmek istediğiniz çağrının call_uuid`ni aşağıdaki URL`de olduğu gibi girmeniz gerekiyor.
+Detayına erişmek istediğiniz çağrının call_uuid'ni aşağıdaki URL'de olduğu gibi girmeniz gerekiyor.
 
 >http://api.bulutsantralim.com/cdrs/5cfdfb46-776c-11e7-8375-0d58348796d3?key=K12345678-1234-5678-4321-123456789012
 
