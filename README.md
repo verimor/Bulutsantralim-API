@@ -9,4 +9,4 @@
 
 **Entegrasyonlar**
 ----
-* **[Opencart Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/blob/master/opencart/README.md)**
+* **[Opencart Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/opencart)**
