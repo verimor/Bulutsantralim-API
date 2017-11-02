@@ -1,6 +1,6 @@
 **Bu entegrasyonun çalışabilmesi için aşağıdaki işlemlerin yapılması gerekiyor.**
 ----
-* Opencart'ın çalıştığı web sunucuya bu entegrasyonun çalışması için yazdığımız API dosyaları ilgili klasörlerin altına kopyalanır (dosyalara [burdan]() erişebilirsiniz).
+* Opencart'ın çalıştığı web sunucuya bu entegrasyonun çalışması için yazdığımız API dosyaları ilgili klasörlerin altına kopyalanır (dosyalara [burdan](https://github.com/verimor/Bulutsantralim-API/tree/master/opencart/public_html/catalog) erişebilirsiniz).
 
 * Opencart yönetim paneli üzerinden kullanıcı adı "bulutsantralim" olan yeni bir kullanıcı hesabı oluşturulur.
      (Kullanıcının ait olduğu kullanıcı grubunun "user/api"  bölümüne erişme ve değiştirme iznine sahip olmasını sağlayın.)
