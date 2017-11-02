@@ -6,3 +6,7 @@
 * **[Arama Kayıtlarına Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/cdrs.md)** Santralinizdeki arama kayıtlarına ve detayına erişebilirsiniz.
 * **[Ses Kaydı Erişimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/recording.md)** Uygulamalarınız üzerinden çağrıların ses kayıtları dinleyebilir veya indirebilirsiniz.
 * **[Otomatik IVR ve Sesli Mesaj Projesi Oluşturma:](https://github.com/verimor/Bulutsantralim-API/blob/master/ivr_campaigns.md)** Uygulamanız üzerinden otomatik IVR araması projesi ve sesli mesaj projesi oluşturabilirsiniz.
+
+**Entegrasyonlar**
+----
+* **[Opencart Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/blob/master/opencart/README.md)**
