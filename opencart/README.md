@@ -24,7 +24,7 @@ Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu 
      * Seçenekler sekmesine tıklayın ve **Kasaya Git** başlığın gidin. 
      * Burada **API kullanıcısı** kutusundan Verimor'u seçin. Oluşturduğunuz API ismini seçin ve kaydedin.
 
-* Bulutsantralinizdekı ayarları tamamlayın.
+* Bulutsantralinizdeki ayarları tamamlayın.
      * [Santral Ayarlarım](https://oim.verimor.com.tr/switch/domain/edit) sayfasındaki E-Ticaret Entegrasyonu başlığını bulun.
      * **E-Ticaret Yazılımı** kutusunda **Opencart**'ı seçin
      * **Servis URL** bölümüne site ismini **http://mağazaadresim.com** şeklinde girin.
