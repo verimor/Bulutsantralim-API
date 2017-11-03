@@ -22,12 +22,12 @@
 
 * Bulutsantralim yönetim panelinden aşağıdaki ayarlar yapılır.
      * **OIM**'den Bulut Santral Hizmeti > Santral Ayarlarım > E-Ticaret Entegrasyonu kısmına gelin.
-     * E-Ticaret Yazılımı bölümünden **Opencartı** seçin
-     * Servis URL bölümüne site ismini girin (örn.  http://opencart.com)
-     * Müşteri Temsilcisi bölümünden müşterinin Müşteri temsilcisi ile görüşülmek istendiğinde bağlanacağı hedefi seçin.
-     * Kapıda Ödeme Onayını açık yapın.
-     * Onay ses kaydı bölümünden kapıda ödeme onayı için arandığında okunacak ses kaydını seçin.
-     * Arayan No bölümünden kapıda ödeme onayı için, müşterinin hangi numaradan aranacağını seçin.
+     * **E-Ticaret Yazılımı** bölümünden **Opencartı** seçin
+     * **Servis URL** bölümüne site ismini girin (örn.  http://opencart.com)
+     * **Müşteri Temsilcisi** bölümünden müşterinin Müşteri temsilcisi ile görüşülmek istendiğinde bağlanacağı hedefi seçin.
+     * **Kapıda Ödeme Onayı**nı açık yapın.
+     * **Onay ses kaydı** bölümünden kapıda ödeme onayı için arandığında okunacak ses kaydını seçin.
+     * **Arayan No** bölümünden kapıda ödeme onayı için, müşterinin hangi numaradan aranacağını seçin.
      * Kaydedin.
 
 * Son olarak Bulutsantralim yönetim panelinden sipariş sorgulama hedefi seçilir. (Gelen arama yönetimi altından veya Sesli Karşılama Menüsü üzerinden **E-Ticaret Sipariş Sorgula** hedefi seçilerek)
