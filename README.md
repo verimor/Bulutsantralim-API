@@ -10,3 +10,4 @@
 **Entegrasyonlar**
 ----
 * **[Opencart Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/opencart)**
+* **[T-Soft Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/tsoft)**
