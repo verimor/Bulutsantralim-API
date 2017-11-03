@@ -5,7 +5,7 @@ https://www.bulutsantralim.com/entegrasyonlar/tsoft-bulutsantralim-entegrasyonu/
 
 **Kurulum**
 ----
-* Sıpariş Sorgulama
+* Sipariş Sorgulama
   * **T-Soft** dan api bilgilerinizi alın.
   * [Santral Ayarlarım](https://oim.verimor.com.tr/switch/domain/edit) sayfasına gidin ve **E-Ticaret Entegrasyonu** başlığını bulun.
   * **E-Ticaret Yazılımı** kutusunda **T-Soft**'u seçin.
