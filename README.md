@@ -11,3 +11,4 @@
 ----
 * **[Opencart Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/opencart)**
 * **[T-Soft Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/tsoft)**
+* **[Ticimax Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/ticimax)**
