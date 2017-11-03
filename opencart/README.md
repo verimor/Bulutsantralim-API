@@ -1,34 +1,38 @@
-**Bu entegrasyonun çalışabilmesi için aşağıdaki işlemlerin yapılması gerekiyor.**
+**Opencart – Bulutsantralim Entegrasyonuyla Neler Yapabilirsiniz?**
 ----
-* Opencart'ın çalıştığı web sunucuya bu entegrasyonun çalışması için yazdığımız API dosyaları ilgili klasörlerin altına kopyalanır (dosyalara [burdan](https://github.com/verimor/Bulutsantralim-API/tree/master/opencart/public_html/catalog) erişebilirsiniz).
+Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu sayfayı inceleyebilirsiniz:  https://www.bulutsantralim.com/entegrasyonlar/opencart-bulutsantralim-entegrasyonu
 
-* Opencart yönetim paneli üzerinden kullanıcı adı **bulutsantralim** olan yeni bir kullanıcı hesabı oluşturulur.
-     (Kullanıcının ait olduğu kullanıcı grubunun **user/api**  bölümüne erişme ve değiştirme iznine sahip olmasını sağlayın.)
+**Kurulum**
+----
+* Opencart'ın çalıştığı web sunucusundaki public_html klasörüne [API dosyalarımızı](https://github.com/verimor/Bulutsantralim-API/tree/master/opencart/public_html/catalog) kopyalayın.
 
-* Opencart yönetim paneli üzerinden **API Key** oluşturulur.
-     * Sistem > Kullanıcılar > API kısmına gelin.
-     * Sağ üst kısımdan yeni api ekleyin.
-     * API adınızı girin.
-     * API anahtarı oluşturun.
+* Opencart yönetim paneli üzerinden kullanıcı adı **bulutsantralim** olan yeni bir kullanıcı hesabı oluşturun.
+     * Kullanıcı grubunun **user/api**ye erişme ve değiştirme iznine sahip olduğuna emin olun.
+
+* Opencart yönetim paneli üzerinden **API Key** oluşturun.
+     * Sistem > Kullanıcılar > API sayfasını açın.
+     * Sağ üst kısımdan ekle (+) düğmesine basın.
+     * API adı olarak **Verimor** girin.
+     * API anahtarı kutusunun altındaki oluştur düğmesine basın.
      * Durumu açık olarak işaretleyin.
      * Ip adresleri sekmesine tıklayın.
      * **194.49.126.36** ve **194.49.126.18** ip adreslerini ekleyin
      * Sağ üst kısımdan kaydedin.
 
-* Opencart yönetim paneli üzerinden API etkinleştirilir.
-     * Sistem > Mağazalar > Düzenle kısmına gelin.
-     * Seçenekler sekmesine tıklayın ve **kasaya git** bölümüne gidin. 
-     * Burada **API kullanıcısı** kısmını bulun.Oluşturduğunuz API ismini seçin ve kaydedin.
+* Opencart yönetim paneli üzerinden API'yi etkinleştirin.
+     * Sistem > Mağazalar sayfasında mağaza isminin yanındakı düzenle düğmesine basın.
+     * Seçenekler sekmesine tıklayın ve **Kasaya Git** başlığın gidin. 
+     * Burada **API kullanıcısı** kutusundan Verimor'u seçin. Oluşturduğunuz API ismini seçin ve kaydedin.
 
-* Bulutsantralim yönetim panelinden aşağıdaki ayarlar yapılır.
-     * **OIM**'den Bulut Santral Hizmeti > Santral Ayarlarım > E-Ticaret Entegrasyonu kısmına gelin.
-     * **E-Ticaret Yazılımı** bölümünden **Opencartı** seçin
-     * **Servis URL** bölümüne site ismini girin (örn.  http://opencart.com)
-     * **Müşteri Temsilcisi** bölümünden müşterinin Müşteri temsilcisi ile görüşülmek istendiğinde bağlanacağı hedefi seçin.
-     * **Kapıda Ödeme Onayı**nı açık yapın.
-     * **Onay ses kaydı** bölümünden kapıda ödeme onayı için arandığında okunacak ses kaydını seçin.
-     * **Arayan No** bölümünden kapıda ödeme onayı için, müşterinin hangi numaradan aranacağını seçin.
+* Bulutsantralinizdekı ayarları tamamlayın.
+     * [Santral Ayarlarım](https://oim.verimor.com.tr/switch/domain/edit) sayfasındaki E-Ticaret Entegrasyonu başlığını bulun.
+     * **E-Ticaret Yazılımı** kutusunda **Opencart**'ı seçin
+     * **Servis URL** bölümüne site ismini **http://mağazaadresim.com** şeklinde girin.
+     * **Müşteri Temsilcisi** kutusundan, Müşteri temsilcisi hedefini seçin.
+     * **Kapıda Ödeme Onayı**nı açın.
+     * **Onay ses kaydı** kutusundan kapıda ödeme onayı için arandığında okunacak ses kaydını seçin.
+     * **Arayan No** kutusundan kapıda ödeme onayı için, müşterinin hangi numaradan aranacağını seçin.
      * Kaydedin.
-
-* Son olarak Bulutsantralim yönetim panelinden sipariş sorgulama hedefi seçilir. (Gelen arama yönetimi altından veya Sesli Karşılama Menüsü üzerinden **E-Ticaret Sipariş Sorgula** hedefi seçilerek)
+     * Gelen aramayı doğrudan sipariş sorgulamaya yönlendirmek istiyorsanız [Gelen Arama Yönetimi](https://oim.verimor.com.tr/switch/dids) sayfasından ilgili nuumaraya girip hedef olarak **E-Ticaret Sipariş Sorgula** seçin.
+     * Sesli Karşılama Menüsünden de sipariş sorgulamaya yönlendirmek istiyorsanız [Sesli Karşılama Menüsü](https://oim.verimor.com.tr/switch/ivrs) sayfasından ilgili Sesli Karşılama Menüsünde **E-Ticaret Sipariş Sorgula** hedefini seçin.
 
