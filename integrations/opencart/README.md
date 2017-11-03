@@ -4,7 +4,7 @@ Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu 
 
 **Kurulum**
 ----
-* Opencart'ın çalıştığı web sunucusundaki public_html klasörüne [API dosyalarımızı](https://github.com/verimor/Bulutsantralim-API/tree/master/opencart/public_html/catalog) kopyalayın.
+* Opencart'ın çalıştığı web sunucusundaki public_html klasörüne [API dosyalarımızı](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/opencart/public_html/catalog) kopyalayın.
 
 * Opencart yönetim paneli üzerinden kullanıcı adı **bulutsantralim** olan yeni bir kullanıcı hesabı oluşturun.
      * Kullanıcı grubunun **user/api**ye erişme ve değiştirme iznine sahip olduğuna emin olun.
