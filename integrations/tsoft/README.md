@@ -28,3 +28,5 @@ https://www.bulutsantralim.com/entegrasyonlar/tsoft-bulutsantralim-entegrasyonu/
   * Almak istediğiniz çağrı olaylarını seçin.
   * **Bildirilecek URL** kutusuna T-Soft dan aldığınız bildrim adresini girin.
   * Kaydedin
+  * Gelen aramayı doğrudan sipariş sorgulamaya yönlendirmek istiyorsanız [Gelen Arama Yönetimi](https://oim.verimor.com.tr/switch/dids) sayfasından ilgili nuumaraya girip hedef olarak **E-Ticaret Sipariş Sorgula** seçin.
+   * Sesli Karşılama Menüsünden de sipariş sorgulamaya yönlendirmek istiyorsanız [Sesli Karşılama Menüsü](https://oim.verimor.com.tr/switch/ivrs) sayfasından ilgili Sesli Karşılama Menüsünde **E-Ticaret Sipariş Sorgula** hedefini seçin.
