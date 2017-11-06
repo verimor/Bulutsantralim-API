@@ -28,6 +28,7 @@ Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu 
      * [Santral Ayarlarım](https://oim.verimor.com.tr/switch/domain/edit) sayfasındaki E-Ticaret Entegrasyonu başlığını bulun.
      * **E-Ticaret Yazılımı** kutusunda **Opencart**'ı seçin
      * **Servis URL** bölümüne site ismini **http://mağazaadresim.com** şeklinde girin.
+     * **Servis Anahtarı** bölümüne Opencart yönetim panelinden oluşturduğunuz API anahtarını girin.
      * **Müşteri Temsilcisi** kutusundan, Müşteri temsilcisi hedefini seçin.
      * **Kapıda Ödeme Onayı**nı açın.
      * **Onay ses kaydı** kutusundan kapıda ödeme onayı için arandığında okunacak ses kaydını seçin.
