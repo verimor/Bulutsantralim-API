@@ -20,24 +20,24 @@ Accept: */*
 event_type=ringing&domain_id=101&direction=inbound&caller_id_number=02123205062&outbound_caller_id_number=&destination_number=1001&dialed_user=1001&call_uuid=1234&start_stamp=2016-01-01 00:00:00
 ``` 
 **PARAMETRELER** 
-  * event_type (ringing, answer, hangup)
-  * domain_id
-  * direction (internal, inbound, outbound)
-  * caller_id_number
-  * outbound_caller_id_number
-  * destination_number
-  * dialed_user
-  * connected_user
-  * call_uuid
-  * start_stamp
-  * answer_stamp
-  * end_stamp
-  * duration
-  * recording_present (t, f)
-  * answered (t, f)
-  * queue
-  * queue_wait_duration
-  * sip_hangup_disposition
-  * hangup_cause
-  * failure_status
-  * failure_phrase   
+  * **event_type:** Olay tipi. *ringing*, *answer* yada *hangup* döner.
+  * **domain_id:** Bulutsantral ID’si.
+  * **direction:** Çağrının yönü. *internal*, *inbound* yada *outbound* döner.
+  * **caller_id_number:** Arayan numara.
+  * **outbound_caller_id_number:** Arayanın dış numarası.
+  * **destination_number:** Aranan numara.
+  * **dialed_user:** Aranan kişinin dahili numarası.
+  * **connected_user:** Bağlanan (telefonu açan) dahili. 
+  * **call_uuid:** Çağrının uuid'si.
+  * **start_stamp:** Çağrının başladığı zaman.
+  * **answer_stamp:** Çağrının cevaplandığı zaman.
+  * **end_stamp:** Çağrının sonlandığı zaman.
+  * **duration:** Konuşma süresi.
+  * **recording_present:** Çağrının ses kaydının olup olmadığı. *true* yada *false* döner.
+  * **answered:** Kaçan çağrı tespiti için kullanılır. Kaçan çağrı ise *true* değilse  *false* döner.
+  * **queue:**  Çağrı kuyrukta beklediyse ve ya cağrı qrupuna yönlendirildiyse onun numarası.
+  * **queue_wait_duration:** Kuyrukta bekleme süresi.
+  * **sip_hangup_disposition:** Çağrının kimin tarafından kapatıldığı. *caller* ya da *callee* olarak döner. 
+  * **hangup_cause:** Çağrının kapanma sebebi.
+  * **failure_status:** Hata kodu.
+  * **failure_phrase:** Hata mesajı.
