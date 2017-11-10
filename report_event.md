@@ -35,7 +35,7 @@ event_type=ringing&domain_id=101&direction=inbound&caller_id_number=02123205062&
   * **duration:** Konuşma süresi.
   * **recording_present:** Çağrının ses kaydının olup olmadığı. *true* yada *false* döner.
   * **answered:** Kaçan çağrı tespiti için kullanılır. Kaçan çağrı ise *true* değilse  *false* döner.
-  * **queue:**  Çağrı kuyrukta beklediyse ve ya cağrı qrupuna yönlendirildiyse onun numarası.
+  * **queue:**  Kuyruğun veya Çağrı grubunun numarası.
   * **queue_wait_duration:** Kuyrukta bekleme süresi.
   * **sip_hangup_disposition:** Çağrının kimin tarafından kapatıldığı. *caller* ya da *callee* olarak döner. 
   * **hangup_cause:** Çağrının kapanma sebebi.
