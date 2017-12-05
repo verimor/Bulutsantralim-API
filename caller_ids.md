@@ -1,4 +1,4 @@
-**NUMARALARIM LİSTESİNE ERİŞİM**
+**NUMARALAR LİSTESİNE ERİŞİM**
 ----
 Santralinizdeki **Arayan Numara** olarak kullanabileceğiniz numaraların listesine erişmek için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi
 aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde numaralarınızın listesi döner. 
@@ -8,7 +8,7 @@ aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200
 ----
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
   
-**NUMARALARIM LİSTESİNE ERİŞİM**
+**NUMARALAR LİSTESİNE ERİŞİM**
 
 >http://api.bulutsantralim.com/caller_ids?key=K12345678-1234-5678-4321-123456789012
  
