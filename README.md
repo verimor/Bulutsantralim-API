@@ -2,7 +2,7 @@
 ----
 * **[Çağrı Başlatma:](https://github.com/verimor/Bulutsantralim-API/blob/master/begin_call.md)** Uygulamalarınız üzerinden çağrı başlatabilirsiniz.
 * **[Çağrı Sonlandırma:](https://github.com/verimor/Bulutsantralim-API/blob/master/hangup_call.md)** Uygulamalarınız üzerinden devam eden çağrıları sonlandırabilirsiniz.
-* **[Çağrıyı Sessize Alma:](https://github.com/verimor/Bulutsantralim-API/blob/master/mute.md)** Uygulamalarınız üzerinden devam eden çağrıları sessize alabilirsiniz.
+* **[Çağrı Sessize Alma:](https://github.com/verimor/Bulutsantralim-API/blob/master/mute.md)** Uygulamalarınız üzerinden devam eden çağrıları sessize alabilirsiniz.
 * **[Müşteri Bilgilerinin Uygulamanızda Açılması (Olay Bildirme):](https://github.com/verimor/Bulutsantralim-API/blob/master/report_event.md)** Santralinizdeki telefonsal olayları uygulamalarınıza bildirebilirsiniz. Böylelikle gelen aramalarda yazılımınızda kayıtlı müşterinizin bilgilerini uygulamanızın ekranında görüntüleyebilirsiniz.
 * **[Arama Kayıtlarına Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/cdrs.md)** Santralinizdeki arama kayıtlarına ve detayına erişebilirsiniz.
 * **[Ses Kaydı Erişimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/recording.md)** Uygulamalarınız üzerinden çağrıların ses kayıtları dinleyebilir veya indirebilirsiniz.
