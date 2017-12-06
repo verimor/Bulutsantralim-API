@@ -1,4 +1,4 @@
-**ÇAĞRI SONLANDIRMA**
+**ÇAĞRIYI SONLANDIRMA**
 ----
   Uygulamalarınız üzerinden santralde devam eden bir çağrıyı sonlandırmak için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde +OK döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
@@ -6,7 +6,7 @@
 ----
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
 
-**ÇAĞRI SONLANDIRMA ÖRNEĞİ**
+**ÇAĞRIYI SONLANDIRMA ÖRNEĞİ**
 
 >http://api.bulutsantralim.com/hangup/f3797dfc-a818-11e7-bf70-cb295b6663ce?key=K12345678-1234-5678-4321-123456789012
 
