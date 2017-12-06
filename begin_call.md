@@ -23,7 +23,8 @@ HTTP/1.1 400 Bad Request
 extension 1005 not found
 ```
 **PARAMETRELER** 
-   Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir. 
+
+Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir. 
   * **key** = Size özel oluşturulmuş API anahtarınızdır. 
   * **extension** = Aramanın bağlanacağı dahili numaradır.
   * **destination** = Aranacak olan numara (908505320000 formatında olmalı).
