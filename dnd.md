@@ -1,4 +1,4 @@
-**DND MODU**
+**DND (rahatsız etme) MODU**
 ----
 Santralinizdeki herhangi bir dahilinin DND modunu açmak veya kapatmak için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde başarı mesajı döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
