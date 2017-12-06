@@ -33,3 +33,4 @@ Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 **Parametreler**
 
 * **state** - DND Modunu açmak için **on**, kapatmak için **off** olarak gönderilir
+* **id** - DND moduna almak istediğiniz dahilinin numarası
