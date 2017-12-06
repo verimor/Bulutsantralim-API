@@ -1,4 +1,4 @@
-**MUTE (sessize alma) MODU**
+**ÇAĞRIYI SESSİZE ALMA**
 ----
 Santralde devam eden bir çağrıyı sessize almak için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi aşağıdaki
 parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde başarı mesajı döner. İstek başarısız
@@ -8,7 +8,7 @@ olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı d�
 ----
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
   
-**MUTE MODUNU AÇMA ÖRNEĞİ**
+**ÇAĞRIYI SESSİZE ALMA ÖRNEĞİ**
 
 >http://api.bulutsantralim.com/mute/f3797dfc-a818-11e7-bf70-cb295b6663ce?state=on&key=K12345678-1234-5678-4321-123456789012
 
@@ -17,7 +17,7 @@ olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı d�
 +OK
 ```
 
-**MUTE MODUNU KAPATMA ÖRNEĞİ**
+**ÇAĞRIYI SESLİYE ALMA ÖRNEĞİ**
 
 >http://api.bulutsantralim.com/mute/f3797dfc-a818-11e7-bf70-cb295b6663ce?state=off&key=K12345678-1234-5678-4321-123456789012
 
