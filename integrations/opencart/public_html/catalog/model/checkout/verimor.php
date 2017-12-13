@@ -2,7 +2,7 @@
 class ModelCheckoutVerimor extends Model {
 
 	public function get_order_by_telephone_number($telephone) {
-		$order_query = $this->db->query("SELECT *,os.name order_status FROM `" . DB_PREFIX . "order` o INNER JOIN `". DB_PREFIX . "order_status` os ON os.order_status_id = o.order_status_id WHERE o.telephone = '" . $telephone . "' order by date_added DESC Limit 1");
+		$order_query = $this->db->query("SELECT *,os.name order_status FROM `" . DB_PREFIX . "order` o INNER JOIN `". DB_PREFIX . "order_status` os ON os.order_status_id = o.order_status_id WHERE o.telephone LIKE '%" . $telephone . "' order by date_added DESC Limit 1");
 
 
 		if ($order_query->num_rows) {
