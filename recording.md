@@ -1,6 +1,6 @@
 **SES KAYDI ERİŞİMİ**
 ----
-Santralinizdeki ses kayıtlarını uygulamalarınız üzerinden dinlemek veya indirmek için kullanılır. Bu işlem iki aşamadan oluşur.
+Santralinizdeki veya Google Drive'a aktarılmış ses kayıtlarınızı uygulamalarınız üzerinden dinlemek veya indirmek için kullanılır. Bu işlem iki aşamadan oluşur.
 Birinci aşamada URL elde edilir. İkinci aşamada ise o URL’den ses dosyası indirilir/dinlenir.
 
 Birinci aşama için; HTTP POST metodu ile api.bulutsantralim.com adresine aşağıdaki parametreler gönderilir. 
