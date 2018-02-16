@@ -8,7 +8,7 @@
 * **[Arama Kayıtlarına Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/cdrs.md)** Santralinizdeki arama kayıtlarına ve detayına erişebilirsiniz.
 * **[Ses Kaydı Erişimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/recording.md)** Uygulamalarınız üzerinden çağrıların ses kayıtları dinleyebilir veya indirebilirsiniz.
 * **[Otomatik IVR ve Sesli Mesaj Projesi Oluşturma:](https://github.com/verimor/Bulutsantralim-API/blob/master/ivr_campaigns.md)** Uygulamalarınız üzerinden otomatik IVR araması projesi ve sesli mesaj projesi oluşturabilirsiniz.
-* **[Ses Dosyaları Listesine Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md)** Uygulamalarınız üzerinden santralinizdeki ses dosyalarının listesine erişebilirsiniz.
+* **[Ses Dosyalarıyla çalışmak:](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md)** Uygulamalarınız üzerinden santralinizdeki ses dosyalarının listesine erişebilirsiniz ve yeni ses dosyası yükleyebilirsiniz.
 * **[Numaralar Listesine Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/caller_ids.md)** Uygulamalarınız üzerinden santralinizdeki Arayan Numara olarak kullanabileceğiniz numaraların listesine erişebilirsiniz.
 * **[Kuyruklar Listesine Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/queues.md)** Uygulamalarınız üzerinden santralinizdeki kuyrukların listesine erişebilirsiniz.
 
