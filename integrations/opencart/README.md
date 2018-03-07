@@ -1,7 +1,9 @@
 **Opencart – Bulutsantralim Entegrasyonuyla Neler Yapabilirsiniz?**
 ----
 Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu sayfayı inceleyebilirsiniz:  https://www.bulutsantralim.com/entegrasyonlar/opencart-bulutsantralim-entegrasyonu
-
+----
+Entegrasyon Opencart 2.3.0.1 sürümü ile uyumludur.
+----
 **Kurulum**
 ----
 * Opencart'ın çalıştığı web sunucusundaki public_html klasörüne [API dosyalarımızı](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/opencart/public_html/catalog) kopyalayın.
