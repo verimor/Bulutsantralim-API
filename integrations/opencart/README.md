@@ -1,7 +1,7 @@
 **Opencart – Bulutsantralim Entegrasyonuyla Neler Yapabilirsiniz?**
 ----
 Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu sayfayı inceleyebilirsiniz:  https://www.bulutsantralim.com/entegrasyonlar/opencart-bulutsantralim-entegrasyonu
-----
+
 Entegrasyon Opencart 2.3.0.1 sürümü ile uyumludur.
 ----
 **Kurulum**
