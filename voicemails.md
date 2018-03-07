@@ -1,6 +1,6 @@
-**TELESEKRETER KAYITLARINA ERİŞİM**
+**TELESEKRETER ARAMA KAYITLARINA ERİŞİM**
 ----
-Santralinizdeki telesekreter mesajlarına ve ses kayıtlarına erişmek için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi
+Santralinizdeki telesekreter arama kayıtlarına ve ses kayıtlarına erişmek için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi
 aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. 
 İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
@@ -8,7 +8,7 @@ aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200
 
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
   
-**TELESEKRETER KAYITLARINA ERİŞME ÖRNEĞİ**
+**TELESEKRETER ARAMA KAYITLARINA ERİŞİM ÖRNEĞİ**
 
 >http://api.bulutsantralim.com/voicemail_messages?key=K12345678-1234-5678-4321-123456789012
  
