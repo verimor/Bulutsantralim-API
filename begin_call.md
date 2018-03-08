@@ -27,6 +27,6 @@ extension 1005 not found
 Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir. 
   * **key** = Size özel oluşturulmuş API anahtarınızdır. 
   * **extension** = Aramanın bağlanacağı dahili numaradır.
-  * **destination** = Aranacak olan numara (908505320000 formatında olmalı).
+  * **destination** = Aranacak olan numara (yurtiçi çağrılar için 908505320000, yurtdışı çağrılar için 00493027590915 formatında olmalı).
   * caller_id = Aramada kullanılacak olan dış numara (908505320000 formatında olmalı. Kullanılacak dış numaranın mutlaka en az bir           dahilide seçili olması gerekir. Bu parametre verilmezse dahilide seçili olan dış no kullanılacaktır).
   * manual_answer = Değeri true olarak gönderilirse dahilinin telefonu açmasını bekler (Normalde otomatik olarak dahili açılır ve karşı    numara aranır).
