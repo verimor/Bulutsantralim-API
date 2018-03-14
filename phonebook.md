@@ -2,7 +2,7 @@
 
 **GRUP OLUŞTURMA ÖRNEĞİ**
 ```json
-POST http://api.bulutsantralim.com/groups
+POST http://api.bulutsantralim.com/contact_groups
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
@@ -28,7 +28,7 @@ name can't be blank
 
 **GRUP GÜNCELLEME ÖRNEĞİ**
 ```json
-PATCH http://api.bulutsantralim.com/groups/20212
+PATCH http://api.bulutsantralim.com/contact_groups/20212
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
@@ -54,7 +54,7 @@ cannot find group with id: 20212
 
 **GRUP SİLME ÖRNEĞİ**
 ```json
-DELETE http://api.bulutsantralim.com/groups/20212
+DELETE http://api.bulutsantralim.com/contact_groups/20212
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
