@@ -13,6 +13,7 @@
 * **[Kuyruklar Listesine Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/queues.md)** Uygulamalarınız üzerinden santralinizdeki kuyrukların listesine erişebilirsiniz.
 * **[Telesekreter Mesajı Erişimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/voicemails.md)** Uygulamalarınız üzerinden telesekreter mesajılarına erişebilir, ses kayıtlarını dinleyebilir veya indirebilirsiniz.
 * **[Rehbere Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/phonebook.md)** Uygulamalarınız üzerinden rehberinize kişi veya grup ekleme/silme/güncelleme işlemlerini yapabilirsiniz.
+* **[Müşteri Tanıma:](https://github.com/verimor/Bulutsantralim-API/blob/master/advisory_webhook.md)** Çağrı geldiği zaman arayan numarayı sizin web servisinize sorup, müşterinizi dinamik istediğiniz hedefe yönlendirebilirsiniz.
 
 **Entegrasyonlar**
 ----
