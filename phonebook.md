@@ -1,7 +1,7 @@
 **REHBERE ERİŞİM**
 ----
 
-**GRUP OLUŞTURMA/GÜNCELLEME/SİLME**
+**GRUP LİSTELEME/OLUŞTURMA/GÜNCELLEME/SİLME**
 
 Rehberde yeni grup oluşturmak, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner
 
@@ -101,7 +101,7 @@ OK
 HTTP/1.1 400 Bad Request
 cannot find group with id: 20212
 ```
-**KİŞİ EKLEME/GÜNCELLEME/SİLME**
+**KİŞİ LİSTELEME/EKLEME/GÜNCELLEME/SİLME**
 
 Rehbere yeni kişi eklemek, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
