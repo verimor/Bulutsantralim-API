@@ -65,7 +65,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * **time_range_end:** Kampanyanın çalışma saatlerinin bitişi. SS:DD (veya S:DD) formatında olmalı.
 * **ring_timeout:** Aranan numara çalarken beklenecek süre (saniye), 10 – 60 sn. arasında olabilir.
 * **cli:** Arayan numara. Karşı taraf bu numarayı görür.
-* **welcome_announcement_id:** Aranan numaralara dinletilecek ses dosyasının ID’si. Bu ses dinletilip peşinden tuşlama beklenir. ID’leri https://oim.verimor.com.tr/switch/announcements sayfasından görebilirsiniz.
+* **welcome_announcement_id:** Aranan numaralara dinletilecek ses dosyasının ID’si. Bu ses dinletilip peşinden tuşlama beklenir. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
 * **call_retries:** Tekrar arama sayısı. Meşgul, ulaşılamıyor, cevap yok gibi durumlarda numaranın kaç defa daha aranacağını belirtir.
 * **webhook_url:** Tuşlamaların bildirileceği URL. Doluysa tüm tuşlamalar bu URL’e gönderilir. Kampanya oluşturulurken bu URL’e boş bir POST request’i gönderilip 200 dönmesi beklenir, bu şekilde URL’i doğruluyoruz. Aranan kişi tuşlama yaptıktan sonra bir yere yönlenmeyecekse, sadece tuşlamayı kaydetmek istiyorsanız, tuşa hedef olarak anons verebilirsiniz.
 * **digit_target0 .. digit_target_9:** Aranan kişi 0 – 9 tuşlarına bastığında yönlendirilecek hedefler (gerçekleşecek eylemler). Verebileceğiniz hedeflerin listesi aşağıda listelenmiştir. 0-9, star, square, timeout, invalid’den en az birisi için hedef verilmesi zorunludur.
@@ -85,7 +85,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * ivr/10: Aranan kişiyi 10 numaralı Sesli Karşılama Menüsüne aktar.
 * external/05321234567: Aranan kişiyi 05321234567 numarasına bağla.
 * voicemail/1000: Aranan kişiyi 1000 numaralı dahilinin telesekreterine aktar. 1000 numaralı dahili ulaşılabilir olsa bile.
-* announcement/456: Aranan kişiye 456 ID’li Ses Dosyasını dinlet ve çağrıyı sonlandır. Ses dosyası ID’lerinizi https://oim.verimor.com.tr/switch/announcements sayfasından görebilirsiniz. Tuşlamaları sadece API ile toplamak istiyorsanız, arayanı başka bir yere yönlendirmeyecekseniz bu seçeneği kullanmalısınız.
+* announcement/456: Aranan kişiye 456 ID’li Ses Dosyasını dinlet ve çağrıyı sonlandır. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz. Tuşlamaları sadece API ile toplamak istiyorsanız, arayanı başka bir yere yönlendirmeyecekseniz bu seçeneği kullanmalısınız.
 * fax: Aranan kişiye faks sinyali gönder, faks alma işlemini başlat.
 * fax/isim@firmaadi.com.tr: Aranan kişiye faks sinyali gönder, faks alma işlemini başlat, faks alınırsa verilen e-posta adresine gönder.
 * hangup/hangup: Çağrıyı kapat (normal kapatma sinyali ver).
