@@ -8,7 +8,7 @@ aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200
 ----
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
   
-**NUMARALAR LİSTESİNE ERİŞME ÖRNEĞİ**
+**NUMARALAR LİSTESİNE ERİŞİM ÖRNEĞİ**
 
 >http://api.bulutsantralim.com/caller_ids?key=K12345678-1234-5678-4321-123456789012
  
