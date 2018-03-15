@@ -8,7 +8,7 @@ aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200
 ----
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
   
-**ARAMA KAYITLARINA ERİŞME ÖRNEĞİ**
+**ARAMA KAYITLARINA ERİŞİM ÖRNEĞİ**
 
 >http://api.bulutsantralim.com/cdrs?key=K12345678-1234-5678-4321-123456789012
  
