@@ -5,6 +5,26 @@
 
 Rehberde yeni grup oluşturmak, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner
 
+**GRUP LİSTESİNE ERİŞME ÖRNEĞİ**
+>http://api.bulutsantralim.com/contact_groups?key=K12345678-1234-5678-4321-123456789012
+
+**BAŞARILI CEVAP**
+
+```json
+HTTP/1.1 200 OK
+[
+  {"id":1,"name":"Müşteriler"},
+  {"id":2,"name":"Arkadaşlarım"}
+]
+```
+
+**BAŞARISIZ CEVAP**
+
+```json
+HTTP/1.1 401 Unauthorized
+Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
+```
+
 **GRUP OLUŞTURMA ÖRNEĞİ**
 ```json
 POST http://api.bulutsantralim.com/contact_groups
@@ -84,6 +104,77 @@ cannot find group with id: 20212
 **KİŞİ EKLEME/GÜNCELLEME/SİLME**
 
 Rehbere yeni kişi eklemek, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
+
+**KİŞİLER LİSTESİNE ERİŞME ÖRNEĞİ**
+>http://api.bulutsantralim.com/contacts?key=K12345678-1234-5678-4321-123456789012
+
+**BAŞARILI CEVAP**
+
+```json
+HTTP/1.1 200 OK
+{"contacts":[{
+  "name":"Verimor",
+  "surname":"Telekomünikasyon",
+  "tckn":"12345678910",
+  "description":"A.Ş.",
+  "phone":"08505320000",
+  "email":"info@verimor.com.tr",
+  "title":"Sabit Telefon Operatörü",
+  "phone2":"02123205062",
+  "fax":"02123205072",
+  "gender":"Erkek",
+  "birthday":"01.01.1990",
+  "birthday_sms":true,
+  "weddingday":"01.01.2018",
+  "weddingday_sms":true,
+  "note1":"",
+  "note2":"",
+  "note3":"",
+  "note4":"",
+  "monthly_sms_day":9,
+  "monthly_sms_message":"Bu gün ayın dokuz",
+  "group_ids":[20212, 20213]
+}],
+"pagination":{
+"page":1,
+"total_count":1,
+"total_pages":1,
+"limit":10
+}
+}
+```
+* name: Ad
+* surname: Soyad
+* tckn: TC kimlik numarası
+* description: Açıklama
+* phone: Telefon numarası
+* email: E-posta adresi
+* title: Unvan
+* phone2: Ek telefon numarası
+* fax: Fax numarası
+* gender: Cinsiyet
+* birthday: Doğum günü
+* birthday_sms: Doğum gününde otomatik mesaj gönderimi. 'true' veya 'false döner'
+* weddingday: Evlilik günü
+* weddingday_sms: Evlilik gününde otomatik mesaj gönderimi. 'true' veya 'false döner'
+* note1: Kişiyle ilgili notlar
+* note2:
+* note3:
+* note4:
+* monthly_sms_day: Kişiye aylık otomatik SMS gönderilecek gün. 0-31 arası rakam veya 'null' döner
+* monthly_sms_message: Aylık SMS mesajı
+* group_ids:[]: Kişinin eklendiği gruplar
+* page – Listenin hangi sayfasında olduğunuz. 
+* total_count – Listede dönen kişi sayısı.
+* total_pages – Listenin kaç sayfadan oluştuğu.(total_pages=total_count/limit).
+* limit – Listeye verilen sınır.
+
+**BAŞARISIZ CEVAP**
+
+```json
+HTTP/1.1 401 Unauthorized
+Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
+```
 
 **KİŞİ EKLEME ÖRNEĞİ**
 ```json
