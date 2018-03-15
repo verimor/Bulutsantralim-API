@@ -1,6 +1,6 @@
 **MÜŞTERİ TANIMA**
 ----
-Santralinize gelen çağrıların numarasını müşteri veritabanızda sorgulayıp, arayana göre farklı kuyruğa veya dahiliye yönlendirmek için kullanılır.
+Santralinize gelen çağrıların numarasını müşteri veritabanınızda sorgulayıp, arayana göre santralinizdeki farklı hedeflere (kuyruk, dahili, sesli karşılama vb.) yönlendirmek için kullanılır.
 Çağrı geldiğinde sizin servisinize HTTP GET isteği yapılır, dönen JSON cevabındaki bilgiye göre çağrı yönlendirilir.
 
 **HAZIRLIK**
