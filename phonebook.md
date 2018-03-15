@@ -13,8 +13,8 @@ Rehberde yeni grup oluşturmak, güncellemek veya silmek için api.bulutsantrali
 ```json
 HTTP/1.1 200 OK
 [
-  {"id":1,"name":"Müşteriler"},
-  {"id":2,"name":"Arkadaşlarım"}
+  {"id":20212,"name":"Müşteriler"},
+  {"id":20213,"name":"Arkadaşlarım"}
 ]
 ```
 
@@ -113,6 +113,7 @@ Rehbere yeni kişi eklemek, güncellemek veya silmek için api.bulutsantralim.co
 ```json
 HTTP/1.1 200 OK
 {"contacts":[{
+  "id":10203,
   "name":"Verimor",
   "surname":"Telekomünikasyon",
   "tckn":"12345678910",
@@ -143,6 +144,7 @@ HTTP/1.1 200 OK
 }
 }
 ```
+* id: ID değeri. Bu değeri kullanarak Kişi silme veya güncelleme işlemlerini gerçekleştirebilirsiniz
 * name: Ad
 * surname: Soyad
 * tckn: TC kimlik numarası
