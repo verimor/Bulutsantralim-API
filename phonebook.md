@@ -1,4 +1,9 @@
-**Rehberde yeni grup oluşturmak, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki örneklerdeki gibi çağrılır.**
+**REHBERE ERİŞİM**
+----
+
+**GRUP OLUŞTURMA/GÜNCELLEME/SİLME**
+
+Rehberde yeni grup oluşturmak, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner
 
 **GRUP OLUŞTURMA ÖRNEĞİ**
 ```json
@@ -76,8 +81,9 @@ OK
 HTTP/1.1 400 Bad Request
 cannot find group with id: 20212
 ```
+**KİŞİ EKLEME/GÜNCELLEME/SİLME**
 
-**Rehbere yeni kişi eklemek, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki örneklerdeki gibi çağrılır.**
+Rehbere yeni kişi eklemek, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
 **KİŞİ EKLEME ÖRNEĞİ**
 ```json
@@ -141,15 +147,15 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * fax: Fax numarası
 * gender: Cinsiyet (Erkek: 'm', Kadın: 'f' olarak gönderilmeli)
 * **birthday:** Doğum günü (dd.mm.yyyy formatında olmalı, birthday_sms parametresi 'true' olarak gönderildiği zaman zorunludur)
-* birthday_sms: Doğum gününde otomatik mesaj gönderimi ('true' veya 'false' olarak girilmeli)
+* birthday_sms: Doğum gününde otomatik mesaj gönderimi. Devreye girmesi için değeri 'true' olarak gönderilmeli
 * **weddingday:** Evlilik günü (dd.mm.yyyy formatında olmalı, weddingday_sms parametresi 'true' olarak gönderildiği zaman zorunludur)
-* weddingday_sms: Evlilik gününde otomatik mesaj gönderimi ('true' veya 'false' olarak girilmeli)
+* weddingday_sms: Evlilik gününde otomatik mesaj gönderimi. Devreye girmesi için değeri 'true' olarak gönderilmeli
 * note1: Kişiyle ilgili notlar
 * note2:
 * note3:
 * note4:
-* monthly_sms_day: Kişiye aylık otomatik SMS gönderilmesini istiyorsanız gönderilecek günü giriniz (1-31 arası).
-* monthly_sms_message: Aylık SMS mesajı
+* monthly_sms_day: Kişiye aylık otomatik SMS gönderilmesini istiyorsanız gönderilecek günü giriniz (1-31 arası)
+* **monthly_sms_message:** Aylık SMS mesajı (monthly_sms_day parametresi girildiği zaman zorunludur)
 * group_ids:[]: Kişinin eklenmesini istediğiniz grubun id değeri
 
 **Doğum günü, Evlilik günü ve Aylık SMS gönderimi özelliklerinin kullanılabilmesi için [Rehber Ayarlarım](https://oim.verimor.com.tr/contact/settings/edit) sayfasından "Özel Gün Mesajları" özelliği aktif edilmelidir**
