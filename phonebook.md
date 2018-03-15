@@ -5,7 +5,7 @@
 
 Rehberde yeni grup oluşturmak, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner
 
-**GRUP LİSTESİNE ERİŞME ÖRNEĞİ**
+**GRUP LİSTESİNE ERİŞİM ÖRNEĞİ**
 >http://api.bulutsantralim.com/contact_groups?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
@@ -105,7 +105,7 @@ cannot find group with id: 20212
 
 Rehbere yeni kişi eklemek, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
-**KİŞİLER LİSTESİNE ERİŞME ÖRNEĞİ**
+**KİŞİLER LİSTESİNE ERİŞİM ÖRNEĞİ**
 >http://api.bulutsantralim.com/contacts?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
