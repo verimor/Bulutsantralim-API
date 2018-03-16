@@ -3,6 +3,8 @@
 Santralinize gelen çağrıların numarasını müşteri veritabanınızda sorgulayıp, arayana göre santralinizdeki farklı hedeflere (kuyruk, dahili, sesli karşılama vb.) yönlendirmek için kullanılır.
 Çağrı geldiğinde sizin servisinize HTTP GET isteği yapılır, dönen JSON cevabındaki bilgiye göre çağrı yönlendirilir.
 
+Eğer arayan numara veritabanınızda bulunmuyorsa, arayanın başka bir telefon numarasını veya müşteri numarasını tuşlamasını isteyebilirsiniz. Bulutsantral istediğiniz uzunluktaki numarayı müşteriden alır ve yine servisinize gönderir.
+
 **HAZIRLIK**
 ----
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz ve Müşteri Tanıma başlığı altındaki ayarları yapmış olmalısınız.
@@ -11,24 +13,68 @@ Santralinize gelen çağrıların numarasını müşteri veritabanınızda sorgu
 **UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ**
 
 ```json
-GET http://musteri.adresi.com.tr/musteri.json?telefon=05301234567
+GET http://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=1
 Host: musteri.adresi.com.tr 
 Accept: */* 
 ``` 
-**PARAMETRELER** 
-  URL'in sonunda arayan kişinin telefon numarası gönderilir. Bu numara ulusal çağrılar için 05301234567, uluslararası çağrılar için 00493089680211 veya dahili çağrılar için 1003 gibi formatlarda olabilir.
+**PARAMETRELER**
+  * uuid = Çağrının unique ID'si.
+  * cli = Arayan kişinin telefon numarası. Bu numara ulusal çağrılar için 05301234567, uluslararası çağrılar için 00493089680211 veya dahili çağrılar için 1003 gibi formatlarda olabilir.
+  * cld = Aranan dış numaranız.
+  * step = İşlem adımı. Aynı çağrı için servisiniz her sorgulandığında bu numara 1 arttırılarak gönderilir. 
 
-**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEĞİ** 
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEĞİ (YÖNLENDİRME) ** 
 
 ```json
 {
-  "name": "Ahmet Yılmaz",
-  "target": "queue/201"
+  "transfer": {
+    "greet_name": "Ahmet Yılmaz",
+    "target": "queue/201"
+  }
 }
 ```
+
 **SAHALAR**
-* name: Opsiyonel. Eğer döndürürseniz müşterinizin ismi TTS ile okunarak karşılanır. "Merhaba, Ahmet Yılmaz. Çağrınızı bağlıyorum" şeklinde okunur. Bu özelliği kullabılabilmesi için TTS modülünü satın almış olmanız gerekir.
+* greet_name: Opsiyonel. Eğer döndürürseniz müşterinizin ismi TTS ile okunarak karşılanır. "Merhaba, Ahmet Yılmaz. Çağrınızı bağlıyorum" şeklinde okunur. Bu özelliği kullabılabilmesi için TTS modülünü satın almış olmanız gerekir.
 * target: Zorunlu. Çağrının hangi hedefe yönleneceğini belirtir. Arayan numara müşteriniz olmasa bile nereye yönlendirileceğini belirtmelisiniz. Bu sahada dönebileceğiniz seçenekleri aşağıdaki listede görebilirsiniz.
+
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEĞİ (TUŞ İSTEME) ** 
+
+```json
+{
+  "prompt": {
+    "announcement_id": "123",
+    "min_digits": "5",
+    "max_digits": "6",
+    "retry_count": "3",
+    "service_url": "https://musteri.adresi.com/tuslamayan_musteri.json",
+    "param_name": "musteri_no",
+  }
+}
+```
+
+**SAHALAR**
+* announcement_id: Zorunlu. Tuş isterken önce okunacak anons'un ID'si. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
+* min_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının minimum uzunluğu. Bundan kısa tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir.
+* max_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının maksimum uzunluğu. Bundan uzun tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir.
+* retry_count: Zorunlu. Geçersiz tuşlama durumunda kaç defa daha deneneceği.
+* service_url: Opsiyonel. Tuşlamanın sonucunun ayrı bir adrese gönderilmesini istiyorsanız bu sahayı döndürün. Programınızı daha basit tutmak için kullanabilirsiniz. Verilmezse OİM'den girdiğiniz Servis URL'nize iletilir.
+* param_name: Opsiyonel. Tuşlanan değerin servisinize iletirken hangi isimle gönderilmesini istiyorsanız burada belirtebilirsiniz. Belirtmezseniz varsayılan olarak "digits" ismiyle gönderilir.
+
+**TUŞLAMADAN SONRA UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ**
+
+```json
+GET http://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=2&digits=123456&error=
+Host: musteri.adresi.com.tr 
+Accept: */* 
+``` 
+**PARAMETRELER**
+  * uuid = Çağrının unique ID'si.
+  * cli = Arayan kişinin telefon numarası. Bu numara ulusal çağrılar için 05301234567, uluslararası çağrılar için 00493089680211 veya dahili çağrılar için 1003 gibi formatlarda olabilir.
+  * cld = Aranan dış numaranız.
+  * step = İşlem adımı. Aynı çağrı için servisiniz her sorgulandığında bu numara 1 arttırılarak gönderilir.
+  * digits = Müşteriniz tarafından tuşlanan rakamlar. Eğer tuşlama yapılmadıysa boş gelir. Bu parametrenin ismini yukarıdaki *param_name* ile değiştirebilirsiniz.
+  * error = Tuş alma işlemi sırasında hata oluşması durumunda servisinize bu hatayı bildirmek için bu parametre kullanılır.
 
 **HEDEF (TARGET) SEÇENEKLERİ**
 
