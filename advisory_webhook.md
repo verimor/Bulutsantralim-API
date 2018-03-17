@@ -38,7 +38,7 @@ Accept: */*
 * greet_name: Opsiyonel. Eğer döndürürseniz müşterinizin ismi TTS ile okunarak karşılanır. "Merhaba, Ahmet Yılmaz. Çağrınızı bağlıyorum" şeklinde okunur. Bu özelliği kullabılabilmesi için TTS modülünü satın almış olmanız gerekir.
 * target: Zorunlu. Çağrının hangi hedefe yönleneceğini belirtir. Arayan numara müşteriniz olmasa bile nereye yönlendirileceğini belirtmelisiniz. Bu sahada dönebileceğiniz seçenekleri aşağıdaki listede görebilirsiniz.
 
-**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEĞİ (TUŞ İSTEME) ** 
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEĞİ (TUŞ İSTEME)** 
 
 ```json
 {
