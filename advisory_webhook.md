@@ -23,7 +23,7 @@ Accept: */*
   * cld = Aranan dış numaranız.
   * step = İşlem adımı. Aynı çağrı için servisiniz her sorgulandığında bu numara 1 arttırılarak gönderilir. 
 
-**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEĞİ (YÖNLENDİRME) ** 
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEĞİ (YÖNLENDİRME)** 
 
 ```json
 {
