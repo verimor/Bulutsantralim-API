@@ -23,7 +23,7 @@ Accept: */*
   * cld = Aranan dış numaranız.
   * step = İşlem adımı. Aynı çağrı için servisiniz her sorgulandığında bu numara 1 arttırılarak gönderilir. 
 
-**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEĞİ (YÖNLENDİRME)** 
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (YÖNLENDİRME)** 
 
 ```json
 {
@@ -34,11 +34,21 @@ Accept: */*
 }
 ```
 
+```json
+{
+  "transfer": {
+    "greet_phrase": "Merhaba Ahmet Yılmaz. Çağrınızı bağlıyorum",
+    "target": "queue/201"
+  }
+}
+```
+
 **SAHALAR**
-* greet_name: Opsiyonel. Eğer döndürürseniz müşterinizin ismi TTS ile okunarak karşılanır. "Merhaba, Ahmet Yılmaz. Çağrınızı bağlıyorum" şeklinde okunur. Bu özelliği kullabılabilmesi için TTS modülünü satın almış olmanız gerekir.
+* greet_name: Opsiyonel. Eğer döndürürseniz müşterinizin ismi TTS ile okunarak karşılanır. "Merhaba, Ahmet Yılmaz. Çağrınızı bağlıyorum" şeklinde okunur. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir.
+* greet_phrase: Opsiyonel. Eğer döndürürseniz metin TTS ile okunarak karşılanır. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir.
 * target: Zorunlu. Çağrının hangi hedefe yönleneceğini belirtir. Arayan numara müşteriniz olmasa bile nereye yönlendirileceğini belirtmelisiniz. Bu sahada dönebileceğiniz seçenekleri aşağıdaki listede görebilirsiniz.
 
-**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEĞİ (TUŞ İSTEME)** 
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (TUŞ İSTEME)** 
 
 ```json
 {
@@ -53,13 +63,28 @@ Accept: */*
 }
 ```
 
+```json
+{
+  "prompt": {
+    "phrase": "Merhaba Ahmet Yılmaz. Teknik destek almak için 1'i, satış ve müşteri ilişkileri birimimizle görüşmek için lütfen 2'yi tuşlayın.",
+    "min_digits": "5",
+    "max_digits": "6",
+    "retry_count": "3",
+    "service_url": "https://musteri.adresi.com/tuslamayan_musteri.json",
+    "param_name": "musteri_no",
+  }
+}
+```
+
 **SAHALAR**
 * announcement_id: Zorunlu. Tuş isterken önce okunacak anons'un ID'si. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
+* phrase: Zorunlu. Tuş isterken önce okunacak metin. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir.
 * min_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının minimum uzunluğu. Bundan kısa tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir.
 * max_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının maksimum uzunluğu. Bundan uzun tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir.
 * retry_count: Zorunlu. Geçersiz tuşlama durumunda kaç defa daha deneneceği.
 * service_url: Opsiyonel. Tuşlamanın sonucunun ayrı bir adrese gönderilmesini istiyorsanız bu sahayı döndürün. Programınızı daha basit tutmak için kullanabilirsiniz. Verilmezse OİM'den girdiğiniz Servis URL'nize iletilir.
 * param_name: Opsiyonel. Tuşlanan değerin servisinize iletirken hangi isimle gönderilmesini istiyorsanız burada belirtebilirsiniz. Belirtmezseniz varsayılan olarak "digits" ismiyle gönderilir.
+
 
 **TUŞLAMADAN SONRA UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ**
 
