@@ -37,8 +37,8 @@ Accept: */*
 ```json
 {
   "transfer": {
-    "greet_phrase": "Merhaba Ahmet Yılmaz. Çağrınızı bağlıyorum",
-    "target": "queue/201"
+    "greet_phrase": "Günaydın Ahmet Bey. Tamir için teslim ettiğiniz cihazınızın arızası tespit edilmiştir. Sizi teknik ekibe aktarıyorum.",
+    "target": "queue/202"
   }
 }
 ```
@@ -57,7 +57,7 @@ Accept: */*
     "min_digits": "5",
     "max_digits": "6",
     "retry_count": "3",
-    "service_url": "https://musteri.adresi.com/tuslamayan_musteri.json",
+    "service_url": "https://musteri.adresi.com/tuslamayan_musteri.php",
     "param_name": "musteri_no",
   }
 }
@@ -66,12 +66,12 @@ Accept: */*
 ```json
 {
   "prompt": {
-    "phrase": "Merhaba Ahmet Yılmaz. Teknik destek almak için 1'i, satış ve müşteri ilişkileri birimimizle görüşmek için lütfen 2'yi tuşlayın.",
-    "min_digits": "5",
-    "max_digits": "6",
-    "retry_count": "3",
-    "service_url": "https://musteri.adresi.com/tuslamayan_musteri.json",
-    "param_name": "musteri_no",
+    "phrase": "Merhaba Ahmet Yılmaz. 12345 numaralı son siparişiniz teslim adresinize edilmiştir. Arıza ve iade işlemleri için 1, diğer işlemler için 2 tuşlayınız.",
+    "min_digits": "1",
+    "max_digits": "1",
+    "retry_count": "2",
+    "service_url": "https://musteri.adresi.com/siparis_sonraki_menu_secim.php",
+    "param_name": "secim",
   }
 }
 ```
