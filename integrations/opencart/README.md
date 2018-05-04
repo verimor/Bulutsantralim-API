@@ -18,7 +18,7 @@ Entegrasyon Opencart 2.3.x sürümü ile uyumludur.
      * API anahtarı kutusunun altındaki oluştur düğmesine basın.
      * Durumu açık olarak işaretleyin.
      * Ip adresleri sekmesine tıklayın.
-     * **194.49.126.36** ve **194.49.126.18** ip adreslerini ekleyin
+     * **194.49.126.36**, **78.189.64.130**, **85.105.157.28** ve **194.49.126.18** ip adreslerini ekleyin
      * Sağ üst kısımdan kaydedin.
 
 * Opencart yönetim paneli üzerinden API'yi etkinleştirin.
