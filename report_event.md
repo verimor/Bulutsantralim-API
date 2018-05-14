@@ -1,11 +1,8 @@
 **OLAY BİLDİRME**
 ----
 Santralinizde gerçekleşen olayları (telefon çalıyor, telefon açıldı, telefon kapandı) uygulamalarınıza bildirmek için kullanılır.
-Telefon kapandı (hangup) bildirimi aynı zamanda CDR bildirimidir. Telefon kapandı bildirimi içesindeki çağrının cevaplanıp cevaplanamadığı
-(answered) bilgisi Kaçan çağrı tespiti için kullanılır. HTTP POST metodu ile santral ayarlarından girdiğiniz olay bildirim adresine
-aşağıdaki parametreler gönderilir. Veriler HTML Form Field olarak gönderilir. adresi aşağıdaki parametrelerle çağrılır.
-İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde call_uuid döner. İstek başarısız olduğunda ise ilgili HTTP Status
-kodu ile mesajın Body’sinde hata mesajı döner.
+Telefon kapandı (hangup) bildirimi aynı zamanda CDR bildirimidir. Telefon kapandı bildirimi içesindeki çağrının cevaplanıp cevaplanamadığı (answered) bilgisi Kaçan çağrı tespiti için kullanılır. HTTP POST metodu ile [Santral Ayarlarım](https://oim.verimor.com.tr/switch/domain/edit) sayfasından CRM Entegrasyonu bölümünden girdiğiniz **Bildirilecek URL** adresine
+aşağıdaki parametreler HTML Form Field olarak gönderilir. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde call_uuid döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
 **HAZIRLIK**
 ----
