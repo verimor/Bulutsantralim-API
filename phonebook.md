@@ -132,6 +132,7 @@ HTTP/1.1 200 OK
   "note2":"",
   "note3":"",
   "note4":"",
+  "company_name":"Verimor Telekomünikasyon",
   "monthly_sms_day":9,
   "monthly_sms_message":"Bu gün ayın dokuz",
   "group_ids":[20212, 20213]
@@ -163,6 +164,7 @@ HTTP/1.1 200 OK
 * note2:
 * note3:
 * note4:
+* company_name: Firma adı
 * monthly_sms_day: Kişiye aylık otomatik SMS gönderilecek gün. 0-31 arası rakam veya 'null' döner
 * monthly_sms_message: Aylık SMS mesajı
 * group_ids:[]: Kişinin eklendiği gruplar
@@ -205,6 +207,7 @@ Accept: */*
  "note2" : "",
  "note3" : "",
  "note4" : "",
+ "company_name":"Verimor Telekomünikasyon",
  "monthly_sms_day" : "9",
  "monthly_sms_message" : "Bu gün ayın dokuzu",
  "group_ids:[]" : "20212",
@@ -247,6 +250,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * note2:
 * note3:
 * note4:
+* company_name: Firma adı
 * monthly_sms_day: Kişiye aylık otomatik SMS gönderilmesini istiyorsanız gönderilecek günü giriniz (1-31 arası)
 * **monthly_sms_message:** Aylık SMS mesajı (monthly_sms_day parametresi girildiği zaman zorunludur)
 * group_ids:[]: Kişinin eklenmesini istediğiniz grubun id değeri
