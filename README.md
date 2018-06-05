@@ -14,6 +14,7 @@
 * **[Telesekreter Mesajı Erişimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/voicemails.md)** Uygulamalarınız üzerinden telesekreter mesajılarına erişebilir, ses kayıtlarını dinleyebilir veya indirebilirsiniz.
 * **[Rehbere Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/phonebook.md)** Uygulamalarınız üzerinden rehberinize kişi veya grup ekleme/silme/güncelleme işlemlerini yapabilirsiniz.
 * **[Müşteri Tanıma:](https://github.com/verimor/Bulutsantralim-API/blob/master/advisory_webhook.md)** Santralinize çağrı geldiği zaman arayan numara sizin web servisinize sorulur, müşterinizi dinamik olarak istediğiniz hedefe yönlendirebilirsiniz.
+* **[Faks Gönderimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/faxes.md)** Uygulamalarınız üzerinden faks gönderebilirsiniz.
 
 **Entegrasyonlar**
 ----
