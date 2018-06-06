@@ -32,9 +32,10 @@ HTTP/1.1 200 OK
 >http://api.bulutsantralim.com/fdrs?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
+
 ```json
 HTTP/1.1 200 OK
-{"fdrs:[{
+{"fdrs":[{
   "call_uuid":"3289fe02-2dc7-11e8-9a23-1f0cd544cc6v",
   "direction":"Giden",
   "caller_id_number":"902129630131",
