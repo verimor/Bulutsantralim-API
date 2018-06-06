@@ -9,7 +9,10 @@ Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altınd
 
 Rehberde yeni grup oluşturmak, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner
 
-**GRUP LİSTESİNE ERİŞİM ÖRNEĞİ**
+**GRUP LİSTESİNE ERİŞİM**
+----
+
+**ÖRNEK URL**
 >http://api.bulutsantralim.com/contact_groups?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
@@ -30,6 +33,8 @@ Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 ```
 
 **GRUP OLUŞTURMA ÖRNEĞİ**
+----
+
 ```json
 POST http://api.bulutsantralim.com/contact_groups
 Host: api.bulutsantralim.com
@@ -56,6 +61,8 @@ name can't be blank
 ```
 
 **GRUP GÜNCELLEME ÖRNEĞİ**
+----
+
 ```json
 PATCH http://api.bulutsantralim.com/contact_groups/20212
 Host: api.bulutsantralim.com
@@ -82,6 +89,8 @@ cannot find group with id: 20212
 ```
 
 **GRUP SİLME ÖRNEĞİ**
+----
+
 ```json
 DELETE http://api.bulutsantralim.com/contact_groups/20212
 Host: api.bulutsantralim.com
@@ -111,7 +120,10 @@ cannot find group with id: 20212
 
 Rehbere yeni kişi eklemek, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
-**KİŞİLER LİSTESİNE ERİŞİM ÖRNEĞİ**
+**KİŞİLER LİSTESİNE ERİŞİM**
+----
+
+**ÖRNEK URL**
 >http://api.bulutsantralim.com/contacts?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
@@ -187,6 +199,8 @@ Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 ```
 
 **KİŞİ EKLEME ÖRNEĞİ**
+----
+
 ```json
 POST http://api.bulutsantralim.com/contacts
 Host: api.bulutsantralim.com
@@ -264,7 +278,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 **Doğum günü, Evlilik günü ve Aylık SMS gönderimi özelliklerinin kullanılabilmesi için [Rehber Ayarlarım](https://oim.verimor.com.tr/contact/settings/edit) sayfasından "Özel Gün Mesajları" özelliği aktif edilmelidir**
 
 **KİŞİ GÜNCELLEME ÖRNEĞİ**
-
+----
 Kişi eklerken kullanabileceğiniz tüm parametreler güncelleme için de geçerlidir.
 
 ```json
@@ -293,7 +307,7 @@ cannot find group with id: 10203
 ```
 
 **KİŞİ SİLME ÖRNEĞİ**
---
+----
 
 ```json
 DELETE http://api.bulutsantralim.com/contacts/10203
