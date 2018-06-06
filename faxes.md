@@ -5,8 +5,11 @@ Uygulamalarınız üzerinden faks göndermek ve faks listesine erişmek için ap
 **HAZIRLIK**
 
  Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
-  
-**Tamamlanmamış Gönderimler Listesine Erişim Örneği**
+
+**Tamamlanmamış Gönderimler Listesine Erişim**
+----
+
+**Örnek URL**
 >http://api.bulutsantralim.com/fax_orders?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
@@ -39,6 +42,9 @@ HTTP/1.1 200 OK
 * page = Liste limite göre sayfalanıyor. “total_pages” değerinden maksimum kaç sayfa olduğunu belirleyerek görmek istediyiniz sayfanın numarasını girebilirsiniz. 
 
 **Faks Listesine Erişim örneği**
+----
+
+**Örnek URL**
 >http://api.bulutsantralim.com/fdrs?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
@@ -103,6 +109,7 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 * page = Liste limite göre sayfalanıyor. “total_pages” değerinden maksimum kaç sayfa olduğunu belirleyerek görmek istediyiniz sayfanın numarasını girebilirsiniz. 
 
 **Faks Gönderimi**
+----
 
 Faks göndermek için dosyasının içeriğinin base64 ile kodlanmış halini ve diğer bilgileri aşağıdaki şekilde POST etmeniz yeterlidir.
 
