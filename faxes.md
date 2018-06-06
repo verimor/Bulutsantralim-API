@@ -12,21 +12,31 @@ Uygulamalarınız üzerinden faks göndermek ve faks listesine erişmek için ap
 **BAŞARILI CEVAP**
 ```json
 HTTP/1.1 200 OK
-[
-  {
-    "id":96,
-    "created_at":"2018-06-05 10:57:45",
-    "local_station_id":"902129630131",
-    "remote_station_id":"902123205072",
-    "status":"Bekliyor"
-   }
-]
+{"fax_orders":[{
+  "id":96,
+  "created_at":"2018-06-05 16:41:39",
+  "local_station_id":"902129630131",
+  "remote_station_id":"902123205072",
+  "status":"Bekliyor"
+}],
+"pagination":{
+  "page":1,
+  "total_count":1,
+  "total_pages":1,
+  "limit":10
+ }
+ }
 ```
 * id: Kayıt NO.
 * created_at: Kayıt zamanı.
 * local_station_id: Arayan numara
 * remote_station_id: Aranan numara
 * status: Sonuç
+
+**PARAMETRELER**
+
+* limit = Listeyi sınırlayabilirsiniz.Varsayılan değer 10,maksimum değer 100. 
+* page = Liste limite göre sayfalanıyor. “total_pages” değerinden maksimum kaç sayfa olduğunu belirleyerek görmek istediyiniz sayfanın numarasını girebilirsiniz. 
 
 **Faks Listesine Erişim örneği**
 >http://api.bulutsantralim.com/fdrs?key=K12345678-1234-5678-4321-123456789012
