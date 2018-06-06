@@ -1,10 +1,11 @@
 **REHBERE ERİŞİM**
 ----
-**HAZIRLIK**
 
- Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
+**HAZIRLIK**
+Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
  
 **GRUP LİSTELEME/OLUŞTURMA/GÜNCELLEME/SİLME**
+----
 
 Rehberde yeni grup oluşturmak, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner
 
@@ -104,7 +105,9 @@ OK
 HTTP/1.1 400 Bad Request
 cannot find group with id: 20212
 ```
+
 **KİŞİ LİSTELEME/EKLEME/GÜNCELLEME/SİLME**
+----
 
 Rehbere yeni kişi eklemek, güncellemek veya silmek için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
@@ -290,6 +293,8 @@ cannot find group with id: 10203
 ```
 
 **KİŞİ SİLME ÖRNEĞİ**
+--
+
 ```json
 DELETE http://api.bulutsantralim.com/contacts/10203
 Host: api.bulutsantralim.com
