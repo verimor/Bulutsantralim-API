@@ -4,7 +4,7 @@ Uygulamalarınız üzerinden faks göndermek için dosyasının içeriğinin bas
 İstek başarılı olduğunda HTTP 200 status kodu ile mesajın Body'sinde faksın id'si döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
 ```json
-POST http://api.bulutsantralim.com/faxes
+POST http://api.bulutsantralim.com/fax_orders
 Host: api.bulutsantralim.com
 Accept: */*
 Content-Length: 481982
