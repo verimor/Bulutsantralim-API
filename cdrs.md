@@ -66,13 +66,14 @@ Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 ```
 
 **PARAMETRELER** 
+
 Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir.
 
 * **key**= Size özel oluşturulmuş API anahtarınızdır.  https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
 * start_stamp_from = Başlama tarihi yazdığınız tarihden sonra olan çağrıları listeler. “2017-08-03 12:30:32 UTC” formatında olmalı. 
 * start_stamp_to = Başlama tarihi yazdığınız tarihe kadar olan çağrıları listeler. “2017-08-03 12:30:32 UTC” formatında olmalı. Tarih aralığı 31 günden uzun olamaz. 
 * recording_present = Değeri “true” olarak gönderilirse ses kaydı olan çağrıları, değeri “false”  olarak gönderilirse ses kaydı olmayan çağrıları, değeri “deleted” olarak gönderilirse ses kaydı silinmiş çağrıları listeler. 
-* direction = Değeri  “inbound” olarak gönderilirse gelen aramaları, değeri  “outbound” olarak gönderilirse giden aramaları, Değeri “internal” olarak gönderilirse santral içi aramaları listeler. 
+* direction = Değeri  “inbound” olarak gönderilirse gelen aramaları, değeri  “outbound” olarak gönderilirse giden aramaları, Değeri “internal” olarak gönderilirse santral içi aramaları listeler.
 * caller_id_number = Arama yapan numara. 
 * missed = Değeri “true” olarak gönderilirse kaçan çağrıları, Değeri  “false”  olarak gönderilirse cevaplanmış çağrıları listeler. 
 * destination_number = Arama yapılan numara. 
