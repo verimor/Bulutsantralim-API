@@ -143,3 +143,41 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 * success = Değeri “true” olarak gönderilirse başarılı, değeri “false” olarak gönderilirse başarısız faksları listeler.
 * limit = Listeyi sınırlayabilirsiniz.Varsayılan değer 10,maksimum değer 100. 
 * page = Liste limite göre sayfalanıyor. “total_pages” değerinden maksimum kaç sayfa olduğunu belirleyerek görmek istediyiniz sayfanın numarasını girebilirsiniz.
+
+**FAKS BELGESİNE ERİŞİM**
+----
+Faks belgelerini uygulamalarınız üzerinden görüntülemek veya indirmek için kullanılır. Bu işlem iki aşamadan oluşur.
+Birinci aşamada URL elde edilir. İkinci aşamada ise o URL’den belge indirilir/görüntülenir.
+
+Birinci aşama için; HTTP POST metodu ile api.bulutsantralim.com adresine aşağıdaki parametreler gönderilir. 
+İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde belgeye ait olan bir URL döner.
+İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
+
+İkinci aşamada ise elde ettiğiniz URL'den görüntüleme yaptırılır veya direkt indirebilir. URL yaşam süresi 1 saattir.
+  
+**URL İSTEME ÖRNEĞİ** 
+```json
+POST http://api.bulutsantralim.com/fax_document_url/
+Host: api.bulutsantralim.com
+Accept: */*
+key=K12345678-1234-5678-4321-123456789012&call_uuid=e28e5d48-05d8-11e8-663a-fde60c59425c
+```
+**BAŞARILI CEVAP** 
+
+```json
+HTTP/1.1 200 OK 
+http://api.bulutsantralim.com/fax_document/Fbb9d6f36-d1a7-46f5-961e-4be2e2ba1b8e
+```
+
+**BAŞARISIZ CEVAP** 
+
+```json
+HTTP/1.1 400 Bad Request 
+cannot find call with call_uuid 12345678-1234-5678-4321-123456789012
+```
+**PARAMETRELER** 
+Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir. 
+
+* **key** = Size özel oluşturulmuş API anahtarınızdır. 
+* **call_uuid** = URL’ini istediğiniz faks belgesine ait uuid.
+
