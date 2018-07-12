@@ -21,7 +21,7 @@ HTTP/1.1 200 OK
 ]
 ```
 * agent - MT numarası.
-* status - MT durumu. AVAILABLE - Müsait, TALKING - Çağrıda, LOGGED_OUT - Çevrimdışı, ON_BREAK - Molada
+* status - MT durumu. AVAILABLE - Müsait, TALKING - Çağrıda, LOGGED_OUT - Çevrimdışı, ON_BREAK - Molada.
 * queues - MT'nin ekli olduğu gruplar.
 
 **BAŞARISIZ CEVAP** 
@@ -36,4 +36,4 @@ Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 Kullanılacak parametreler aşağıdakilerdir.
  * agent - Durumunu öğrenmek istediğiniz MT numarası.
  * status - MT'leri durumuna göre listelemek için. AVAILABLE, TALKING, LOGGED_OUT, ON_BREAK olarak değişebilir.
- * queue - Müşteri Temsilcilerini ekli oldukları kuyruğa göre listeleyebilirsiniz
+ * queue - Müşteri Temsilcilerini ekli oldukları kuyruğa göre listeleyebilirsiniz.
