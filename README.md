@@ -15,7 +15,7 @@
 * **[Rehbere Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/phonebook.md)** Uygulamalarınız üzerinden rehberinize kişi veya grup ekleme/silme/güncelleme işlemlerini yapabilirsiniz.
 * **[Müşteri Tanıma:](https://github.com/verimor/Bulutsantralim-API/blob/master/advisory_webhook.md)** Santralinize çağrı geldiği zaman arayan numara sizin web servisinize sorulur, müşterinizi dinamik olarak istediğiniz hedefe yönlendirebilirsiniz.
 * **[Faks İşlemleri:](https://github.com/verimor/Bulutsantralim-API/blob/master/faxes.md)** Uygulamalarınız üzerinden faks gönderebilir ve faks kayıtlarına erişebilirsiniz.
-* **[MT (Müşteri Temsilcisi) Listesi:](https://github.com/verimor/Bulutsantralim-API/blob/master/agent_status.md)** Uygulamalarınız üzerinden Müşteri Temsilcilerinin listesine erişebilir, durumunu ve hangi kuyruklarda olduğunu görebilirsiniz.
+* **[MT (Müşteri Temsilcisi) Durumları ve Üyeliklerini Listeleme:](https://github.com/verimor/Bulutsantralim-API/blob/master/agent_status.md)** Uygulamalarınız üzerinden Müşteri Temsilcilerinin listesine erişebilir, durumunu ve hangi kuyruklarda olduğunu görebilirsiniz.
 
 **Entegrasyonlar**
 ----
