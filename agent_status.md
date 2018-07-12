@@ -1,4 +1,4 @@
-**MT (Müşteri Temsilcisi) Listesi**
+**MT (Müşteri Temsilcisi) Durumlarını ve Üyeliklerini Listeleme**
 ----
 Müşteri Temsilcilerinizin durumunu ve hangi kuyruklara üye olduklarını listelemek için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
