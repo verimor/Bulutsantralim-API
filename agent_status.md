@@ -1,8 +1,6 @@
 **MT (Müşteri Temsilcisi) Listesi**
 ----
-Müşteri Temsilcilerinizin durumunu ve hangi kuyruklarda ekli olduğunu listelemek için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi
-aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. 
-İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
+Müşteri Temsilcilerinizin durumunu ve hangi kuyruklara üye olduklarını listelemek için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde mesajlar döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
 **HAZIRLIK**
 
@@ -21,8 +19,8 @@ HTTP/1.1 200 OK
 ]
 ```
 * agent - MT numarası.
-* status - MT durumu. AVAILABLE - Müsait, TALKING - Çağrıda, LOGGED_OUT - Çevrimdışı, ON_BREAK - Molada.
-* queues - MT'nin ekli olduğu gruplar.
+* status - MT durumu. (AVAILABLE=Müsait, TALKING=Çağrıda, LOGGED_OUT=Çevrimdışı, ON_BREAK=Molada)
+* queues - MT'nin üye olduğu kuyruklar.
 
 **BAŞARISIZ CEVAP** 
 
@@ -34,6 +32,6 @@ Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 **PARAMETRELER**
 
 Kullanılacak parametreler aşağıdakilerdir.
- * agent - Durumunu öğrenmek istediğiniz MT numarası.
- * status - MT'leri durumuna göre listelemek için. AVAILABLE, TALKING, LOGGED_OUT, ON_BREAK olarak değişebilir.
- * queue - Müşteri Temsilcilerini ekli oldukları kuyruğa göre listeleyebilirsiniz.
+ * agent - Belirli bir MT'nin durumunu öğrenmek için kullanılır.
+ * status - Belirli durumdaki MT'leri listelemek için kullanılır. (AVAILABLE, TALKING, LOGGED_OUT, ON_BREAK)
+ * queue - Belirli kuyruktaki MT'lerin durumlarını listelemek için kullanılır. 
