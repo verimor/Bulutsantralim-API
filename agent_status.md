@@ -34,4 +34,7 @@ Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 Kullanılacak parametreler aşağıdakilerdir.
  * agent - Belirli bir MT'nin durumunu öğrenmek için kullanılır.
  * status - Belirli durumdaki MT'leri listelemek için kullanılır. (AVAILABLE, TALKING, LOGGED_OUT, ON_BREAK)
- * queue - Belirli kuyruktaki MT'lerin durumlarını listelemek için kullanılır. 
+ * queue - Belirli kuyruktaki MT'lerin durumlarını listelemek için kullanılır.
+ 
+ **Not:** API ile dakikada iki istek (request) gönderebilirsiniz. Request limitini aştığınızda 429 (Too Many Requests) hatası döner.
+ 
