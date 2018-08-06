@@ -16,6 +16,8 @@
 * **[Müşteri Tanıma:](https://github.com/verimor/Bulutsantralim-API/blob/master/advisory_webhook.md)** Santralinize çağrı geldiği zaman arayan numara sizin web servisinize sorulur, müşterinizi dinamik olarak istediğiniz hedefe yönlendirebilirsiniz.
 * **[Faks İşlemleri:](https://github.com/verimor/Bulutsantralim-API/blob/master/faxes.md)** Uygulamalarınız üzerinden faks gönderebilir ve faks kayıtlarına erişebilirsiniz.
 * **[MT (Müşteri Temsilcisi) Durumları ve Üyeliklerini Listeleme:](https://github.com/verimor/Bulutsantralim-API/blob/master/agent_status.md)** Uygulamalarınız üzerinden Müşteri Temsilcilerinizin durumlarını ve hangi kuyruklara üye olduğunu görebilirsiniz.
+* **[Bulutsantralim Web Telefonunu Kendi Uygulamanızın İçinde Kullanma (iframe embed):](https://github.com/verimor/Bulutsantralim-API/blob/master/webphone_iframe.md)** Uygulamalarınız içinde Bulutsantralim web telefonunu gösterebilirsiniz.
+
 
 **Entegrasyonlar**
 ----
