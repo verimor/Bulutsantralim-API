@@ -7,7 +7,7 @@ Eğer arayan numara veritabanınızda bulunmuyorsa, arayanın başka bir telefon
 
 **HAZIRLIK**
 ----
-  Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz ve Müşteri Tanıma başlığı altındaki ayarları yapmış olmalısınız.
+  Müşteri Tanıma başlığı altındaki ayarları yapmış olmalısınız.
   Online İşlem Merkezi => Bulut Santralim => Gelen Arama Yönetiminde hedef olarak Müşteri Tanımayı seçmiş olmalısınız.
   
 **UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ**
