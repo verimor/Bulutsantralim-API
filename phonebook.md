@@ -136,7 +136,8 @@ HTTP/1.1 200 OK
   "surname":"Telekomünikasyon",
   "tckn":"12345678910",
   "description":"A.Ş.",
-  "phone":"08505320000",
+  "phone":"05531234567",
+  "phone1":"05531234569",
   "email":"info@verimor.com.tr",
   "title":"Sabit Telefon Operatörü",
   "phone2":"02123205062",
@@ -168,7 +169,8 @@ HTTP/1.1 200 OK
 * surname: Soyad
 * tckn: TC kimlik numarası
 * description: Açıklama
-* phone: Telefon numarası
+* phone: GSM numarası 1
+* phone1: GSM numarası 2
 * email: E-posta adresi
 * title: Unvan
 * phone2: Ek telefon numarası
@@ -213,7 +215,8 @@ Accept: */*
  "surname" : "Telekomünikasyon",
  "tckn" : "12345678910",
  "description" : "A.Ş.",
- "phone" : "08505320000",
+ "phone" : "05531234567",
+ "phone1" : "05531234569",
  "email" : "info@verimor.com.tr",
  "title" : "Sabit Telefon Operatörü",
  "phone2" : "02123205062",
@@ -256,7 +259,8 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * surname: Soyad
 * tckn: TC kimlik numarası
 * description: Açıklama
-* **phone:** Telefon numarası
+* **phone:** GSM numarası 1
+* phone1: GSM numarası 2
 * email: E-posta adresi
 * title: Unvan
 * phone2: Ek telefon numarası
