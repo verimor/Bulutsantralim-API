@@ -20,8 +20,8 @@ Content-Type: application/json
 Accept: */*
 
 {
- "key" : "K12345678-1234-5678-4321-123456789012",
- "extension" : "1000"
+  "key" : "K12345678-1234-5678-4321-123456789012",
+  "extension" : "1000"
 }
 ```
 
