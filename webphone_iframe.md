@@ -49,5 +49,5 @@ missing extension
 **WEB TELEFONUNU IFRAME İLE GÖMME ÖRNEĞİ**
 ----
 ```html
-<iframe style="border: none;" src="https://oim.verimor.com.tr/webphone?token=W03311746-d56d-489b-801f-da610aba71cf" width="275px" height="700px"></iframe>
+<iframe style="border: none;" src="https://oim.verimor.com.tr/webphone?token=W03311746-d56d-489b-801f-da610aba71cf" width="275px" height="700px" allow="microphone"></iframe>
 ```
