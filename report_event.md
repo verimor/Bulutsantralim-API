@@ -36,3 +36,35 @@ event_type=ringing&domain_id=101&direction=inbound&caller_id_number=02123205062&
   * **failure_phrase:** Çağrı başarısız ise hata mesajı.
 
 ¹ dialed_user ve connected_user sadece bir dahili diğerinin çağrısını (*8 ile) çektiği zaman farklı olur. Bu detayla ilgilenmiyorsanız her zaman connected_user'ı kullanabilirsiniz.
+
+**hangup_cause Parametresinin Alabileceği Değerler ve Açıklamaları**
+
+| Değer                          | Açıklama    |
+|--------------------------------|-------------|
+| USER_BUSY                      | Meşgul |
+| ORIGINATOR_CANCEL              | Vazgeçildi |
+| NO_ANSWER                      | Cevapsız |
+| NORMAL_CLEARING                | Cevaplandı |
+| CALL_REJECTED                  | Reddedildi |
+| INCOMPATIBLE_DESTINATION       | Ses kodekleri uyumsuz |
+| INCOMING_CALL_BARRED           | Reddedildi |
+| UNALLOCATED_NUMBER             | Hatalı Numara |
+| NO_ROUTE_DESTINATION           | Hatalı Numara |
+| NO_USER_RESPONSE               | Ulaşılamıyor |
+| NORMAL_UNSPECIFIED             | Cevaplandı |
+| INVALID_NUMBER_FORMAT          | Hatalı Numara |
+| FACILITY_REJECTED              | Hata |
+| SERVICE_NOT_IMPLEMENTED        | Hata |
+| FACILITY_NOT_IMPLEMENTED       | Hata |
+| SERVICE_UNAVAILABLE            | Hata |
+| REDIRECTION_TO_NEW_DESTINATION | Cihaz yönlendirmesi |
+| EXCHANGE_ROUTING_ERROR         | Çağrı bağlanamadı |
+| MEDIA_TIMEOUT                  | RTP zamanaşımı |
+| SYSTEM_SHUTDOWN                | Santral kapatılıyor |
+| ATTENDED_TRANSFER              | Katılımlı aktarım |
+| PICKED_OFF                     | Çağrısı çekildi |
+| DESTINATION_OUT_OF_ORDER       | Cihazla iletişim sorunu |
+| NORMAL_TEMPORARY_FAILURE       | Cihazla iletişim sorunu |
+| NETWORK_OUT_OF_ORDER           | İletişim sorunu |
+| RECOVERY_ON_TIMER_EXPIRE       | Zamanaşımı |
+| ALLOTTED_TIMEOUT               | Cevapsız |
