@@ -5,6 +5,12 @@ Santralinize gelen çağrıların numarasını müşteri veritabanınızda sorgu
 
 Eğer arayan numara veritabanınızda bulunmuyorsa, arayanın başka bir telefon numarasını veya müşteri numarasını tuşlamasını isteyebilirsiniz. Bulutsantral istediğiniz uzunluktaki numarayı müşteriden alır ve yine servisinize gönderir.
 
+**Özellikler**
+----
+  * Çağrınız servisinizin döndüğü cevaba göre yönlendirilebilir.
+  * Arayan taraftan tuşlama yapması istenebilir.
+  * Ses kaydı alınabilir.
+
 **HAZIRLIK**
 ----
   Müşteri Tanıma başlığı altındaki ayarları yapmış olmalısınız.
