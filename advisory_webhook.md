@@ -1,7 +1,7 @@
 **MÜŞTERİ TANIMA**
 ----
-Santralinize gelen çağrıların numarasını müşteri veritabanınızda sorgulayıp, arayana göre santralinizdeki farklı hedeflere (kuyruk, dahili, sesli karşılama vb.) yönlendirmek için kullanılır.
-Çağrı geldiğinde sizin servisinize HTTP GET isteği yapılır, dönen JSON cevabındaki bilgiye göre çağrı yönlendirilir.
+Santralinize gelen çağrıların numarasını müşteri veritabanınızda sorgulayıp, arayana göre santralinizdeki farklı hedeflere (kuyruk, dahili, sesli karşılama vb.) yönlendirmek veya ses kaydı almak için kullanılır.
+Çağrı geldiğinde sizin servisinize HTTP GET isteği yapılır, dönen JSON cevabındaki bilgiye göre çağrı yönlendirilir veya ses kaydı alınır.
 
 Eğer arayan numara veritabanınızda bulunmuyorsa, arayanın başka bir telefon numarasını veya müşteri numarasını tuşlamasını isteyebilirsiniz. Bulutsantral istediğiniz uzunluktaki numarayı müşteriden alır ve yine servisinize gönderir.
 
@@ -114,3 +114,25 @@ Accept: */*
 * fax/isim@firmaadi.com.tr: Aranan kişiye faks sinyali gönder, faks alma işlemini başlat, faks alınırsa verilen e-posta adresine gönder.
 * hangup/hangup: Çağrıyı kapat (normal kapatma sinyali ver).
 * hangup/busy: Çağrıyı kapat (meşgul tonu ver).
+
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (SES KAYDI ALMA)** 
+
+```json
+{
+  "record": {
+    "announcement_id": "123"
+  }
+}
+```
+
+```json
+{
+  "record": {
+    "phrase": "Sayın Ahmet Yılmaz ses kaydınız alınıyor."
+  }
+}
+```
+
+**SAHALAR**
+* announcement_id: Opsiyonel. Ses kaydı alınmadan önce okunacak anons'un ID'si. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
+* phrase: Opsiyonel. Ses kaydı alınmadan önce okunacak metin. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir.
