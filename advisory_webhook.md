@@ -95,7 +95,13 @@ Accept: */*
 **TUŞLAMADAN SONRA UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ**
 
 ```json
-GET http://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=2&digits=123456&error=
+GET http://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=2&musteri_no=123456&error=
+Host: musteri.adresi.com.tr 
+Accept: */* 
+``` 
+
+```json
+GET http://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=2&secim=1&error=
 Host: musteri.adresi.com.tr 
 Accept: */* 
 ``` 
