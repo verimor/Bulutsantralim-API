@@ -22,6 +22,7 @@ HTTP/1.1 200 OK
   "caller_id_number":"03121234567",
   "destination_number":"902129876543",
   "duration":"00:01:05",
+  "talk_duration":"00:0:35",
   "queue":"201",
   "result":"Cevaplandı",
   "missed":"true",
@@ -44,7 +45,8 @@ HTTP/1.1 200 OK
 * direction – Çağrının yönü. “Gelen”, “Giden”, “Giden (API), “Giden (IVR)”  ve  “Santral içi” olarak değişebilir.
 * caller_id_number – Arayan numara. 
 * destination_number – Aranan numara.
-* duration – Konuşma süresi. 
+* duration – Toplam süre.
+* talk_duration - Konuşma süresi.
 * queue – Çağrı kuyrukta beklediyse ve ya cağrı qrupuna yönlendirildiyse onun numarası. 
 * result – Çağrının sonuçu. “Cevaplandı”, “Meşgul”  ve ya “Meşgule atıldı” gibi  döner.
 * missed – Kaçan çağrı ise “true” değilse  “false” döner.
@@ -102,6 +104,7 @@ HTTP/1.1 200 OK
   "answer_stamp":"2017-08-02 13:21:37 +0300",
   "end_stamp":"2017-08-02 13:22:09 +0300",
   "duration":"00:00:32",
+  "talk_duration":"00:0:35",
   "recording_present":"true"
 },
 "call_flow":[{
@@ -109,6 +112,7 @@ HTTP/1.1 200 OK
   "start_stamp":"2017-08-02 13:21:35 +0300",
   "answer_stamp":"2017-08-02 13:21:37 +0300",
   "end_stamp":"2017-08-02 13:21:52 +0300",
+  "duration":"00:0:35",
   "ip_address":"192.168.1.101",
   "sip_user_agent":"Yealink SIP-T22P 7.73.0.50",
   "write_codec":"PCMA",
@@ -119,6 +123,7 @@ HTTP/1.1 200 OK
   "start_stamp":"2017-08-02 13:21:35 +030",
   "answer_stamp":"2017-08-02 13:21:37 +030",
   "end_stamp":"2017-08-02 13:22:09 +0300",
+  "duration":"00:0:35",
   "ip_address":"192.168.1.102",
   "sip_user_agent":"X-Lite release 4.9.7 stamp 83108",
   "write_codec":"PCMA",
@@ -140,7 +145,8 @@ HTTP/1.1 200 OK
 * start_stamp – Çağrının başladığı zaman. 
 * answer_stamp – Çağrının cevaplandığı zaman. 
 * end_stamp – Çağrının sonlandığı zaman. 
-* duration – Konuşma süresi. 
+* duration – Toplam süre.
+* talk_duration - Konuşma süresi.
 * recording_present – Çağrının ses kaydının olup olmadığı. “true” ya da “false” döner. 
 
 **Çağrı akışı :** 
@@ -149,6 +155,7 @@ HTTP/1.1 200 OK
 * start_stamp – Çağrının başladığı zaman. 
 * answer_stamp – Çağrının cevaplandığı zaman. 
 * end_stamp – Çağrının sonlandığı zaman. 
+* duration - Süre.
 * ip_address –Aranan numaranın ip adresi. 
 * sip_user_agent – Aranan numaranın cihaz modeli. 
 * write_codec – Bulutsantralin gonderdiyi ses paketlerinin kodeki. 
