@@ -5,7 +5,7 @@
  
 Karalisteye erişmek ve ekleme yapmak için api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde id döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner
 
-**KARALİSTEYE ERİŞİM**
+**KARALİSTEYE ERİŞİM ÖRNEĞİ**
 ----
 
 **ÖRNEK URL**
