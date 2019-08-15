@@ -16,6 +16,7 @@ Accept: */*
  "date_range_begin" : "2017-05-09",
  "time_range_begin" : "09:00",
  "time_range_end" : "18:00",
+ "active_days" : [1,2,3,4,5,6,7],
  "ring_timeout" : 30,
  "cli" : "902129630131",
  "welcome_announcement_id" : 128,
@@ -63,6 +64,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * **date_range_begin:** Kampanyanın aramaya başlayacağı tarih, YYYY-AA-GG formatında olmalıdır.
 * **time_range_begin:** Kampanyanın çalışma saatlerinin başlangıcı. SS:DD (veya S:DD) formatında olmalı.
 * **time_range_end:** Kampanyanın çalışma saatlerinin bitişi. SS:DD (veya S:DD) formatında olmalı.
+* **active_days:** Kampanyanın çalışma günleri. 1=Pazartesi, 7=Pazar olacak şeklinde çalışma günlerini integer array olarak verip, kampanyanın haftanın sadece belirli günleri çalışmasını sağlayabilirsiniz.
 * **ring_timeout:** Aranan numara çalarken beklenecek süre (saniye), 10 – 60 sn. arasında olabilir.
 * **cli:** Arayan numara. Karşı taraf bu numarayı görür.
 * **welcome_announcement_id:** Aranan numaralara dinletilecek ses dosyasının ID’si. Bu ses dinletilip peşinden tuşlama beklenir. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
