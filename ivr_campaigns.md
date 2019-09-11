@@ -122,6 +122,7 @@ notification_id=5&notification_date=2017-05-10 13:18:56 UTC&domain_id=429&ivr_ca
 ```
 
 **BİLDİRİM SAHALARI**
+
 API’nize gönderilecek parametreler aşağıdakilerdir.
 
 * notification_id: Bu bildirime ait unique id.
