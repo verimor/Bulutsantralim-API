@@ -20,9 +20,9 @@ HTTP/1.1 200 OK
   "start_stamp":"2017-08-03 12:30:32 +0300",
   "direction":"Gelen",
   "caller_id_number":"03121234567",
-  "caller_id_name":"Verimor Telekom"
+  "caller_id_name":"Verimor Telekom",
   "destination_number":"902129876543",
-  "destination_name":"Dahili 1"
+  "destination_name":"Dahili 1",
   "duration":"00:01:05",
   "talk_duration":"00:0:35",
   "queue":"201",
