@@ -20,7 +20,9 @@ HTTP/1.1 200 OK
   "start_stamp":"2017-08-03 12:30:32 +0300",
   "direction":"Gelen",
   "caller_id_number":"03121234567",
+  "caller_id_name":"Verimor Telekom"
   "destination_number":"902129876543",
+  "destination_name":"Dahili 1"
   "duration":"00:01:05",
   "talk_duration":"00:0:35",
   "queue":"201",
@@ -43,8 +45,10 @@ HTTP/1.1 200 OK
 
 * start_stamp – Çağrının başladığı zaman.
 * direction – Çağrının yönü. “Gelen”, “Giden”, “Giden (API), “Giden (IVR)”  ve  “Santral içi” olarak değişebilir.
-* caller_id_number – Arayan numara. 
+* caller_id_number – Arayan numara.
+* caller_id_name - Giden aramalarda dahili ismini, gelen aramalarda arayan ismini ifade eder.
 * destination_number – Aranan numara.
+* destination_name - Gelen aramalarda dahili ismini, Giden aramalarda aranan ismini ifade eder.
 * duration – Toplam süre.
 * talk_duration - Konuşma süresi.
 * queue – Çağrı kuyrukta beklediyse ve ya cağrı qrupuna yönlendirildiyse onun numarası. 
@@ -83,7 +87,8 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 * limit = Listeyi sınırlayabilirsiniz.Varsayılan değer 10,maksimum değer 100. 
 * page = Liste limite göre sayfalanıyor. “total_pages” değerinden maksimum kaç sayfa olduğunu belirleyerek görmek istediyiniz sayfanın numarasını girebilirsiniz. 
 
-**ARAMA KAYDININ DETAYINA ERİŞME ÖRNEĞİ** 
+**ARAMA KAYDININ DETAYINA ERİŞME ÖRNEĞİ**
+
 Detayına erişmek istediğiniz çağrının call_uuid'ni aşağıdaki URL'de olduğu gibi girmeniz gerekiyor.
 
 >http://api.bulutsantralim.com/cdrs/5cfdfb46-776c-11e7-8375-0d58348796d3?key=K12345678-1234-5678-4321-123456789012
