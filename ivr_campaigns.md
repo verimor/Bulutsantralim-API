@@ -172,3 +172,38 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 
 * **key** = Size özel oluşturulmuş API anahtarınızdır. https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
 * **Kampanya ID’si (bu örnekte 112):** Silmek istediğiniz kampanyanın ID’si. Bu ID kampanyayı ilk oluşturduğunuzda API tarafından döner. Ayrıca https://oim.verimor.com.tr/switch/ivr_campaigns adresinden de görebilirsiniz.
+
+**OTOMATİK ARAMA KAMPANYASI DURDURMA**
+
+Otomatik arama kampanyasını durdurmak ve yeniden başlatmak istediğinizde **HTTP(S) PATCH** yöntemini kullanabilirsiniz.
+Aşağıdaki örnekte olduğu gibi PATCH request’i göndermeniz yeterlidir.
+
+**KAMPANYA DURDURMA ÖRNEĞİ**
+
+```json
+PATCH http://api.bulutsantralim.com/ivr_campaigns/112
+Host: api.bulutsantralim.com
+Accept: */*
+
+key=K12345678-1234-5678-4321-123456789012&status=off
+```
+**BAŞARILI CEVAP**
+
+```json
+HTTP/1.1 200 OK
+OK
+```
+
+**BAŞARISIZ CEVAP**
+
+```json
+HTTP/1.1 400 Bad Request
+Cannot find ivr_campaign with ID 112
+```
+
+**PARAMETRELER**
+Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir.
+
+* **key** Size özel oluşturulmuş API anahtarınızdır. https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
+* **Kampanya ID’si (bu örnekte 112):** Durdurmak istediğiniz kampanyanın ID’si. Bu ID kampanyayı ilk oluşturduğunuzda API tarafından döner. Ayrıca https://oim.verimor.com.tr/switch/ivr_campaigns adresinden de görebilirsiniz.
+* **status** on veya off olabilir. Kampanyayı durdurmak için off, tekrar başlatmak için on olarak gönderilmesi gerekiyor.
