@@ -175,7 +175,7 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 
 **OTOMATİK ARAMA KAMPANYASI DURDURMA**
 
-Otomatik arama kampanyasını durdurmak ve yeniden başlatmak istediğinizde **HTTP(S) PATCH** yöntemini kullanabilirsiniz.
+Otomatik arama kampanyasını durdurmak ve tekrar başlatmak istediğinizde **HTTP(S) PATCH** yöntemini kullanabilirsiniz.
 Aşağıdaki örnekte olduğu gibi PATCH request’i göndermeniz yeterlidir.
 
 **KAMPANYA DURDURMA ÖRNEĞİ**
@@ -202,6 +202,7 @@ Cannot find ivr_campaign with ID 112
 ```
 
 **PARAMETRELER**
+
 Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir.
 
 * **key** Size özel oluşturulmuş API anahtarınızdır. https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
