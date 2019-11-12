@@ -32,7 +32,7 @@ class ModelCheckoutVerimor extends Model {
 	}   
 	
 	public function list_orders($date_added) {
-		$orders = $this->db->query("SELECT o.order_id,o.firstname,o.lastname,o.telephone,o.date_added,o.total,os.name as status FROM `" . DB_PREFIX . "order` o INNER JOIN `". DB_PREFIX . "order_status` os ON os.order_status_id = o.order_status_id  WHERE o.payment_method='Kapıda Ödeme' AND os.name='Onay Bekliyor' AND o.date_added > '" . $date_added . "' AND o.date_added >=Curdate() order by o.date_added ASC");
+		$orders = $this->db->query("SELECT o.order_id,o.firstname,o.lastname,o.telephone,o.date_added,o.total,os.name as status FROM `" . DB_PREFIX . "order` o INNER JOIN `". DB_PREFIX . "order_status` os ON os.order_status_id = o.order_status_id  WHERE o.payment_method IN ('Kapıda Ödeme', 'Kapıda Kredi Kartı ile Ödeme', 'Kapıda Nakit Ödeme') AND os.name='Onay Bekliyor' AND o.date_added > '" . $date_added . "' AND o.date_added >=Curdate() order by o.date_added ASC");
         
         $order_array = null;
 		if ($orders->num_rows) {
