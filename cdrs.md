@@ -28,6 +28,7 @@ HTTP/1.1 200 OK
   "queue":"201",
   "result":"Cevaplandı",
   "missed":"true",
+  "return_uuid":"38359b70-7c10-4342-9479-e98ff716d102",
   "recording_present":"false",
   "sip_hangup_disposition":"caller",
   "call_uuid":"651f8a68-782e-11g7-a6b6-5bedc26e2ab3",
@@ -54,6 +55,7 @@ HTTP/1.1 200 OK
 * queue – Çağrı kuyrukta beklediyse ve ya cağrı qrupuna yönlendirildiyse onun numarası. 
 * result – Çağrının sonuçu. “Cevaplandı”, “Meşgul”  ve ya “Meşgule atıldı” gibi  döner.
 * missed – Kaçan çağrı ise “true” değilse  “false” döner.
+* return_uuid - Kaçan çağrıya dönüldüyse o çağrının uuid'si döner. Cevaplanan veya kaçan ama dönülmeyen çağrılarda null döner.
 * recording_present – Çağrının ses kaydının olup olmadığı. “true”  ya da “false” döner.
 * sip_hangup_disposition – Çağrının kimin tarafından kapatıldığı. “caller” ya da “callee” olarak döner. 
 * call_uuid – Çağrının uuid'si.
@@ -104,6 +106,7 @@ HTTP/1.1 200 OK
   "result":"Cevaplandı",
   "sip_hangup_disposition":"caller",
   "missed":"false",
+  "return_uuid":"38359b70-7c10-4342-9479-e98ff716d102",
   "call_uuid":"5cfdfb46-776c-11e7-8375-0d58348796d3",
   "start_stamp":"2017-08-02 13:21:35 +0300",
   "answer_stamp":"2017-08-02 13:21:37 +0300",
@@ -145,7 +148,8 @@ HTTP/1.1 200 OK
 * destination_number – Aranan numara.
 * result – Çağrının sonuçu. “Cevaplandı”, “Meşgul” ve ya “Meşgule atıldı” gibi döner. 
 * sip_hangup_disposition – Çağrının kimin tarafından kapatıldığı. “caller” ya da “callee” olarak döner. 
-* missed – Kaçan çağrı. “true” ya da “false” döner. 
+* missed – Kaçan çağrı. “true” ya da “false” döner.
+* return_uuid - Kaçan çağrıya dönüldüyse o çağrının uuid'si döner. Cevaplanan veya kaçan ama dönülmeyen çağrılarda null döner.
 * call_uuid – Çağrının uuid'si. 
 * start_stamp – Çağrının başladığı zaman. 
 * answer_stamp – Çağrının cevaplandığı zaman. 
