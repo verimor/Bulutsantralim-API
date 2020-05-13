@@ -14,7 +14,7 @@
   
 **ÇAĞRI BAŞLATMA ÖRNEĞİ**
 
->http://api.bulutsantralim.com/originate?key=K12345678-1234-5678-4321-123456789012&source=905321234567&destination=905423456789
+>http://api.bulutsantralim.com/bridge?key=K12345678-1234-5678-4321-123456789012&source=905321234567&destination=905423456789
 
 **BAŞARILI CEVAP:**
 
