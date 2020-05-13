@@ -3,8 +3,9 @@
   Uygulamalarınız üzerinden iki dış numarayı (örn. cep telefonu) arayıp birbiriyle görüştürmek için kullanılır.
   
   Kullanım alanları:
-  * Müşteriniz ve saha personelinizi görüştürmek istiyorsunuz fakat bilgi güvenliği (örn. KVKK) nedeniyle cep telefonu numaralarının görünmesini istemiyorsunuz.
-  * Müşteriniz ve saha personelinizi görüştürmek ve müşteri memnuniyeti için bu görüşmeyi kaydetmek istiyorsunuz.
+  * Müşteriniz ve saha personelinizi görüştürmek istiyorsunuz fakat bilgi güvenliği (örn. KVKK) nedeniyle cep telefonu numaralarının görünmesini istemiyorsunuz. (Bu özellik numara maskele veya numara gizleme olarakta bilinir.)
+  * Müşteriniz ve saha personelinizin yaptığı görüşmeleri raporlamak ve müşteri memnuniyeti için bu görüşmelerin ses kayıtlarını tutmak istiyorsunuz.
+  
   Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde call_uuid döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
 **HAZIRLIK**
