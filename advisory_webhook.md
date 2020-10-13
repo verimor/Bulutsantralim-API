@@ -57,6 +57,7 @@ Accept: */*
 * announcement_to_caller: Opsiyonel. Eğer döndürürseniz çağrının cevaplanma anında arayan tarafa bu anons dinletilir. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
 * announcement_to_callee: Opsiyonel. Eğer döndürürseniz çağrının cevaplanma anında aranan tarafa bu anons dinletilir. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
 * target: Zorunlu. Çağrının hangi hedefe yönleneceğini belirtir. Arayan numara müşteriniz olmasa bile nereye yönlendirileceğini belirtmelisiniz. Bu sahada dönebileceğiniz seçenekleri aşağıdaki listede görebilirsiniz.
+* recording_enabled: Opsiyonel. Görüşmenin ses kaydının alınmasını istemiyorsanız false döndürün. Varsayılan olarak true kabul edilir ve görüşme kaydedilir.
 
 **UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (TUŞ İSTEME)** 
 
