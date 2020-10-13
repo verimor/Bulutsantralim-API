@@ -14,7 +14,7 @@
   
 **ÇAĞRI BAŞLATMA ÖRNEĞİ**
 
->http://api.bulutsantralim.com/bridge?key=K12345678-1234-5678-4321-123456789012&source=905321234567&destination=905423456789
+>http://api.bulutsantralim.com/bridge?key=K12345678-1234-5678-4321-123456789012&source=905321234567&destination=905423456789&recording_enabled=false
 
 **BAŞARILI CEVAP:**
 
@@ -35,4 +35,5 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
   * **key** = Size özel oluşturulmuş API anahtarınızdır. 
   * **source** = İlk olarak bu numara aranır, çalmaya başlayınca **destination** aranır ve birbiriyle görüşmeye başlarlar (yurtiçi çağrılar için 908505320000, yurtdışı çağrılar için 00493027590915 formatında olmalı).
   * **destination** = İkinci aranacak numara (yurtiçi çağrılar için 908505320000, yurtdışı çağrılar için 00493027590915 formatında olmalı).
-  * caller_id = İki tarafı da ararken kullanılacak dış numara (908505320000 formatında olmalı. Bu parametre verilmezse 1000 dahilisinde seçili olan dış no kullanılacaktır).
+  * **caller_id** = İki tarafı da ararken kullanılacak dış numara (908505320000 formatında olmalı. Bu parametre verilmezse 1000 dahilisinde seçili olan dış no kullanılacaktır).
+  * **recording_enabled** = Görüşmenin kaydedilmesini istemiyorsanız bu parametreye false vermelisiniz. Varsayılan olarak true kabul edilir ve görüşme kaydedilir.
