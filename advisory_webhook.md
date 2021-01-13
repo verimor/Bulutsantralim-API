@@ -78,7 +78,7 @@ Accept: */*
 {
   "prompt": {
     "phrase": "Merhaba Ahmet Yılmaz. 12345 numaralı son siparişiniz teslim adresinize edilmiştir. Arıza ve iade işlemleri için 1, diğer işlemler için 2 tuşlayınız.",
-    phrase_speed: 1.0,
+    "phrase_speed": 1.0,
     "min_digits": "1",
     "max_digits": "1",
     "retry_count": "2",
@@ -94,7 +94,7 @@ Accept: */*
 * phrase_speed: Opsiyonel. Metin okuma hızı. Varsayılan değeri: 1.0, Geçerli hız aralığı: 0.5 - 1.5,
 * min_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının minimum uzunluğu. Bundan kısa tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir.
 * max_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının maksimum uzunluğu. Bundan uzun tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir.
-* retry_count: Zorunlu. Geçersiz tuşlama durumunda kaç defa daha deneneceği.
+* retry_count: Zorunlu. Geçersiz tuşlama durumunda kaç defa daha deneneceği. 0 (Sıfır) değeri tekrar deneme yapılmaması kullanılır.
 * service_url: Opsiyonel. Tuşlamanın sonucunun ayrı bir adrese gönderilmesini istiyorsanız bu sahayı döndürün. Programınızı daha basit tutmak için kullanabilirsiniz. Verilmezse OİM'den girdiğiniz Servis URL'nize iletilir.
 * param_name: Opsiyonel. Tuşlanan değerin servisinize iletirken hangi isimle gönderilmesini istiyorsanız burada belirtebilirsiniz. Belirtmezseniz varsayılan olarak "digits" ismiyle gönderilir.
 
