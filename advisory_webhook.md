@@ -78,6 +78,7 @@ Accept: */*
 {
   "prompt": {
     "phrase": "Merhaba Ahmet Yılmaz. 12345 numaralı son siparişiniz teslim adresinize edilmiştir. Arıza ve iade işlemleri için 1, diğer işlemler için 2 tuşlayınız.",
+    phrase_speed: 1.0,
     "min_digits": "1",
     "max_digits": "1",
     "retry_count": "2",
@@ -90,6 +91,7 @@ Accept: */*
 **SAHALAR**
 * announcement_id: Zorunlu. Tuş isterken önce okunacak anons'un ID'si. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
 * phrase: Zorunlu. Tuş isterken önce okunacak metin. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir.
+* phrase_speed: Opsiyonel. Metin okuma hızı. Varsayılan değeri: 1.0, Geçerli hız aralığı: 0.5 - 1.5,
 * min_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının minimum uzunluğu. Bundan kısa tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir.
 * max_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının maksimum uzunluğu. Bundan uzun tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir.
 * retry_count: Zorunlu. Geçersiz tuşlama durumunda kaç defa daha deneneceği.
