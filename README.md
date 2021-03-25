@@ -9,12 +9,12 @@
 * **[Arama Kayıtlarına Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/cdrs.md)** Santralinizdeki arama kayıtlarına ve detayına erişebilirsiniz.
 * **[Ses Kaydı Erişimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/recording.md)** Uygulamalarınız üzerinden çağrıların ses kayıtları dinleyebilir veya indirebilirsiniz.
 * **[Otomatik IVR ve Sesli Mesaj Projesi Oluşturma:](https://github.com/verimor/Bulutsantralim-API/blob/master/ivr_campaigns.md)** Uygulamalarınız üzerinden otomatik IVR araması projesi ve sesli mesaj projesi oluşturabilirsiniz.
-* **[Ses Dosyalarıyla çalışmak:](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md)** Uygulamalarınız üzerinden santralinizdeki ses dosyalarının listesine erişebilirsiniz ve yeni ses dosyası yükleyebilirsiniz.
+* **[Ses Dosyaları Yönetimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md)** Uygulamalarınız üzerinden santralinizdeki ses dosyalarının listesine erişebilir, düzenleyebilir, silebir ve yeni ses dosyası yükleyebilirsiniz.
 * **[Numaralar Listesine Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/caller_ids.md)** Uygulamalarınız üzerinden santralinizdeki Arayan Numara olarak kullanabileceğiniz numaraların listesine erişebilirsiniz.
 * **[Kuyruklar Listesine Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/queues.md)** Uygulamalarınız üzerinden santralinizdeki kuyrukların listesine erişebilirsiniz.
 * **[Telesekreter Mesajı Erişimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/voicemails.md)** Uygulamalarınız üzerinden telesekreter mesajılarına erişebilir, ses kayıtlarını dinleyebilir veya indirebilirsiniz.
 * **[Rehbere Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/phonebook.md)** Uygulamalarınız üzerinden rehberinize kişi veya grup ekleme/silme/güncelleme işlemlerini yapabilirsiniz.
-* **[Karalisteye Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/blocked_numbers.md)** Uygulamalarınız üzerinden karalistenize erişebilir ve ekleme yapabilirsiniz.
+* **[Karaliste Yönetimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/blocked_numbers.md)** Uygulamalarınız üzerinden karalistenize erişebilir, ekleme ve silme yapabilirsiniz.
 * **[Müşteri Tanıma:](https://github.com/verimor/Bulutsantralim-API/blob/master/advisory_webhook.md)** Santralinize çağrı geldiği zaman arayan numara sizin web servisinize sorulur, müşterinizi dinamik olarak istediğiniz hedefe yönlendirebilirsiniz.
 * **[Faks İşlemleri:](https://github.com/verimor/Bulutsantralim-API/blob/master/faxes.md)** Uygulamalarınız üzerinden faks gönderebilir ve faks kayıtlarına erişebilirsiniz.
 * **[MT (Müşteri Temsilcisi) Durumları ve Üyeliklerini Listeleme:](https://github.com/verimor/Bulutsantralim-API/blob/master/agent_status.md)** Uygulamalarınız üzerinden Müşteri Temsilcilerinizin durumlarını ve hangi kuyruklara üye olduğunu görebilirsiniz.
