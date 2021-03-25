@@ -1,4 +1,4 @@
-**KARALİSTEYE ERİŞİM**
+**KARALİSTE YÖNETİMİ**
 ----
 
 **HAZIRLIK** Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
