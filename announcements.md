@@ -1,4 +1,4 @@
-# SES DOSYALARI LİSTESİNE ERİŞİM
+# SES DOSYALARI YÖNETİMİ
 ----
 Santralinizdeki ses dosyalarının listesine erişmek için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi
 aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde ses dosyalarının listesi döner. 
