@@ -62,3 +62,23 @@ HTTP/1.1 200 OK
 HTTP/1.1 400 Bad Request
 number required
 ```
+
+**KARALİSTEDEN SİLME ÖRNEĞİ**
+----
+
+**ÖRNEK URL**
+>http://api.bulutsantralim.com/blocked_numbers/delete?key=K12345678-1234-5678-4321-123456789012&number=05531234567
+
+**BAŞARILI CEVAP**
+
+```
+HTTP/1.1 200 OK
+```
+
+**BAŞARISIZ CEVAP**
+
+```json
+HTTP/1.1 401 Unauthorized
+Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
+```
+
