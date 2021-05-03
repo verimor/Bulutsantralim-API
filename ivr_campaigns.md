@@ -1,7 +1,7 @@
 ## İÇİNDEKİLER
 * [OTOMATİK ARAMA KAMPANYASI OLUŞTURMA](#otomatik-arama-kampanyasi-olusturma)
-* [OTOMATİK ARAMA KAMPANYASI SİLME](#otomatik-arama-kampanyasi-silme)
-* [OTOMATİK ARAMA KAMPANYASI DURDURMA](#otomatik-arama-kampanyasi-durdurma)
+* [OTOMATİK ARAMA KAMPANYASI SİLME](#otomati%CC%87k-arama-kampanyasi-si%CC%87lme)
+* [OTOMATİK ARAMA KAMPANYASI DURDURMA](#otomati%CC%87k-arama-kampanyasi-durdurma)
 
 
 ----
