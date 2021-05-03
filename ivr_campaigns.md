@@ -1,6 +1,6 @@
 ## İÇİNDEKİLER
 * [OTOMATİK ARAMA KAMPANYASI OLUŞTURMA](#otomati%CC%87k-arama-kampanyasi-olu%C5%9Fturma)
-* [OTOMATİK ARAMA KAMPANYASI OLUŞTURMA - TUŞLAMA RAPOR ALIMI](#otomati%CC%87k-arama-kampanyasi-olu%C5%9Fturma)
+* [OTOMATİK ARAMA KAMPANYASI OLUŞTURMA - TUŞLAMA RAPOR ALIMI](#tu%C5%9Flama-raporu-alimi)
 * [OTOMATİK ARAMA KAMPANYASI SİLME](#otomati%CC%87k-arama-kampanyasi-si%CC%87lme)
 * [OTOMATİK ARAMA KAMPANYASI DURDURMA](#otomati%CC%87k-arama-kampanyasi-durdurma)
 
