@@ -5,7 +5,7 @@
 
 
 ----
-## OTOMATİK ARAMA KAMPANYASI OLUŞTURMA
+**OTOMATİK ARAMA KAMPANYASI OLUŞTURMA**
 ----
 Yeni otomatik arama kampanyasını oluşturmak için **HTTP(S) POST JSON** yöntemini kullanabilirsiniz.
 Aşağıdaki örnekte olduğu gibi bir JSON string POST etmeniz yeterlidir.
@@ -148,7 +148,7 @@ API’nize gönderilecek parametreler aşağıdakilerdir.
 * call_uuid: Tuşlama için yapılan çağrının UUID’si. Yukarıdaki olay bildirme API’sini de kullanıyorsanız, orada gelen UUID ile eşleştirebilirsiniz.
 
 ----
-## OTOMATİK ARAMA KAMPANYASI SİLME
+**OTOMATİK ARAMA KAMPANYASI SİLME**
 ----
 Otomatik arama kampanyasını iptal etmek istediğinizde (örneğin arayacağınız müşteri sizi aradıysa), oluşturduğunuz kampanyayı silmek için **HTTP(S) DELETE** yöntemini kullanabilirsiniz.
 Aşağıdaki örnekte olduğu gibi DELETE request’i göndermeniz yeterlidir.
@@ -182,7 +182,7 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 * **Kampanya ID’si (bu örnekte 112):** Silmek istediğiniz kampanyanın ID’si. Bu ID kampanyayı ilk oluşturduğunuzda API tarafından döner. Ayrıca https://oim.verimor.com.tr/switch/ivr_campaigns adresinden de görebilirsiniz.
 
 ----
-## OTOMATİK ARAMA KAMPANYASI DURDURMA
+**OTOMATİK ARAMA KAMPANYASI DURDURMA**
 ----
 Otomatik arama kampanyasını durdurmak ve tekrar başlatmak istediğinizde **HTTP(S) PATCH** yöntemini kullanabilirsiniz.
 Aşağıdaki örnekte olduğu gibi PATCH request’i göndermeniz yeterlidir.
