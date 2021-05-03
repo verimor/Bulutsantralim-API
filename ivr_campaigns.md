@@ -1,5 +1,6 @@
 ## İÇİNDEKİLER
-* [OTOMATİK ARAMA KAMPANYASI OLUŞTURMA](#otomatik-arama-kampanyasi-olusturma)
+* [OTOMATİK ARAMA KAMPANYASI OLUŞTURMA](#otomati%CC%87k-arama-kampanyasi-olu%C5%9Fturma)
+* [OTOMATİK ARAMA KAMPANYASI OLUŞTURMA - TUŞLAMA RAPOR ALIMI](#otomati%CC%87k-arama-kampanyasi-olu%C5%9Fturma)
 * [OTOMATİK ARAMA KAMPANYASI SİLME](#otomati%CC%87k-arama-kampanyasi-si%CC%87lme)
 * [OTOMATİK ARAMA KAMPANYASI DURDURMA](#otomati%CC%87k-arama-kampanyasi-durdurma)
 
@@ -115,8 +116,9 @@ Karşı tarafa okunacak ‘cümle’, boşlukla ayrılmış ‘kelime’lerden o
 
 Karşı tarafa **“Değerli müşterimiz, son ödeme tarihi on beş kasım iki bin on yedi olan faturanızın tutarı yetmiş üç lira elli altı kuruştur. İyi günler dileriz.”** şeklinde seslendirilecektir.
 
+----
 **TUŞLAMA RAPORU ALIMI**
-
+----
 Kampanyadaki numara aranıp tuşlama yapıldığında, webhook_url sahasında URL varsa aşağıdaki gibi bir HTTP POST request’i gönderilir.
 
 **BİLDİRİM ÖRNEĞİ**
