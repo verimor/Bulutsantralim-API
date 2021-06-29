@@ -1,45 +1,12 @@
-*KUYRUKLAR*
-----
-
 **HAZIRLIK**
 ----
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
-
-**KUYRUKLAR LİSTESİNE ERİŞİM**
-----
-Santralinizdeki kuyrukların listesine erişmek için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi
-aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde kuyrukların listesi döner. 
-İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
-  
-**KUYRUKLAR LİSTESİNE ERİŞİM ÖRNEĞİ**
-
->http://api.bulutsantralim.com/queues?key=K12345678-1234-5678-4321-123456789012
- 
-**BAŞARILI CEVAP**
-
-```json
-HTTP/1.1 200 OK
-[
-  {"number":201,"name":"Kuyruk 1"},
-  {"number":202,"name":"Kuyruk 2"},
-  {"number":203,"name":"Kuyruk 3"},
-  {"number":204,"name":"Kuyruk 4"}
-]
-```
-
-**BAŞARISIZ CEVAP** 
-
-```json
-HTTP/1.1 400 Bad Request 
-Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
-```
 
 **KUYRUKTA BEKLEYENLER LİSTESİNE ERİŞİM**
 ----
 Santralinizdeki kuyrukta bekleyenlerin listesine erişmek için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi
 aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde kuyrukta bekleyenlerin listesi döner. 
 İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
-Dakika başı 6 istek sayısı ile limitlendirilmiştir.
   
 **KUYRUKTA BEKLEYENLER LİSTESİNE ERİŞİM ÖRNEĞİ**
 
@@ -71,3 +38,5 @@ HTTP/1.1 200 OK
 HTTP/1.1 400 Bad Request 
 Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 ```
+
+ **Not:** API ile dakikada 10 istek (request) gönderebilirsiniz. Request limitini aştığınızda 429 (Too Many Requests) hatası döner.
