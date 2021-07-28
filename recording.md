@@ -8,6 +8,7 @@ Birinci aşama için; HTTP POST metodu ile api.bulutsantralim.com adresine aşa�
 İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
 İkinci aşamada ise elde ettiğiniz URL bir player’a verilip dinleme yaptırılır veya direkt indirebilir. URL yaşam süresi 1 saattir.
+Dakikada başına 3 istek sayısı olarak limitlidir.
 
 **HAZIRLIK** 
 ----
