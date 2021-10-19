@@ -71,7 +71,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * **key** = Size özel oluşturulmuş API anahtarınızdır. https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
 * **name:** Kampanyanın adı.
 * **date_range_begin:** Kampanyanın aramaya başlayacağı tarih, YYYY-AA-GG formatında olmalıdır.
-* **date_range_end:** Kampanyanın aramaya bitiş tarihi, Boş bırakılabilinir, bırakılırsa **Başlahıç Tarihi + 1 hafta** olarak otomatik eklenir. YYYY-AA-GG formatında olmalıdır.
+* **date_range_end:** Kampanyanın aramaya bitiş tarihi, Boş bırakılabilir, bırakılırsa **Başlahıç Tarihi + 1 hafta** olarak otomatik eklenir. YYYY-AA-GG formatında olmalıdır.
 * **time_range_begin:** Kampanyanın çalışma saatlerinin başlangıcı. SS:DD (veya S:DD) formatında olmalı.
 * **time_range_end:** Kampanyanın çalışma saatlerinin bitişi. SS:DD (veya S:DD) formatında olmalı.
 * **active_days:** Kampanyanın çalışma günleri. 1=Pazartesi, 7=Pazar olacak şeklinde çalışma günlerini integer array olarak verip, kampanyanın haftanın sadece belirli günleri çalışmasını sağlayabilirsiniz.
