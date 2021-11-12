@@ -22,7 +22,7 @@ Accept: */*
  "key" : "K12345678-1234-5678-4321-123456789012",
  "name" : "Memnuniyet anketi",
  "date_range_begin" : "2017-05-09",
- "date_range_end" : "2017-05-16",
+ "date_range_end" : "2017-05-10",
  "time_range_begin" : "09:00",
  "time_range_end" : "18:00",
  "active_days" : [1,2,3,4,5,6,7],
@@ -71,7 +71,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * **key** = Size özel oluşturulmuş API anahtarınızdır. https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
 * **name:** Kampanyanın adı.
 * **date_range_begin:** Kampanyanın aramaya başlayacağı tarih, YYYY-AA-GG formatında olmalıdır.
-* **date_range_end:** Kampanyanın aramaya bitiş tarihi, Boş bırakılabilir, bırakılırsa **Başlahıç Tarihi + 1 hafta** olarak otomatik eklenir. YYYY-AA-GG formatında olmalıdır.
+* **date_range_end:** Kampanyanın aramaya bitiş tarihi, Boş bırakılabilir, bırakılırsa **Başlangıç Tarihi + 1 gün** olarak otomatik eklenir. YYYY-AA-GG formatında olmalıdır.
 * **time_range_begin:** Kampanyanın çalışma saatlerinin başlangıcı. SS:DD (veya S:DD) formatında olmalı.
 * **time_range_end:** Kampanyanın çalışma saatlerinin bitişi. SS:DD (veya S:DD) formatında olmalı.
 * **active_days:** Kampanyanın çalışma günleri. 1=Pazartesi, 7=Pazar olacak şeklinde çalışma günlerini integer array olarak verip, kampanyanın haftanın sadece belirli günleri çalışmasını sağlayabilirsiniz.
