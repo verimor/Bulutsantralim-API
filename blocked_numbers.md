@@ -35,6 +35,13 @@ HTTP/1.1 401 Unauthorized
 Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 ```
 
+**PARAMETRELER** 
+
+Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir.
+
+* **key**= Size özel oluşturulmuş API anahtarınızdır.  https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
+* limit = Listeyi sınırlayabilirsiniz. Varsayılan değer 10, minimum değer 10, maksimum değer 100.
+
 **KARALİSTEYE EKLEME ÖRNEĞİ**
 ----
 
