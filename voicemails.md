@@ -62,7 +62,7 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 * read = Değeri “true” olarak gönderilirse okunmuş mesajları, değeri “false”  olarak gönderilirse henüz okunmamış mesajları listeler. 
 * user_number = Mesajın bırakıldığı dahilinin numarası.
 * uuid = Mesajın (veya ilgili CDR kaydının) kayıt numarası.
-* limit = Listeyi sınırlayabilirsiniz.Varsayılan değer 10, minimum değer 10, maksimum değer 100. 
+* limit = Listeyi sınırlayabilirsiniz. Varsayılan değer 10, minimum değer 10, maksimum değer 100. 
 * page = Liste limite göre sayfalanıyor. “total_pages” değerinden maksimum kaç sayfa olduğunu belirleyerek görmek istediyiniz sayfanın numarasını girebilirsiniz. 
 
 **TELESEKRETERİN SES KAYDINA ERİŞİM**
