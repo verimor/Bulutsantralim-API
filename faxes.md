@@ -74,8 +74,8 @@ HTTP/1.1 200 OK
 * status: Sonuç
 
 **PARAMETRELER**
-
-* limit = Listeyi sınırlayabilirsiniz.Varsayılan değer 10,maksimum değer 100. 
+* **key**= Size özel oluşturulmuş API anahtarınızdır.  https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
+* limit = Listeyi sınırlayabilirsiniz.Varsayılan değer 10, minimum değer 10, maksimum değer 100.
 * page = Liste limite göre sayfalanıyor. “total_pages” değerinden maksimum kaç sayfa olduğunu belirleyerek görmek istediyiniz sayfanın numarasını girebilirsiniz. 
 
 **Faks Listesine Erişim örneği**
@@ -142,7 +142,7 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 * caller_id_number = Faks gönderen numara.
 * original_destination = Faks alan numara.
 * success = Değeri “true” olarak gönderilirse başarılı, değeri “false” olarak gönderilirse başarısız faksları listeler.
-* limit = Listeyi sınırlayabilirsiniz.Varsayılan değer 10,maksimum değer 100. 
+* limit = Listeyi sınırlayabilirsiniz.Varsayılan değer 10, minimum değer 10, maksimum değer 100. 
 * page = Liste limite göre sayfalanıyor. “total_pages” değerinden maksimum kaç sayfa olduğunu belirleyerek görmek istediyiniz sayfanın numarasını girebilirsiniz.
 
 **FAKS BELGESİNE ERİŞİM**
