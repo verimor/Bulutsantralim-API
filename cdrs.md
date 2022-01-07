@@ -86,7 +86,7 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 * missed = Değeri “true” olarak gönderilirse kaçan çağrıları, Değeri  “false”  olarak gönderilirse cevaplanmış çağrıları listeler. 
 * destination_number = Arama yapılan numara. 
 * queue = Çağrının bağlandığı kuyruk. 
-* limit = Listeyi sınırlayabilirsiniz.Varsayılan değer 10, minimum değer 10, maksimum değer 100. 
+* limit = Listeyi sınırlayabilirsiniz. Varsayılan değer 10, minimum değer 10, maksimum değer 100. 
 * page = Liste limite göre sayfalanıyor. “total_pages” değerinden maksimum kaç sayfa olduğunu belirleyerek görmek istediyiniz sayfanın numarasını girebilirsiniz. 
 
 **ARAMA KAYDININ DETAYINA ERİŞME ÖRNEĞİ**
