@@ -46,6 +46,8 @@ Accept: */*
  "timeout_target" : "",
  "invalid_target" : "",
  "digit_retries" : 1,
+ "digit_timeout" : 4,
+ "is_commercial" : false,
  "phone_list" : [
  {"phone" : "05512369874", "phrase" : "#429 12/05/2017 #430 102.45 #431"},
  {"phone" : "05651236547", "phrase" : "#429 12/05/2017 #430 65.12 #431"}
@@ -83,13 +85,14 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * **digit_target0 .. digit_target_9:** Aranan kişi 0 – 9 tuşlarına bastığında yönlendirilecek hedefler (gerçekleşecek eylemler). Verebileceğiniz hedeflerin listesi aşağıda listelenmiştir. 0-9, star, square, timeout, invalid’den en az birisi için hedef verilmesi zorunludur.
 * **digit_target_star:** Aranan kişi yıldız (*) tuşuna bastığında yönlendirilecek hedef (gerçekleşecek eylem). Verebileceğiniz hedeflerin listesi aşağıda listelenmiştir. 0-9, star, square, timeout, invalid’den en az birisi için hedef verilmesi zorunludur.
 * **digit_target_square:** Aranan kişi kare (#) tuşuna bastığında yönlendirilecek hedef (gerçekleşecek eylem). Verebileceğiniz hedeflerin listesi aşağıda listelenmiştir. 0-9, star, square, timeout, invalid’den en az birisi için hedef verilmesi zorunludur.
-* **timeout_target:** Aranan kişi ses kaydını dinledikten sonra 2 saniye içinde bir tuşa basmadığında ve retry_count adedi kadar tekrar denemenin sonunda yönlendirilecek hedef (gerçekleşecek eylem). Verebileceğiniz hedeflerin listesi aşağıda listelenmiştir. 0-9, star, square, timeout, invalid’den en az birisi için hedef verilmesi zorunludur.
-* **invalid_target:** Aranan kişi ses kaydını dinledikten hatalı bir tuşa bastığında ve retry_count adedi kadar tekrar denemenin sonunda yönlendirilecek hedef (gerçekleşecek eylem). Verebileceğiniz hedeflerin listesi aşağıda listelenmiştir. 0-9, star, square, timeout, invalid’den en az birisi için hedef verilmesi zorunludur.
-* **digit_retries:** Tuşlama tekrar sayısı. Geçersiz tuşlama yapıldığında veya hiç tuşlama yapılmayıp 2 saniye zamanaşımı dolduğunda, ilgili uyarı okunup Menü baştan okunur.
+* **timeout_target:** Aranan kişi ses kaydını dinledikten sonra digit_timeout süresi içinde bir tuşa basmadığında ve retry_count adedi kadar tekrar denemenin sonunda yönlendirilecek hedef (gerçekleşecek eylem). Verebileceğiniz hedeflerin listesi aşağıda listelenmiştir. 0-9, star, square, timeout, invalid’den en az birisi için hedef verilmesi zorunludur.
+* **invalid_target:** Aranan kişi ses kaydını dinledikten sonra hatalı bir tuşa bastığında ve retry_count adedi kadar tekrar denemenin sonunda yönlendirilecek hedef (gerçekleşecek eylem). Verebileceğiniz hedeflerin listesi aşağıda listelenmiştir. 0-9, star, square, timeout, invalid’den en az birisi için hedef verilmesi zorunludur.
+* **digit_retries:** Tuşlama tekrar sayısı. Geçersiz tuşlama yapıldığında veya hiç tuşlama yapılmayıp digit_timeout süresi dolduğunda, ilgili uyarı okunup Menü baştan okunur.
+* **digit_timeout:** Opsiyonel. Min:1, Maks:10, Varsayılan 4'tür. Ses kaydı dinletildikten sonra burada belirtilen süre kadar bekletilip senaryoya göre ya zaman aşımı hedefine aktarılır yada menü baştan okutulur.
 * **phone_list:** Aranacak numara listesi (zorunlu). ‘phone’ aranacak numaradır, ‘905321234567’ veya ‘05321234567’ veya ‘5321234567’ veya uluslararası için ‘00491234567’ şeklinde olmalıdır, ‘phone’ sahası zorunludur. ‘phrase’ sahası bu numaraya okunacak özel mesajı belirtir, formatı için aşağıda Cümle (phrase) Formatı başlığına bakınız. ‘phrase’ sahası zorunlu değildir.
-* is_commercial: Opsiyonel. true | false değeri alır. Ticari gönderimlerde true olarak belirlemelisiniz.
-* iys_recipient_type: "BIREYSEL" yada "TACIR" olmalıdır. Ticari gönderimlerde bu alanı zorunlu olarak göndermelisiniz.
-* iys_brand_code: Sistemde kayıtlı ve onaylı başlıklarınızdan birinin "İYS Marka Kodu" değeri olmalıdır. Ticari gönderimlerde bu alanı zorunlu olarak göndermelisiniz.
+* **is_commercial:** Opsiyonel. true | false değeri alır. Varsayılan false. Ticari gönderimlerde true olarak belirlemelisiniz.
+* **iys_recipient_type:** "BIREYSEL" yada "TACIR" olmalıdır. Ticari gönderimlerde bu alanı zorunlu olarak göndermelisiniz.
+* **iys_brand_code:** Sistemde kayıtlı ve onaylı başlıklarınızdan birinin "İYS Marka Kodu" değeri olmalıdır. Ticari gönderimlerde bu alanı zorunlu olarak göndermelisiniz.
 
 **HEDEF (TARGET) SEÇENEKLERİ**
 
