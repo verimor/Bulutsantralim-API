@@ -11,7 +11,6 @@ Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu 
 
 * Opencart yönetim paneli üzerinden API Key oluşturun.
      * Sistem > Kullanıcılar > API sayfasını açın.
-     * Sağ üst kısımdan ekle (+) düğmesine basın.
      * API adı olarak **bulutsantralim** girin.
      * API anahtarı kutusunun altındaki oluştur düğmesine basın.
      * Durumu açık olarak işaretleyin.
@@ -23,6 +22,7 @@ Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu 
      * Sistem > Mağazalar sayfasında mağaza isminin yanındakı düzenle düğmesine basın.
      * Seçenekler sekmesine tıklayın ve **Kasaya Git** başlığın gidin. 
      * Burada **API kullanıcısı** kutusundan bulutsantralim'i seçin.
+     * Sağ üst kısımdan kaydedin.
 
 * Bulutsantralinizdeki ayarları tamamlayın.
      * [Santral Ayarlarım](https://oim.verimor.com.tr/switch/domain/edit) sayfasındaki E-Ticaret Entegrasyonu başlığını bulun.
