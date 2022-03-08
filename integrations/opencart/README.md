@@ -18,12 +18,6 @@ Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu 
      * **194.49.126.36**, **194.49.126.45**, **194.49.126.46**, **194.49.126.18** ip adreslerini ekleyin.
      * Sağ üst kısımdan kaydedin.
 
-* Opencart yönetim paneli üzerinden API'yi etkinleştirin.
-     * Sistem > Mağazalar sayfasında mağaza isminin yanındakı düzenle düğmesine basın.
-     * Seçenekler sekmesine tıklayın ve **Kasaya Git** başlığın gidin. 
-     * Burada **API kullanıcısı** kutusundan bulutsantralim'i seçin.
-     * Sağ üst kısımdan kaydedin.
-
 * Bulutsantralinizdeki ayarları tamamlayın.
      * [Santral Ayarlarım](https://oim.verimor.com.tr/switch/domain/edit) sayfasındaki E-Ticaret Entegrasyonu başlığını bulun.
      * **E-Ticaret Yazılımı** kutusunda **Opencart**'ı seçin
