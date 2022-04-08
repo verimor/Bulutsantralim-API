@@ -8,7 +8,7 @@
   
   Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde call_uuid döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner. 
   
-  **Not:** İsteğin sonucu, source telefon cevaplandığında veya ulaşılamıyor, meşgul, cevapsız vb. bir duruma geldiğinde döndürülür. Telefon çaldırma süresi 30 sn. olduğundan response süresi 30 saniye sürebilir. 
+  **Not:** İsteğin sonucu, source telefon cevaplandığında veya ulaşılamıyor, meşgul, cevapsız vb. bir durumda döndürülür. Telefon çaldırma süresi kadar (timeout parametresi) sürebilir. 
 
 **HAZIRLIK**
 ----
