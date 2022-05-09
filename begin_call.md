@@ -28,5 +28,8 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
   * **key** = Size özel oluşturulmuş API anahtarınızdır. 
   * **extension** = Aramanın bağlanacağı dahili numaradır.
   * **destination** = Aranacak olan numara (yurtiçi çağrılar için 908505320000, yurtdışı çağrılar için 00493027590915 formatında olmalı).
-  * caller_id = Aramada kullanılacak olan dış numara (908505320000 formatında olmalı. Bu parametre verilmezse dahilide seçili olan dış no kullanılacaktır).
-  * manual_answer = Değeri true olarak gönderilirse dahilinin telefonu açmasını bekler (Normalde otomatik olarak dahili açılır ve karşı    numara aranır).
+  * **caller_id** = Aramada kullanılacak olan dış numara (908505320000 formatında olmalı. Bu parametre verilmezse dahilide seçili olan dış no kullanılacaktır).
+  * **manual_answer** = Değeri true olarak gönderilirse dahilinin telefonu açmasını bekler (Normalde otomatik olarak dahili açılır ve karşı numara aranır).
+  * **timeout** = Opsiyonel. Telefon çaldırma süresidir. 10 ile 60 sn. arasında bir değer olmalı. Varsayılan 30'dur.
+  * **announcement_to_callee** = Opsiyonel. Cevaplanma anında aranan tarafa bu anons dinletilir. Ses dosyası ID’lerinizi API ile veya Online İşlem Merkezi üzerinden görebilirsiniz.
+* **announcement_to_caller** = Opsiyonel. Cevaplanma anında arayan tarafa bu anons dinletilir. Ses dosyası ID’lerinizi API ile veya Online İşlem Merkezi üzerinden görebilirsiniz.
