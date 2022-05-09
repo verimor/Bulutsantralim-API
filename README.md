@@ -3,6 +3,7 @@
 * **[Çağrı Başlatma:](https://github.com/verimor/Bulutsantralim-API/blob/master/begin_call.md)** Uygulamalarınız üzerinden çağrı başlatabilirsiniz.
 * **[Çağrı Bağlama:](https://github.com/verimor/Bulutsantralim-API/blob/master/bridge.md)** Uygulamalarınız üzerinden iki numarayı arayıp anonim olarak birbiri ile görüştürebilirsiniz.
 * **[Çağrıyı Sessize Alma:](https://github.com/verimor/Bulutsantralim-API/blob/master/mute.md)** Uygulamalarınız üzerinden devam eden çağrıları sessize alabilirsiniz.
+* **[Çağrıyı Aktarma:](https://github.com/verimor/Bulutsantralim-API/blob/master/transfer.md)** Uygulamalarınız üzerinden devam eden çağrıları başka bir dahiliye aktarabilirsiniz.
 * **[Çağrıyı Sonlandırma:](https://github.com/verimor/Bulutsantralim-API/blob/master/hangup_call.md)** Uygulamalarınız üzerinden devam eden çağrıları sonlandırabilirsiniz.
 * **[DND (rahatsız etme) Modu:](https://github.com/verimor/Bulutsantralim-API/blob/master/dnd.md)** Uygulamalarınız üzerinden santralinizdeki dahilinin DND modunu açıp kapatabilirsiniz.
 * **[Müşteri Bilgilerinin Uygulamanızda Açılması (Olay Bildirme):](https://github.com/verimor/Bulutsantralim-API/blob/master/report_event.md)** Santralinizdeki telefonsal olayları uygulamalarınıza bildirebilirsiniz. Böylelikle gelen aramalarda yazılımınızda kayıtlı müşterinizin bilgilerini uygulamanızın ekranında görüntüleyebilirsiniz.
