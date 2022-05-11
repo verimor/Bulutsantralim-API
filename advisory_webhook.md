@@ -1,3 +1,13 @@
+## İÇİNDEKİLER
+* [MÜŞTERİ TANIMA](#m%C3%BC%C5%9Fteri%CC%87-tanima)
+* [UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ](#uygulamaniza-g%C3%B6nderi%CC%87lecek-i%CC%87stek-%C3%B6rne%C4%9Fi%CC%87)
+* [UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (YÖNLENDİRME)](#uygulamanizin-d%C3%B6nece%C4%9Fi%CC%87-cevap-%C3%B6rnekleri%CC%87-y%C3%B6nlendi%CC%87rme)
+* [UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (TUŞ İSTEME)](#uygulamanizin-d%C3%B6nece%C4%9Fi%CC%87-cevap-%C3%B6rnekleri%CC%87-tu%C5%9F-i%CC%87steme)
+* [TUŞLAMADAN SONRA UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ](#tu%C5%9Flamadan-sonra-uygulamaniza-g%C3%B6nderi%CC%87lecek-i%CC%87stek-%C3%B6rne%C4%9Fi%CC%87)
+* [UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (SES KAYDI ALMA)](#uygulamanizin-d%C3%B6nece%C4%9Fi%CC%87-cevap-%C3%B6rnekleri%CC%87-ses-kaydi-alma)
+
+
+----
 **MÜŞTERİ TANIMA**
 ----
 Santralinize gelen çağrıların numarasını müşteri veritabanınızda sorgulayıp, arayana göre santralinizdeki farklı hedeflere (kuyruk, dahili, sesli karşılama vb.) yönlendirmek veya ses kaydı almak için kullanılır.
@@ -6,17 +16,19 @@ Santralinize gelen çağrıların numarasını müşteri veritabanınızda sorgu
 Eğer arayan numara veritabanınızda bulunmuyorsa, arayanın başka bir telefon numarasını veya müşteri numarasını tuşlamasını isteyebilirsiniz. Bulutsantral istediğiniz uzunluktaki numarayı müşteriden alır ve yine servisinize gönderir.
 
 **Özellikler**
-----
+
   * Çağrınız servisinizin döndüğü cevaba göre yönlendirilebilir.
   * Arayan taraftan tuşlama yapması istenebilir.
   * Ses kaydı alınabilir.
 
 **HAZIRLIK**
-----
+
   Müşteri Tanıma başlığı altındaki ayarları yapmış olmalısınız.
   Online İşlem Merkezi => Bulut Santralim => Gelen Arama Yönetiminde hedef olarak Müşteri Tanımayı seçmiş olmalısınız.
-  
+
+----
 **UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ**
+----
 
 ```json
 GET http://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=1
@@ -29,7 +41,9 @@ Accept: */*
   * cld = Aranan dış numaranız.
   * step = İşlem adımı. Aynı çağrı için servisiniz her sorgulandığında bu numara 1 arttırılarak gönderilir. 
 
-**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (YÖNLENDİRME)** 
+----
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (YÖNLENDİRME)**
+----
 
 ```json
 {
@@ -59,7 +73,9 @@ Accept: */*
 * target: Zorunlu. Çağrının hangi hedefe yönleneceğini belirtir. Arayan numara müşteriniz olmasa bile nereye yönlendirileceğini belirtmelisiniz. Bu sahada dönebileceğiniz seçenekleri aşağıdaki listede görebilirsiniz.
 * recording_enabled: Opsiyonel. Görüşmenin ses kaydının alınmasını istemiyorsanız false döndürün. Varsayılan olarak true kabul edilir ve görüşme kaydedilir.
 
-**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (TUŞ İSTEME)** 
+----
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (TUŞ İSTEME)**
+----
 
 ```json
 {
@@ -92,14 +108,17 @@ Accept: */*
 * announcement_id: Zorunlu. Tuş isterken önce okunacak anons'un ID'si. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
 * phrase: Zorunlu. Tuş isterken önce okunacak metin. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir.
 * phrase_speed: Opsiyonel. Metin okuma hızı. Varsayılan değeri: 1.0, Geçerli hız aralığı: 0.5 - 1.5,
-* min_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının minimum uzunluğu. Bundan kısa tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir.
-* max_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının maksimum uzunluğu. Bundan uzun tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir.
-* retry_count: Zorunlu. Geçersiz tuşlama durumunda kaç defa daha deneneceği. 0 (Sıfır) değeri tekrar deneme yapılmaması kullanılır.
+* min_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının minimum uzunluğu. Bundan kısa tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir. (retry_count değerine göre) 
+* max_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının maksimum uzunluğu. Tuşlama bu uzunluğa geldiğinde tuş isteme tamamlanır.
+* timeout: Opsiyonel. Min:1, Maks:10, Varsayılan 6'dır. Tuşlama için bekleme süresidir. Bu süre içerisinde tuşlama yapılmazsa tekrar tuşlama yapılması istenir. (retry_count değerine göre)
+* digit_timeout: Opsiyonel. Min:1, Maks:10, Varsayılan 3'tür. Tuşlama başladıktan sonra tuşlamalar arasındaki bekleme süresidir. max_digits uzunluğuna kadar tuşlamalarda digit_timeout süresinden sonra tuş isteme tamamlanır.
+* retry_count: Zorunlu. Tuşlama yapılmadığında veya geçersiz tuşlama durumunda kaç defa daha deneneceği. 0 (Sıfır) değeri tekrar deneme yapılmaması kullanılır.
 * service_url: Opsiyonel. Tuşlamanın sonucunun ayrı bir adrese gönderilmesini istiyorsanız bu sahayı döndürün. Programınızı daha basit tutmak için kullanabilirsiniz. Verilmezse OİM'den girdiğiniz Servis URL'nize iletilir.
 * param_name: Opsiyonel. Tuşlanan değerin servisinize iletirken hangi isimle gönderilmesini istiyorsanız burada belirtebilirsiniz. Belirtmezseniz varsayılan olarak "digits" ismiyle gönderilir.
 
 
 **TUŞLAMADAN SONRA UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ**
+----
 
 ```json
 GET http://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=2&musteri_no=123456&error=
@@ -134,7 +153,9 @@ Accept: */*
 * hangup/hangup: Çağrıyı kapat (normal kapatma sinyali ver).
 * hangup/busy: Çağrıyı kapat (meşgul tonu ver).
 
-**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (SES KAYDI ALMA)** 
+----
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (SES KAYDI ALMA)**
+----
 
 ```json
 {
