@@ -14,13 +14,30 @@ Müşteri Temsilcilerinizin durumunu ve hangi kuyruklara üye olduklarını list
 ```json
 HTTP/1.1 200 OK
 [
-  {"agent":"1010","status":"AVAILABLE","queues":["204","205"]},
-  {"agent":"1011","status":"TALKING","queues":["202"]}
+  {
+    "agent":"1010",
+    "status":"AVAILABLE",
+    "queues":["204","205"]
+  },
+  {
+    "agent":"1011",
+    "status":"TALKING",
+    "queues":["202"]
+  },
+  {
+        "agent": "1026",
+        "queues": [
+            "204"
+        ],
+        "status": "ON_BREAK",
+        "break_description": "Kahve"
+  }
 ]
 ```
 * agent - MT numarası.
 * status - MT durumu. (AVAILABLE=Müsait, TALKING=Çağrıda, LOGGED_OUT=Çevrimdışı, ON_BREAK=Molada)
 * queues - MT'nin üye olduğu kuyruklar.
+* break_description - MT molada ise, mola açıklaması
 
 **BAŞARISIZ CEVAP** 
 
