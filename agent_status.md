@@ -25,12 +25,10 @@ HTTP/1.1 200 OK
     "queues":["202"]
   },
   {
-        "agent": "1026",
-        "queues": [
-            "204"
-        ],
-        "status": "ON_BREAK",
-        "break_description": "Kahve"
+    "agent": "1026",
+    "status": "ON_BREAK",
+    "queues": ["204"],
+    "break_description": "Kahve"
   }
 ]
 ```
