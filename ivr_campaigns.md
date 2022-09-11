@@ -11,7 +11,7 @@
 Yeni otomatik arama kampanyasını oluşturmak için **HTTP(S) POST JSON** yöntemini kullanabilirsiniz.
 Aşağıdaki örnekte olduğu gibi bir JSON string POST etmeniz yeterlidir.
 
-**KAMPANYA BAŞLATMA ÖRNEĞİ**
+**IVR KAMPANYA BAŞLATMA ÖRNEĞİ**
 ```json
 POST http://api.bulutsantralim.com/ivr_campaigns.json
 Host: api.bulutsantralim.com
@@ -19,39 +19,70 @@ Content-Type: application/json
 Accept: */*
 
 {
- "key" : "K12345678-1234-5678-4321-123456789012",
- "name" : "Memnuniyet anketi",
- "date_range_begin" : "2017-05-09",
- "date_range_end" : "2017-05-10",
- "time_range_begin" : "09:00",
- "time_range_end" : "18:00",
- "active_days" : [1,2,3,4,5,6,7],
- "ring_timeout" : 30,
- "cli" : "902129630131",
- "welcome_announcement_id" : 128,
- "call_retries" : 2,
- "webhook_url" : "https://sizin.adresiniz.com.tr/bildirim/yolu",
- "digit_target_0" : "announcement/421",
- "digit_target_1" : "announcement/421",
- "digit_target_2" : "user/1001",
- "digit_target_3" : "group/700",
- "digit_target_4" : "ivr/10",
- "digit_target_5" : "announcement/428",
- "digit_target_6" : "external/05321234567",
- "digit_target_7" : "voicemail/1003",
- "digit_target_8" : "queue/201",
- "digit_target_9" : "queue/202",
- "digit_target_star" : "restart",
- "digit_target_square" : "user/1000",
- "timeout_target" : "",
- "invalid_target" : "",
- "digit_retries" : 1,
- "digit_timeout" : 4,
- "is_commercial" : false,
- "phone_list" : [
- {"phone" : "05512369874", "phrase" : "#429 12/05/2017 #430 102.45 #431"},
- {"phone" : "05651236547", "phrase" : "#429 12/05/2017 #430 65.12 #431"}
- ]
+    "key" : "K12345678-1234-5678-4321-123456789012",
+    "call_type": "ivr",
+    "name" : "Memnuniyet anketi",
+    "date_range_begin" : "2022-09-12",
+    "date_range_end" : "2022-09-12",
+    "time_range_begin" : "09:00",
+    "time_range_end" : "18:00",
+    "active_days" : [1,2,3,4,5,6,7],
+    "max_thread_count": 1,
+    "ring_timeout" : 30,
+    "cli" : "902129630131",
+    "welcome_announcement_id" : 128,
+    "call_retries" : 2,
+    "webhook_url" : "https://sizin.adresiniz.com.tr/bildirim/yolu",
+    "digit_target_0" : "announcement/421",
+    "digit_target_1" : "announcement/421",
+    "digit_target_2" : "user/1001",
+    "digit_target_3" : "group/700",
+    "digit_target_4" : "ivr/10",
+    "digit_target_5" : "announcement/428",
+    "digit_target_6" : "external/05321234567",
+    "digit_target_7" : "voicemail/1003",
+    "digit_target_8" : "queue/201",
+    "digit_target_9" : "queue/202",
+    "digit_target_star" : "restart",
+    "digit_target_square" : "user/1000",
+    "timeout_target" : "",
+    "invalid_target" : "",
+    "digit_retries" : 1,
+    "digit_timeout" : 4,
+    "is_commercial" : false,
+    "phone_list" : [
+        {"phone" : "05512369874", "phrase" : "#429 12/05/2017 #430 102.45 #431"},
+        {"phone" : "05651236547", "phrase" : "#429 12/05/2017 #430 65.12 #431"}
+      ]
+}
+```
+
+**KUYRUK (ÖNGÖRÜLÜ) KAMPANYA BAŞLATMA ÖRNEĞİ**
+```json
+POST http://api.bulutsantralim.com/ivr_campaigns.json
+Host: api.bulutsantralim.com
+Content-Type: application/json
+Accept: */*
+
+{
+    "key": "K12345678-1234-5678-4321-123456789012",
+    "call_type": "queue",
+    "name": "Queue Test (API)",
+    "date_range_begin": "2022-09-12",
+    "date_range_end": "2022-09-12",
+    "time_range_begin": "00:00",
+    "time_range_end": "23:59",
+    "active_days" : [1,2,3,4,5,6,7],
+    "max_thread_count": 1,
+    "predictive_thread_count": 1,
+    "queue_number": 204,
+    "ring_timeout": 30,
+    "cli": "902129630131",
+    "call_retries": 0,
+    "phone_list": [
+        { "phone": "05512369874" },
+        { phone": "05651236547" }
+    ]
 }
 ```
 **BAŞARILI CEVAP**
@@ -71,6 +102,10 @@ name can't be blank
 Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak belirtilmiştir.
 
 * **key** = Size özel oluşturulmuş API anahtarınızdır. https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
+* **call_type** = Otomatik aramanın tipi."queue" ya da "ivr" olabilir.
+* **queue_number** = Kuyruk tipi otomatik aramalarda, çağrıların hangi kuyruğa aktarılacağını belirtir.
+* **predictive_thread_count** = Kuyruk tipi otomatik aramalarda, eşzamanlı olarak, müsait temsilci sayısının kaç katı arama yapılacağını belirtir.
+* **max_thread_count:** Kampanya için, eşzamanlı maksimum çağrı sayısını belirtir. Bu parametre belirtilmezse, santralin değerleri referans alınır. (Santral ayarlarında, "Otomatik Arama Kanal Sayısı" değeri referans alınır. Bu ayar için "Otomatik Arama / Sesli Mesaj (Çoklu) modülü gereklidir.)
 * **name:** Kampanyanın adı.
 * **date_range_begin:** Kampanyanın aramaya başlayacağı tarih, YYYY-AA-GG formatında olmalıdır.
 * **date_range_end:** Opsiyonel. Varsayılan **Başlangıç Tarihi + 1 gün** olarak kabul edilir. Kampanyanın aramaya bitiş tarihi. YYYY-AA-GG formatında olmalıdır.
