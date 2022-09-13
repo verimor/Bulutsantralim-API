@@ -74,7 +74,7 @@ Accept: */*
     "time_range_end": "23:59",
     "active_days" : [1,2,3,4,5,6,7],
     "max_thread_count": 1,
-    "predictive_thread_count": 1,
+    "thread_multiplier": 1,
     "queue_number": 204,
     "ring_timeout": 30,
     "cli": "902129630131",
@@ -104,7 +104,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * **key** = Size özel oluşturulmuş API anahtarınızdır. https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
 * **call_type** = Otomatik aramanın tipi."queue" ya da "ivr" olabilir.
 * **queue_number** = Kuyruk tipi otomatik aramalarda, çağrıların hangi kuyruğa aktarılacağını belirtir.
-* **predictive_thread_count** = Kuyruk tipi otomatik aramalarda, eşzamanlı olarak, müsait temsilci sayısının kaç katı arama yapılacağını belirtir.
+* **thread_multiplier** = Kuyruk tipi otomatik aramalarda, eşzamanlı olarak, müsait temsilci sayısının kaç katı arama yapılacağını belirtir.
 * **max_thread_count:** Kampanya için, eşzamanlı maksimum çağrı sayısını belirtir. Bu parametre belirtilmezse, santralin değerleri referans alınır. (Santral ayarlarında, "Otomatik Arama Kanal Sayısı" değeri referans alınır. Bu ayar için "Otomatik Arama / Sesli Mesaj (Çoklu) modülü gereklidir.)
 * **name:** Kampanyanın adı.
 * **date_range_begin:** Kampanyanın aramaya başlayacağı tarih, YYYY-AA-GG formatında olmalıdır.
