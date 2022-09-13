@@ -10,7 +10,7 @@ aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200
   
 **CRM ENTEGRASYONU AYARLARINA ERİŞİM ÖRNEĞİ**
 
->http://api.bulutsantralim.com/crm_integrations?key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/crm_integrations?key=K12345678-1234-5678-4321-123456789012
  
 **BAŞARILI CEVAP**
 
@@ -39,7 +39,7 @@ Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 **CRM ENTEGRASYONU AYARLARINI GÜNCELLEME ÖRNEĞİ**
 
 ```json
-POST http://api.bulutsantralim.com/crm_integrations
+POST https://api.bulutsantralim.com/crm_integrations
 Host: api.bulutsantralim.com
 Accept: */*
 

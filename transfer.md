@@ -10,7 +10,7 @@ olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı d�
 
 **ÇAĞRIYI AKTARMA ÖRNEĞİ**
 
->http://api.bulutsantralim.com/transfer/f3797dfc-a818-11e7-bf70-cb295b6663ce?user_number=1000&key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/transfer/f3797dfc-a818-11e7-bf70-cb295b6663ce?user_number=1000&key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
 ```

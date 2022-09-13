@@ -7,7 +7,7 @@ https://www.bulutsantralim.com/entegrasyonlar/projesoft-bulutsantralim-entegrasy
 ----
 * [Santral Ayarlarım](https://oim.verimor.com.tr/switch/domain/edit) sayfasındaki E-Ticaret Entegrasyonu başlığını bulun.
 * **E-Ticaret Yazılımı** kutusunda **ProjeSoft**'u seçin
-* **Servis URL** bölümüne site adresini **http://mağazaadresim.com** şeklinde girin.
+* **Servis URL** bölümüne site adresini **https://mağazaadresim.com** şeklinde girin.
 * **Kullanıcı Adı** bölümüne ProjeSoft dan aldığınız kullanıcı adını girin.
 * **Şifre** bölümüne ProjeSoft dan aldığınız şifreyi girin.
 * **Müşteri Temsilcisi** kutusundan, Müşteri temsilcisi hedefini seçin.

@@ -10,7 +10,7 @@ aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200
   
 **TELESEKRETER ARAMA KAYITLARINA ERİŞİM ÖRNEĞİ**
 
->http://api.bulutsantralim.com/voicemail_messages?key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/voicemail_messages?key=K12345678-1234-5678-4321-123456789012
  
 **BAŞARILI CEVAP**
 
@@ -76,7 +76,7 @@ Birinci aşama için; HTTP POST metodu ile api.bulutsantralim.com adresine aşa�
 
 **URL İSTEME ÖRNEĞİ** 
 ```json
-POST http://api.bulutsantralim.com/voicemail_recording_url/
+POST https://api.bulutsantralim.com/voicemail_recording_url/
 Host: api.bulutsantralim.com
 Accept: */*
 key=K12345678-1234-5678-4321-123456789012&uuid=12345678-1234-5678-4321-123456789012
@@ -85,7 +85,7 @@ key=K12345678-1234-5678-4321-123456789012&uuid=12345678-1234-5678-4321-123456789
 
 ```json
 HTTP/1.1 200 OK 
-http://api.bulutsantralim.com/recording/Rbb9d6f36-d1a7-46f5-961e-4be2e2ba1b8e
+https://api.bulutsantralim.com/recording/Rbb9d6f36-d1a7-46f5-961e-4be2e2ba1b8e
 ```
 
 **BAŞARISIZ CEVAP** 

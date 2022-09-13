@@ -7,7 +7,7 @@ https://www.bulutsantralim.com/entegrasyonlar/ticimax-bulutsantralim-entegrasyon
 ----
 * [Santral Ayarlarım](https://oim.verimor.com.tr/switch/domain/edit) sayfasındaki E-Ticaret Entegrasyonu başlığını bulun.
 * **E-Ticaret Yazılımı** kutusunda **Ticimax**'ı seçin
-* **Servis URL** bölümüne site adresini **http://mağazaadresim.com** şeklinde girin.
+* **Servis URL** bölümüne site adresini **https://mağazaadresim.com** şeklinde girin.
 * **Servis Anahtarı** bölümüne Ticimax dan aldığınız servis anahtarını girin.
 * **Müşteri Temsilcisi** kutusundan, Müşteri temsilcisi hedefini seçin.
 * **Kapıda Ödeme Onayı**nı açın.

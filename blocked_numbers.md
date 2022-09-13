@@ -9,7 +9,7 @@ Karalisteye erişmek ve ekleme yapmak için api.bulutsantralim.com adresi aşağ
 ----
 
 **ÖRNEK URL**
->http://api.bulutsantralim.com/blocked_numbers?key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/blocked_numbers?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
 
@@ -46,7 +46,7 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 ----
 
 ```json
-POST http://api.bulutsantralim.com/blocked_numbers
+POST https://api.bulutsantralim.com/blocked_numbers
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
@@ -74,7 +74,7 @@ number required
 ----
 
 **ÖRNEK URL**
->http://api.bulutsantralim.com/blocked_numbers/delete?key=K12345678-1234-5678-4321-123456789012&number=05531234567
+>https://api.bulutsantralim.com/blocked_numbers/delete?key=K12345678-1234-5678-4321-123456789012&number=05531234567
 
 **BAŞARILI CEVAP**
 

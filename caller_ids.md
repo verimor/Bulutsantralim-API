@@ -10,7 +10,7 @@ aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200
   
 **NUMARALAR LİSTESİNE ERİŞİM ÖRNEĞİ**
 
->http://api.bulutsantralim.com/caller_ids?key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/caller_ids?key=K12345678-1234-5678-4321-123456789012
  
 **BAŞARILI CEVAP**
 

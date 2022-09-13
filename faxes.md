@@ -12,7 +12,7 @@ Uygulamalarınız üzerinden faks göndermek ve faks listesine erişmek için ap
 Faks göndermek için dosyasının içeriğinin base64 ile kodlanmış halini ve diğer bilgileri aşağıdaki şekilde POST etmeniz yeterlidir.
 
 ```json
-POST http://api.bulutsantralim.com/fax_orders
+POST https://api.bulutsantralim.com/fax_orders
 Host: api.bulutsantralim.com
 Accept: */*
 Content-Length: 481982
@@ -47,7 +47,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 ----
 
 **Örnek URL**
->http://api.bulutsantralim.com/fax_orders?key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/fax_orders?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
 ```json
@@ -82,7 +82,7 @@ HTTP/1.1 200 OK
 ----
 
 **Örnek URL**
->http://api.bulutsantralim.com/fdrs?key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/fdrs?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
 
@@ -158,7 +158,7 @@ Birinci aşama için; HTTP POST metodu ile api.bulutsantralim.com adresine aşa�
   
 **URL İSTEME ÖRNEĞİ** 
 ```json
-POST http://api.bulutsantralim.com/fax_document_url/
+POST https://api.bulutsantralim.com/fax_document_url/
 Host: api.bulutsantralim.com
 Accept: */*
 key=K12345678-1234-5678-4321-123456789012&call_uuid=e28e5d48-05d8-11e8-663a-fde60c59425c
@@ -167,7 +167,7 @@ key=K12345678-1234-5678-4321-123456789012&call_uuid=e28e5d48-05d8-11e8-663a-fde6
 
 ```json
 HTTP/1.1 200 OK 
-http://api.bulutsantralim.com/fax_document/Fbb9d6f36-d1a7-46f5-961e-4be2e2ba1b8e
+https://api.bulutsantralim.com/fax_document/Fbb9d6f36-d1a7-46f5-961e-4be2e2ba1b8e
 ```
 
 **BAŞARISIZ CEVAP** 

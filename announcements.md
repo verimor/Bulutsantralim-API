@@ -10,7 +10,7 @@ aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200
   
 **SES DOSYALARI LİSTESİNE ERİŞİM ÖRNEĞİ**
 
->http://api.bulutsantralim.com/announcements?key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/announcements?key=K12345678-1234-5678-4321-123456789012
  
 **BAŞARILI CEVAP**
 
@@ -39,7 +39,7 @@ Yeni ses dosyasının ismini ve içeriğinin base64 ile kodlanmış halini POST 
 
 **YENİ SES DOSYASI YÜKLEME ÖRNEĞİ**
 ```json
-POST http://api.bulutsantralim.com/announcements
+POST https://api.bulutsantralim.com/announcements
 Host: api.bulutsantralim.com
 Accept: */*
 Content-Length: 481982
@@ -68,7 +68,7 @@ Ses dosyasının ismini ve içeriğinin base64 ile kodlanmış halini PUT etmeni
 
 ** SES DOSYASI GÜNCELLEME ÖRNEĞİ**
 ```json
-PUT http://api.bulutsantralim.com/announcements/21870
+PUT https://api.bulutsantralim.com/announcements/21870
 Host: api.bulutsantralim.com
 Accept: */*
 Content-Length: 481982
@@ -97,7 +97,7 @@ Ses dosyasının id ile DELETE etmeniz yeterlidir. Başarılı durumda OK yazıs
 
 **SES DOSYASI SİLME ÖRNEĞİ**
 ```json
-DELETE http://api.bulutsantralim.com/announcements/21870
+DELETE https://api.bulutsantralim.com/announcements/21870
 Host: api.bulutsantralim.com
 Accept: */*
 Content-Length: 481982

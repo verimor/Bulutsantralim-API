@@ -8,7 +8,7 @@
 
 **ÇAĞRIYI SONLANDIRMA ÖRNEĞİ**
 
->http://api.bulutsantralim.com/hangup/f3797dfc-a818-11e7-bf70-cb295b6663ce?key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/hangup/f3797dfc-a818-11e7-bf70-cb295b6663ce?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP:**
 

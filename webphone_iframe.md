@@ -14,7 +14,7 @@
   Web telefonunu kendi uygulamanız içinde her açacağınız zaman, o dahili için bir token almak için API'ye POST isteği yapmalısınız. Bu token **1 gün** boyunca güvenli bir şekilde web telefonunu çalıştırmanızı sağlar.
 
  ```json
-POST http://api.bulutsantralim.com/webphone_tokens
+POST https://api.bulutsantralim.com/webphone_tokens
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*

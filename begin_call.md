@@ -8,7 +8,7 @@
   
 **ÇAĞRI BAŞLATMA ÖRNEĞİ**
 
->http://api.bulutsantralim.com/originate?key=K12345678-1234-5678-4321-123456789012&extension=1001&destination=908505320000
+>https://api.bulutsantralim.com/originate?key=K12345678-1234-5678-4321-123456789012&extension=1001&destination=908505320000
 
 **BAŞARILI CEVAP:**
 

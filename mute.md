@@ -10,7 +10,7 @@ olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı d�
   
 **ÇAĞRIYI SESSİZE ALMA ÖRNEĞİ**
 
->http://api.bulutsantralim.com/mute/f3797dfc-a818-11e7-bf70-cb295b6663ce?state=on&key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/mute/f3797dfc-a818-11e7-bf70-cb295b6663ce?state=on&key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
 ```
@@ -19,7 +19,7 @@ olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı d�
 
 **ÇAĞRIYI SESLİYE ALMA ÖRNEĞİ**
 
->http://api.bulutsantralim.com/mute/f3797dfc-a818-11e7-bf70-cb295b6663ce?state=off&key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/mute/f3797dfc-a818-11e7-bf70-cb295b6663ce?state=off&key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
 ```

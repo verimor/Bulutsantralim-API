@@ -13,7 +13,7 @@ Rehberde yeni grup oluşturmak, güncellemek veya silmek için api.bulutsantrali
 ----
 
 **ÖRNEK URL**
->http://api.bulutsantralim.com/contact_groups?key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/contact_groups?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
 
@@ -36,7 +36,7 @@ Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 ----
 
 ```json
-POST http://api.bulutsantralim.com/contact_groups
+POST https://api.bulutsantralim.com/contact_groups
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
@@ -64,7 +64,7 @@ name can't be blank
 ----
 
 ```json
-PATCH http://api.bulutsantralim.com/contact_groups/20212
+PATCH https://api.bulutsantralim.com/contact_groups/20212
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
@@ -92,7 +92,7 @@ cannot find group with id: 20212
 ----
 
 ```json
-DELETE http://api.bulutsantralim.com/contact_groups/20212
+DELETE https://api.bulutsantralim.com/contact_groups/20212
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
@@ -124,7 +124,7 @@ Rehbere yeni kişi eklemek, güncellemek veya silmek için api.bulutsantralim.co
 ----
 
 **ÖRNEK URL**
->http://api.bulutsantralim.com/contacts?key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/contacts?key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
 
@@ -211,7 +211,7 @@ Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belir
 ----
 
 ```json
-POST http://api.bulutsantralim.com/contacts
+POST https://api.bulutsantralim.com/contacts
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
@@ -293,7 +293,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 Kişi eklerken kullanabileceğiniz tüm parametreler güncelleme için de geçerlidir.
 
 ```json
-PATCH http://api.bulutsantralim.com/contacts/10203
+PATCH https://api.bulutsantralim.com/contacts/10203
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
@@ -321,7 +321,7 @@ cannot find group with id: 10203
 ----
 
 ```json
-DELETE http://api.bulutsantralim.com/contacts/10203
+DELETE https://api.bulutsantralim.com/contacts/10203
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*

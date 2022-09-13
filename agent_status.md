@@ -7,7 +7,7 @@ Müşteri Temsilcilerinizin durumunu ve hangi kuyruklara üye olduklarını list
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
   
   **Müşteri Temsilcilerini Listeleme Örneği**
-  >http://api.bulutsantralim.com/agent_statuses?key=K12345678-1234-5678-4321-123456789012
+  >https://api.bulutsantralim.com/agent_statuses?key=K12345678-1234-5678-4321-123456789012
   
   **BAŞARILI CEVAP**
 

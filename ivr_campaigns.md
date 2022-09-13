@@ -13,7 +13,7 @@ Aşağıdaki örnekte olduğu gibi bir JSON string POST etmeniz yeterlidir.
 
 **IVR KAMPANYA BAŞLATMA ÖRNEĞİ**
 ```json
-POST http://api.bulutsantralim.com/ivr_campaigns.json
+POST https://api.bulutsantralim.com/ivr_campaigns.json
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
@@ -59,7 +59,7 @@ Accept: */*
 
 **KUYRUK (ÖNGÖRÜLÜ) KAMPANYA BAŞLATMA ÖRNEĞİ**
 ```json
-POST http://api.bulutsantralim.com/ivr_campaigns.json
+POST https://api.bulutsantralim.com/ivr_campaigns.json
 Host: api.bulutsantralim.com
 Content-Type: application/json
 Accept: */*
@@ -201,7 +201,7 @@ Aşağıdaki örnekte olduğu gibi DELETE request’i göndermeniz yeterlidir.
 **KAMPANYA SİLME ÖRNEĞİ**
 
 ```json
-DELETE http://api.bulutsantralim.com/ivr_campaigns/112?key=K12345678-1234-5678-4321-123456789012
+DELETE https://api.bulutsantralim.com/ivr_campaigns/112?key=K12345678-1234-5678-4321-123456789012
 Host: api.bulutsantralim.com
 Accept: */*
 ```
@@ -235,7 +235,7 @@ Aşağıdaki örnekte olduğu gibi PATCH request’i göndermeniz yeterlidir.
 **KAMPANYA DURDURMA ÖRNEĞİ**
 
 ```json
-PATCH http://api.bulutsantralim.com/ivr_campaigns/112
+PATCH https://api.bulutsantralim.com/ivr_campaigns/112
 Host: api.bulutsantralim.com
 Accept: */*
 

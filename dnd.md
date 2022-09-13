@@ -8,7 +8,7 @@ Santralinizdeki herhangi bir dahilinin DND modunu açmak veya kapatmak için kul
   
 **DND MODUNU AÇMA ÖRNEĞİ**
 
->http://api.bulutsantralim.com/dnd/1010?state=on&key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/dnd/1010?state=on&key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
 ```
@@ -17,7 +17,7 @@ Changed DND of 1010 to on.
 
 **DND MODUNU KAPATMA ÖRNEĞİ**
 
->http://api.bulutsantralim.com/dnd/1010?state=off&key=K12345678-1234-5678-4321-123456789012
+>https://api.bulutsantralim.com/dnd/1010?state=off&key=K12345678-1234-5678-4321-123456789012
 
 **BAŞARILI CEVAP**
 ```

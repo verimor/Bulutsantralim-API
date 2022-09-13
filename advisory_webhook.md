@@ -31,7 +31,7 @@ Eğer arayan numara veritabanınızda bulunmuyorsa, arayanın başka bir telefon
 ----
 
 ```json
-GET http://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=1
+GET https://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=1
 Host: musteri.adresi.com.tr 
 Accept: */* 
 ``` 
@@ -121,13 +121,13 @@ Accept: */*
 ----
 
 ```json
-GET http://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=2&musteri_no=123456&error=
+GET https://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=2&musteri_no=123456&error=
 Host: musteri.adresi.com.tr 
 Accept: */* 
 ``` 
 
 ```json
-GET http://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=2&secim=1&error=
+GET https://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=2&secim=1&error=
 Host: musteri.adresi.com.tr 
 Accept: */* 
 ``` 

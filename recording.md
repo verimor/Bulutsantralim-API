@@ -16,7 +16,7 @@ Dakikada başına 3 istek sayısı olarak limitlidir.
   
 **URL İSTEME ÖRNEĞİ** 
 ```json
-POST http://api.bulutsantralim.com/recording_url/
+POST https://api.bulutsantralim.com/recording_url/
 Host: api.bulutsantralim.com
 Accept: */*
 key=K12345678-1234-5678-4321-123456789012&call_uuid=12345678-1234-5678-4321-123456789012
@@ -25,7 +25,7 @@ key=K12345678-1234-5678-4321-123456789012&call_uuid=12345678-1234-5678-4321-1234
 
 ```json
 HTTP/1.1 200 OK 
-http://api.bulutsantralim.com/recording/Rbb9d6f36-d1a7-46f5-961e-4be2e2ba1b8e
+https://api.bulutsantralim.com/recording/Rbb9d6f36-d1a7-46f5-961e-4be2e2ba1b8e
 ```
 
 **BAŞARISIZ CEVAP** 

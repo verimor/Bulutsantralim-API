@@ -7,7 +7,7 @@ Dahililerinizin durumlarını listelemek için kullanılır. Bunun için HTTP GE
   Online İşlem Merkezi => Bulut Santralim => Santral Ayarlarım menüsü altından API Anahtarınızı (key) öğrenmelisiniz.
   
   **Dahili durumlarını Listeleme Örneği**
-  >http://api.bulutsantralim.com/user_statuses?key=K12345678-1234-5678-4321-123456789012
+  >https://api.bulutsantralim.com/user_statuses?key=K12345678-1234-5678-4321-123456789012
   
   **BAŞARILI CEVAP**
 
