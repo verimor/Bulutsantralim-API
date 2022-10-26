@@ -69,7 +69,7 @@ Accept: */*
 
 **SAHALAR**
 * greet_name: Opsiyonel. Eğer döndürürseniz müşterinizin ismi TTS ile okunarak karşılanır. "Merhaba, Ahmet Yılmaz. Çağrınızı bağlıyorum" şeklinde okunur. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir.
-* greet_phrase: Opsiyonel. Eğer döndürürseniz metin TTS ile okunarak karşılanır. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir.
+* greet_phrase: Opsiyonel. Eğer döndürürseniz metin TTS ile okunarak karşılanır. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir. En fazla 300 karakter uzunluğunda olmalıdır.
 * announcement_to_caller: Opsiyonel. Eğer döndürürseniz çağrının cevaplanma anında arayan tarafa bu anons dinletilir. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
 * announcement_to_callee: Opsiyonel. Eğer döndürürseniz çağrının cevaplanma anında aranan tarafa bu anons dinletilir. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
 * target: Zorunlu. Çağrının hangi hedefe yönleneceğini belirtir. Arayan numara müşteriniz olmasa bile nereye yönlendirileceğini belirtmelisiniz. Bu sahada dönebileceğiniz seçenekleri aşağıdaki listede görebilirsiniz.
@@ -109,7 +109,7 @@ Accept: */*
 
 **SAHALAR**
 * announcement_id: Zorunlu. Tuş isterken önce okunacak anons'un ID'si. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
-* phrase: Zorunlu. Tuş isterken önce okunacak metin. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir.
+* phrase: Zorunlu. Tuş isterken önce okunacak metin. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir. En fazla 300 karakter uzunluğunda olmalıdır.
 * phrase_speed: Opsiyonel. Metin okuma hızı. Varsayılan değeri: 1.0, Geçerli hız aralığı: 0.5 - 1.5,
 * lang: Opsiyonel. Okunacak metnin dili. Varsayılan değeri: "tr-TR", Geçerli değerler: "tr-TR", "en-US", "ar-XA",
 * min_digits: Zorunlu. Tuşlanacak telefon veya müşteri numarasının minimum uzunluğu. Bundan kısa tuşlamalar geçersiz kabul edilir ve tekrar tuşlanması istenir. (retry_count değerine göre) 
@@ -180,4 +180,4 @@ Accept: */*
 
 **SAHALAR**
 * announcement_id: Opsiyonel. Ses kaydı alınmadan önce okunacak anons'un ID'si. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
-* phrase: Opsiyonel. Ses kaydı alınmadan önce okunacak metin. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir.
+* phrase: Opsiyonel. Ses kaydı alınmadan önce okunacak metin. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir. En fazla 300 karakter uzunluğunda olmalıdır.
