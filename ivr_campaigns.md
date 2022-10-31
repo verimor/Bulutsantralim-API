@@ -51,8 +51,8 @@ Accept: */*
     "digit_timeout" : 4,
     "is_commercial" : false,
     "phone_list" : [
-        {"phone" : "05512369874", "phrase" : "#429 12/05/2017 #430 102.45 #431"},
-        {"phone" : "05651236547", "phrase" : "#429 12/05/2017 #430 65.12 #431"}
+        {"phone" : "05512369874", "phrase" : "#429 12/05/2017 #430 102.45 #431", "lang" : "tr-TR"}
+        {"phone" : "05651236547", "phrase" : "#429 12/05/2017 #430 65.12 #431", "lang" : "tr-TR"}
       ]
 }
 ```
@@ -124,7 +124,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * **invalid_target:** Aranan kişi ses kaydını dinledikten sonra hatalı bir tuşa bastığında ve retry_count adedi kadar tekrar denemenin sonunda yönlendirilecek hedef (gerçekleşecek eylem). Verebileceğiniz hedeflerin listesi aşağıda listelenmiştir. 0-9, star, square, timeout, invalid’den en az birisi için hedef verilmesi zorunludur.
 * **digit_retries:** Tuşlama tekrar sayısı. Geçersiz tuşlama yapıldığında veya hiç tuşlama yapılmayıp digit_timeout süresi dolduğunda, ilgili uyarı okunup Menü baştan okunur.
 * **digit_timeout:** Opsiyonel. Min:1, Maks:10, Varsayılan 4'tür. Ses kaydı dinletildikten sonra burada belirtilen süre kadar bekletilip senaryoya göre ya zaman aşımı hedefine aktarılır yada menü baştan okutulur.
-* **phone_list:** Aranacak numara listesi (zorunlu). ‘phone’ aranacak numaradır, ‘905321234567’ veya ‘05321234567’ veya ‘5321234567’ veya uluslararası için ‘00491234567’ şeklinde olmalıdır, ‘phone’ sahası zorunludur. ‘phrase’ sahası bu numaraya okunacak özel mesajı belirtir, formatı için aşağıda Cümle (phrase) Formatı başlığına bakınız. ‘phrase’ sahası zorunlu değildir.
+* **phone_list:** Aranacak numara listesi (zorunlu). ‘phone’ aranacak numaradır, ‘905321234567’ veya ‘05321234567’ veya ‘5321234567’ veya uluslararası için ‘00491234567’ şeklinde olmalıdır, ‘phone’ sahası zorunludur. ‘phrase’ sahası bu numaraya okunacak özel mesajı belirtir, formatı için aşağıda Cümle (phrase) Formatı başlığına bakınız. ‘phrase’ sahası zorunlu değildir. ‘lang’ sahası, mesajın hangi dilde okunacağını belirtir. Zorunlu değildir. Gönderilmediği durumda varsayılan olarak ‘tr-TR’ kabul edilir. Geçerli diller: ‘tr-TR’, ‘en-US’ ve ‘ar-XA’.
 * **is_commercial:** Opsiyonel. true | false değeri alır. Varsayılan false. Ticari gönderimlerde true olarak belirlemelisiniz.
 * **iys_recipient_type:** "BIREYSEL" yada "TACIR" olmalıdır. Ticari gönderimlerde bu alanı zorunlu olarak göndermelisiniz.
 * **iys_brand_code:** Sistemde kayıtlı ve onaylı başlıklarınızdan birinin "İYS Marka Kodu" değeri olmalıdır. Ticari gönderimlerde bu alanı zorunlu olarak göndermelisiniz.
