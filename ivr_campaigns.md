@@ -112,7 +112,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * **time_range_begin:** Kampanyanın çalışma saatlerinin başlangıcı. SS:DD (veya S:DD) formatında olmalı.
 * **time_range_end:** Kampanyanın çalışma saatlerinin bitişi. SS:DD (veya S:DD) formatında olmalı.
 * **active_days:** Kampanyanın çalışma günleri. 1=Pazartesi, 7=Pazar olacak şeklinde çalışma günlerini integer array olarak verip, kampanyanın haftanın sadece belirli günleri çalışmasını sağlayabilirsiniz.
-* **ring_timeout:** Aranan numara çalarken beklenecek süre (saniye), 10 – 60 sn. arasında olabilir.
+* **ring_timeout:** Aranan numara çalarken beklenecek süre (saniye), 25 – 60 sn. arasında olabilir.
 * **cli:** Arayan numara. Karşı taraf bu numarayı görür.
 * **welcome_announcement_id:** Aranan numaralara dinletilecek ses dosyasının ID’si. Bu ses dinletilip peşinden tuşlama beklenir. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
 * **call_retries:** Tekrar arama sayısı. Meşgul, ulaşılamıyor, cevap yok gibi durumlarda numaranın kaç defa daha aranacağını belirtir.
