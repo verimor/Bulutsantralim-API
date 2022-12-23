@@ -23,6 +23,7 @@
 * **[Dahili Durumlarını Listeleme:](https://github.com/verimor/Bulutsantralim-API/blob/master/user_status.md)** Uygulamalarınız üzerinden dahililerinizin durumlarını listeleyebilirsiniz.
 * **[Bulutsantralim Web Telefonunu Kendi Uygulamanızın İçinde Kullanma (iframe embed):](https://github.com/verimor/Bulutsantralim-API/blob/master/webphone_iframe.md)** Uygulamalarınız içinde Bulutsantralim web telefonunu gösterebilirsiniz.
 * **[CRM Entegrasyonu Ayarlarına Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/crm_integrations.md)** Uygulamalarınız üzerinden santralinizin CRM Entegrasyonu ayarlarına erişebilir ve güncelleyebilirsiniz.
+* **[Hata Açıklamaları:](https://github.com/verimor/Bulutsantralim-API/blob/master/errors.md)** API isteklerinde cevap olarak dönülen hataların değer ve açıklamalarına bu bölümde ulaşabilirsiniz.
 
 
 **Entegrasyonlar**
