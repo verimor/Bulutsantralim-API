@@ -1,4 +1,4 @@
-**HATA KODLARI**
+**HATA AÇIKLAMALARI**
 ----
 
 API isteklerinde cevap olarak dönülen hataların değer ve açıklamalarına bu bölümde ulaşabilirsiniz.
