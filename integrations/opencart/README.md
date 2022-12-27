@@ -3,8 +3,8 @@
 Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu sayfayı inceleyebilirsiniz:  https://www.bulutsantralim.com/entegrasyonlar/opencart-bulutsantralim-entegrasyonu
 
 * Kapıda Ödeme Onayı Çalışma Mantığı
-  * Aldığınız siparişlerden ödeme tipi 'Kapıda Ödeme', 'Kapıda Kredi Kartı ile Ödeme', 'Kapıda Nakit Ödeme' olanların içinden sipariş durumu Bekliyor (order_status=1) olanları çeker ve arama başlatılır.
-  * Otomatik arama ile onay alınan siparişleriniz Hazırlanıyor (order_status=2) durumuna, iptal edilenler ise İptal (order_status=7) durumuna çekilir.
+  * Aldığınız siparişlerden ödeme tipi "Kapıda Ödeme", "Kapıda Kredi Kartı ile Ödeme", "Kapıda Nakit Ödeme" olanların içinden sipariş durumu "Onay Bekliyor" (order_status=1) olanları çeker ve arama başlatılır.
+  * Otomatik arama ile onay alınan siparişleriniz Hazırlanıyor (order_status=2) durumuna, iptal edilenler ise "İptal Edildi" (order_status=7) durumuna çekilir.
 
 
 ----
