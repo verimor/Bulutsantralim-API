@@ -164,6 +164,8 @@ Karşı tarafa **“Değerli müşterimiz, son ödeme tarihi on beş kasım iki 
 ----
 Kampanyadaki numaralar arandığında, aramanın durumu ve varsa tuşlama bilgisi, kampanya oluşturulurken verilen webhook_url adresine bir HTTP POST request’i ile gönderilir.
 
+ [Çağrı Sonuç Kodları ve Açıklamaları](https://github.com/verimor/Bulutsantralim-API/blob/master/cagri-sonuc-kodlari.md)
+
 **BİLDİRİM ÖRNEĞİ**
 
 ```json
