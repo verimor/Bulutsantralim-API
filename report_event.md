@@ -55,10 +55,12 @@ event_type=ringing&domain_id=101&direction=inbound&caller_id_number=02123205062&
 | NO_USER_RESPONSE               | Ulaşılamıyor |
 | NORMAL_UNSPECIFIED             | Cevaplandı |
 | INVALID_NUMBER_FORMAT          | Hatalı Numara |
+| NOT_ALLOWED_BY_IYS             | İYS izni yok |
 | FACILITY_REJECTED              | Hata |
 | SERVICE_NOT_IMPLEMENTED        | Hata |
 | FACILITY_NOT_IMPLEMENTED       | Hata |
-| SERVICE_UNAVAILABLE            | Hata |
+| SERVICE_UNAVAILABLE            | Genel Hata |
+| INTERWORKING                   | Genel Hata |
 | REDIRECTION_TO_NEW_DESTINATION | Cihaz yönlendirmesi |
 | EXCHANGE_ROUTING_ERROR         | Çağrı bağlanamadı |
 | MEDIA_TIMEOUT                  | RTP zamanaşımı |
@@ -70,3 +72,8 @@ event_type=ringing&domain_id=101&direction=inbound&caller_id_number=02123205062&
 | NETWORK_OUT_OF_ORDER           | İletişim sorunu |
 | RECOVERY_ON_TIMER_EXPIRE       | Zamanaşımı |
 | ALLOTTED_TIMEOUT               | Cevapsız |
+| BEARERCAPABILITY_NOTIMPL       | Sesli görüşme yapamayan numara |
+| LOSE_RACE                      | Diğer dahili cevapladı |
+| CHAN_NOT_IMPLEMENTED           | Desteklenmeyen kanal tipi |
+| NORMAL_CIRCUIT_CONGESTION      | Arama için santral uygun durumda değil |
+| INVALID_CALL_REFERENCE         | Tanınmayan Çağrı ID numarası |
