@@ -8,6 +8,8 @@
   
   Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde call_uuid döner. İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner. 
   
+   [Çağrı Sonuç Kodları ve Açıklamaları](https://github.com/verimor/Bulutsantralim-API/blob/master/cagri-sonuc-kodlari.md)
+  
   **Not:** İsteğin sonucu, source telefon cevaplandığında veya ulaşılamıyor, meşgul, cevapsız vb. bir durumda döndürülür. Telefon çaldırma süresi kadar (timeout parametresi) sürebilir. 
 
 **HAZIRLIK**
