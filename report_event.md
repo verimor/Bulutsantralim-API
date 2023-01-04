@@ -41,4 +41,4 @@ event_type=ringing&domain_id=101&direction=inbound&caller_id_number=02123205062&
 
 **hangup_cause Parametresinin Alabileceği Değerler ve Açıklamaları**
 
-https://github.com/verimor/Bulutsantralim-API/blob/master/cagri-sonuc-kodlari.md
+ [Çağrı Sonuç Kodları ve Açıklamaları](https://github.com/verimor/Bulutsantralim-API/blob/master/cagri-sonuc-kodlari.md)
