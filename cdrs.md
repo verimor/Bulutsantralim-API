@@ -66,6 +66,8 @@ HTTP/1.1 200 OK
 * total_pages – Listenin kaç sayfadan oluştuğu.(total_pages=total_count/limit).
 * limit – Listeye verilen sınır. 
 
+ [Çağrı Sonuç Kodları ve Açıklamaları](https://github.com/verimor/Bulutsantralim-API/blob/master/cagri-sonuc-kodlari.md)
+
 **BAŞARISIZ CEVAP** 
 
 ```json
