@@ -21,7 +21,7 @@ https://github.com/verimor/Bulutsantralim-API/blob/master/caller_ids.md
 
 ```json
 HTTP/1.1 200 OK
-OK
++OK
 ```
 
 **BAŞARISIZ CEVAP** 
