@@ -1,4 +1,4 @@
-**NUMARALAR LİSTESİNE ERİŞİM**
+**DIŞ NUMARALAR LİSTESİNE ERİŞİM**
 ----
 Santralinizdeki **Arayan Numara** olarak kullanabileceğiniz numaraların listesine erişmek için kullanılır. Bunun için HTTP GET metodu ile api.bulutsantralim.com adresi
 aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200 Status kodu ile mesajın Body’sinde numaralarınızın listesi döner. 
