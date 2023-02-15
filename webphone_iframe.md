@@ -51,3 +51,11 @@ missing extension
 ```html
 <iframe style="border: none;" src="https://oim.verimor.com.tr/webphone?token=W03311746-d56d-489b-801f-da610aba71cf" width="275px" height="700px" allow="microphone"></iframe>
 ```
+
+**DAHİLİNİN DIŞ NUMARASINI (ARAYAN NO) DEĞİŞTİRME**
+---
+https://github.com/verimor/Bulutsantralim-API/blob/master/user_caller_id.md
+
+**DIŞ NUMARALAR LİSTESİNE ERİŞİM**
+---
+https://github.com/verimor/Bulutsantralim-API/blob/master/caller_ids.md
