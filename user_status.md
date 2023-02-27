@@ -16,11 +16,12 @@ HTTP/1.1 200 OK
 [
   {"user":1000,"status":"AVAILABLE"},
   {"user":1001,"status":"UNREGISTERED"},
-  {"user":1002,"status":"TALKING"}
+  {"user":1002,"status":"TALKING"},
+  {"user":1003,"status":"SS_DND"}
 ]
 ```
 * user - Dahili numarası.
-* status - Dahili durumu. (AVAILABLE=Müsait, TALKING=Çağrıda, UNREGISTERED=Çevrimdışı)
+* status - Dahili durumu. (AVAILABLE=Müsait, TALKING=Çağrıda, UNREGISTERED=Çevrimdışı, SS_DND=Bulutsantral server side DND ayarı aktif)
 
 **BAŞARISIZ CEVAP** 
 
