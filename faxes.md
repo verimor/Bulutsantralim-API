@@ -37,7 +37,7 @@ invalid base64
 Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak belirtilmiştir.
 
 * **key** = Size özel oluşturulmuş API anahtarınızdır. https://oim.verimor.com.tr/switch/domain/edit adresinden görebilir/üretebilirsiniz.
-* **local_station_header:** Gönderici numara (zorunlu değil).
+* **local_station_id:** Gönderici numara (zorunlu değil).
 * **local_station_header:** Gönderici başlığı.
 * **remote_station_id:** Alıcı numara.
 * **filedata:** Gönderilecek dosyanın içeriğinin base64 ile kodlanmış hali.
