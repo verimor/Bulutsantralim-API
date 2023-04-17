@@ -1,5 +1,5 @@
 ## İÇİNDEKİLER
-* [MÜŞTERİ TANIMA](#m%C3%BC%C5%9Fteri%CC%87-tanima)
+* [ÇAĞRI YÖNETİM API](#çağri-yöneti̇m-api)
 * [UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ](#uygulamaniza-g%C3%B6nderi%CC%87lecek-i%CC%87stek-%C3%B6rne%C4%9Fi%CC%87)
 * [UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (YÖNLENDİRME)](#uygulamanizin-d%C3%B6nece%C4%9Fi%CC%87-cevap-%C3%B6rnekleri%CC%87-y%C3%B6nlendi%CC%87rme)
 * [UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (TUŞ İSTEME)](#uygulamanizin-d%C3%B6nece%C4%9Fi%CC%87-cevap-%C3%B6rnekleri%CC%87-tu%C5%9F-i%CC%87steme)
@@ -8,7 +8,7 @@
 
 
 ----
-**MÜŞTERİ TANIMA**
+**ÇAĞRI YÖNETİM API**
 ----
 Santralinize gelen çağrıların numarasını müşteri veritabanınızda sorgulayıp, arayana göre santralinizdeki farklı hedeflere (kuyruk, dahili, sesli karşılama vb.) yönlendirmek veya ses kaydı almak için kullanılır.
 Çağrı geldiğinde sizin servisinize HTTP GET isteği yapılır, dönen JSON cevabındaki bilgiye göre çağrı yönlendirilir veya ses kaydı alınır.
@@ -23,8 +23,8 @@ Eğer arayan numara veritabanınızda bulunmuyorsa, arayanın başka bir telefon
 
 **HAZIRLIK**
 
-  Müşteri Tanıma başlığı altındaki ayarları yapmış olmalısınız.
-  Online İşlem Merkezi => Bulut Santralim => Gelen Arama Yönetiminde hedef olarak Müşteri Tanımayı seçmiş olmalısınız.
+  Çağrı Yönetim Entegrasyonu başlığı altındaki ayarları yapmış olmalısınız.
+  Online İşlem Merkezi => Bulut Santralim => Gelen Arama Yönetiminde hedef olarak Çağrı Yönetim API seçmiş olmalısınız.
 
 ----
 **UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ**
