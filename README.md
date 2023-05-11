@@ -18,7 +18,7 @@
 * **[Telesekreter Mesajı Erişimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/voicemails.md)** Uygulamalarınız üzerinden telesekreter mesajılarına erişebilir, ses kayıtlarını dinleyebilir veya indirebilirsiniz.
 * **[Rehbere Erişim:](https://github.com/verimor/Bulutsantralim-API/blob/master/phonebook.md)** Uygulamalarınız üzerinden rehberinize kişi veya grup ekleme/silme/güncelleme işlemlerini yapabilirsiniz.
 * **[Karaliste Yönetimi:](https://github.com/verimor/Bulutsantralim-API/blob/master/blocked_numbers.md)** Uygulamalarınız üzerinden karalistenize erişebilir, ekleme ve silme yapabilirsiniz.
-* **[Çağrı Yönetim API:](https://github.com/verimor/Bulutsantralim-API/blob/master/advisory_webhook.md)** Santralinize çağrı geldiği zaman arayan numara sizin web servisinize sorulur, müşterinizi dinamik olarak istediğiniz hedefe yönlendirebilirsiniz.
+* **[Santral Programlama API:](https://github.com/verimor/Bulutsantralim-API/blob/master/advisory_webhook.md)** Santralinize çağrı geldiği zaman arayan numara sizin web servisinize sorulur, müşterinizi dinamik olarak istediğiniz hedefe yönlendirebilirsiniz.
 * **[Faks İşlemleri:](https://github.com/verimor/Bulutsantralim-API/blob/master/faxes.md)** Uygulamalarınız üzerinden faks gönderebilir ve faks kayıtlarına erişebilirsiniz.
 * **[MT (Müşteri Temsilcisi) Durumları ve Üyeliklerini Listeleme:](https://github.com/verimor/Bulutsantralim-API/blob/master/agent_status.md)** Uygulamalarınız üzerinden Müşteri Temsilcilerinizin durumlarını ve hangi kuyruklara üye olduğunu görebilirsiniz.
 * **[Dahili Durumlarını Listeleme:](https://github.com/verimor/Bulutsantralim-API/blob/master/user_status.md)** Uygulamalarınız üzerinden dahililerinizin durumlarını listeleyebilirsiniz.
