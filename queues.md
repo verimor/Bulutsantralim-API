@@ -79,19 +79,15 @@ Gecersiz anahtar: K12345678-1234-5678-4321-123456789012Ç
 Queue_number value null or none 200
 ```
 
-**KUYRUĞA DAHİLİ EKLEME**
+**KUYRUĞA DAHİLİ EKLEME, ÇIKARMA VEYA YER DEĞİŞTİRME**
 ----
-Santralinizdeki kuyruklara dahili eklemek için kullanılır. Bunun için GET metodu ile api.bulutsantralim.com adresi
+Santralinizdeki kuyruklara dahili ekleme, çıkarma veya yer değiştirme için kullanılır. Bunun için GET metodu ile api.bulutsantralim.com adresi
 aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda OK döner. 
 İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
-**KUYRUĞA DAHİLİ EKLEME ÖRNEĞİ**
+**KUYRUĞA DAHİLİ EKLEME, ÇIKARMA VEYA YER DEĞİŞTİRME**
+  >https://api.bulutsantralim.com/queue/manage_users?key=K12345678-1234-5678-4321-123456789012Ç&queue_number=200&user_list=1000,1001,1002
 
- * Çoklu dahili ekleme işlemlerinde kullanılması gereken:
-  >https://api.bulutsantralim.com/queue/add_user?key=K12345678-1234-5678-4321-123456789012Ç&queue_number=200&user_list=1000,1001,1002
-
- * Tekli dahili ekleme işlemlerinde kullanılması gereken:
-  >https://api.bulutsantralim.com/queue/add_user?key=K12345678-1234-5678-4321-123456789012Ç&queue_number=200&user=1006
 
 **BAŞARILI CEVAP**
 ```json
@@ -103,61 +99,19 @@ OK
 ```json
 Gecersiz anahtar: K12345678-1234-5678-4321-123456789012Ç
 
-You are trying to add an existing user 1039
-```
+user_list value null or none
 
-**KUYRUKDAN DAHİLİ ÇIKARMA**
-----
-Santralinizdeki kuyruklarda dahili çıkarmak için kullanılır. Bunun için DELETE metodu ile api.bulutsantralim.com adresi
-aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda OK döner. 
-İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
+Queue_number value null or none 200
 
-**KUYRUKDAN DAHİLİ ÇIKARMA ÖRNEĞİ**
-
->DELETE https://api.bulutsantralim.com/queue/user_del?key=K12345678-1234-5678-4321-123456789012Ç&queue_number=204&user=1039
- 
-**BAŞARILI CEVAP**
-
-```json
-OK
-```
-
-**BAŞARISIZ CEVAP** 
-
-```json
-Gecersiz anahtar: K12345678-1234-5678-4321-123456789012Ç
-
-User value null or none 1039
-```
-
-**KUYRUKDAN DAHİLİ SIRALAMASI DEĞİŞTİRME**
-----
-Santralinizdeki kuyruklarda dahili sıralaması değiştirmek için kullanılır. Bunun için GET metodu ile api.bulutsantralim.com adresi
-aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda OK döner. 
-İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
-
-**KUYRUKDAN DAHİLİ SIRALAMASI DEĞİŞTİRME ÖRNEĞİ**
-
->https://api.bulutsantralim.com/queue/user_sorting?key=K12345678-1234-5678-4321-123456789012Ç&queue_number=200&user_list=1002,1006,1000
- 
-**BAŞARILI CEVAP**
-
-```json
-OK
-```
-
-**BAŞARISIZ CEVAP** 
-
-```json
-Gecersiz anahtar: K12345678-1234-5678-4321-123456789012Ç
+User value null or none 1034
 ```
 
 **PARAMETRELER**
 
 Kullanılacak parametreler aşağıdakilerdir. Zorunlu olanlar koyu olarak belirtilmiştir.
-  * **key** = Size özel oluşturulmuş API anahtarınızdır. 
-  * **user_list** = Kuyruğa dahili eklemek veya yerini değiştirmek için göndermeniz gereken değer.
+  * **key** = Size özel oluşturulmuş API anahtarınızdır.
   * **queue_number** = Dahili ayarını değiştirmek istediğiniz kuyruğun numarası.
+  * **user_list** = Kuyruğa dahili eklemek, çıkarmak veya yerini değiştirmek için göndermeniz gereken değer.
   * *user* = Eklemek veya silmek istediğiniz tek bir dahilinin numarası.
   * *name* = Dahilinin ismi
 
