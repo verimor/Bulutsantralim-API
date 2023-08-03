@@ -12,9 +12,31 @@ aşağıdaki parametrelerle çağrılır. İstek başarılı olduğunda HTTP 200
 İstek başarısız olduğunda ise ilgili HTTP Status kodu ile mesajın Body’sinde hata mesajı döner.
 
 **KUYRUKLAR LİSTESİNE ERİŞİM ÖRNEĞİ**
+>http://api.bulutsantralim.com/queues?key=K12345678-1234-5678-4321-123456789012
+
+**BAŞARILI CEVAP**
 
 ```json
 HTTP/1.1 200 OK
+[
+   {
+        "number": 200,
+        "name": "Kuyruk 1"
+    },
+    {
+        "number": 201,
+        "name": "Kuyruk 2"
+    },
+    {
+        "number": 202,
+        "name": "Kuyruk 3"
+    }
+]
+```
+
+**BAŞARISIZ CEVAP** 
+
+```json
 HTTP/1.1 400 Bad Request 
 Gecersiz anahtar: K12345678-1234-5678-4321-123456789012
 ```
