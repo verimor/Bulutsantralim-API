@@ -143,7 +143,13 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * fax/isim@firmaadi.com.tr: Aranan kişiye faks sinyali gönder, faks alma işlemini başlat, faks alınırsa verilen e-posta adresine gönder.
 * hangup/hangup: Çağrıyı kapat (normal kapatma sinyali ver).
 * hangup/busy: Çağrıyı kapat (meşgul tonu ver).
-* tts/tr-TR/Bu bir test cümlesidir : Aranan kişiyi ilgili cümleyi verilen dil parametresine göre dinlet ve sonlandır. Göderdiğiniz format (tts/dil/okunacak metin) şeklinde gönderdiğinizden emin olun.
+* tts/tr-TR/Bu bir test cümlesidir: Aranan kişiyi ilgili metni, verilen dil parametresine göre dinlet ve sonlandır. Gönderdiğiniz format (tts/dil/okunacak metin) şeklinde gönderdiğinizden emin olun.
+
+**CÜMLE (LANG) FORMATI** 
+
+* **tr-TR:** Türk aksanında metni okur.
+* **en-US:** İngiliz aksanında metni okur.
+* **ar-XA:** Arap aksanında metni okur.
 
 **CÜMLE (PHRASE) FORMATI**
 
