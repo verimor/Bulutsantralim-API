@@ -156,6 +156,8 @@ Accept: */*
 * fax/isim@firmaadi.com.tr: Aranan kişiye faks sinyali gönder, faks alma işlemini başlat, faks alınırsa verilen e-posta adresine gönder.
 * hangup/hangup: Çağrıyı kapat (normal kapatma sinyali ver).
 * hangup/busy: Çağrıyı kapat (meşgul tonu ver).
+* tts/tr-TR/Bu bir test cümlesidir: Aranan kişiye ilgili metni TTS ile dinlet ve çağrıyı sonlandır. Geçerli diller: ‘tr-TR’, ‘en-US’ ve ‘ar-XA’. Bu özelliği kullanabilmek için TTS modülüne sahip olmanız gerekir.
+
 
 ----
 **UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (SES KAYDI ALMA)**

@@ -42,7 +42,7 @@ Accept: */*
     "digit_target_6" : "external/05321234567",
     "digit_target_7" : "voicemail/1003",
     "digit_target_8" : "queue/201",
-    "digit_target_9" : "queue/202",
+    "digit_target_9" : "tts/tr-TR/Bu bir test cümlesidir.",
     "digit_target_star" : "restart",
     "digit_target_square" : "user/1000",
     "timeout_target" : "",
@@ -143,6 +143,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * fax/isim@firmaadi.com.tr: Aranan kişiye faks sinyali gönder, faks alma işlemini başlat, faks alınırsa verilen e-posta adresine gönder.
 * hangup/hangup: Çağrıyı kapat (normal kapatma sinyali ver).
 * hangup/busy: Çağrıyı kapat (meşgul tonu ver).
+* tts/tr-TR/Bu bir test cümlesidir: Aranan kişiye ilgili metni TTS ile dinlet ve çağrıyı sonlandır. Geçerli diller: ‘tr-TR’, ‘en-US’ ve ‘ar-XA’. Bu özelliği kullanabilmek için TTS modülüne sahip olmanız gerekir.
 
 **CÜMLE (PHRASE) FORMATI**
 
