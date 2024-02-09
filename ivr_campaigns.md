@@ -165,8 +165,6 @@ Karşı tarafa **“Değerli müşterimiz, son ödeme tarihi on beş kasım iki 
 ----
 Kampanyadaki numaralar arandığında, aramanın durumu ve varsa tuşlama bilgisi, kampanya oluşturulurken verilen webhook_url adresine bir HTTP POST request’i ile gönderilir.
 
- [Çağrı Sonuç Kodları ve Açıklamaları](https://github.com/verimor/Bulutsantralim-API/blob/master/cagri-sonuc-kodlari.md)
-
 **BİLDİRİM ÖRNEĞİ**
 
 ```json
@@ -192,8 +190,9 @@ API’nize gönderilecek parametreler aşağıdakilerdir.
   * 0-9 arası bir rakam: Geçerli bir tuşlama yapıldı.
   * tire (-) işareti: tuşlama yapılmadı ve timeout oluştu.
   * ünlem (!) işareti ve rakam (örn: !4): Geçerli olmayan (tuşlama ayarlarında karşılığı olmayan) bir tuşa basıldı.
-* status: Çağrı durumu. “Başarılı”, “Cevapsız”, “Reddedildi”, “Hata” gibi açıklamaları içerir. “Başarılı” hariç her durum hata olarak yorumlanabilir.
 * call_uuid: Tuşlama için yapılan çağrının UUID’si. Yukarıdaki olay bildirme API’sini de kullanıyorsanız, orada gelen UUID ile eşleştirebilirsiniz.
+* status: Çağrı durumu. “Cevaplandı”, “Cevapsız”, “Reddedildi”, “Hata” gibi açıklamaları içerir. “Cevaplandı” hariç her durum hata olarak yorumlanabilir. Linkten tüm çağrı durumlarına ulaşabilirsiniz.
+[Çağrı Sonuç Kodları ve Açıklamaları](https://github.com/verimor/Bulutsantralim-API/blob/master/cagri-sonuc-kodlari.md)
 
 ----
 **OTOMATİK ARAMA KAMPANYASI SİLME**
