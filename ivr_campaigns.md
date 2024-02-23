@@ -107,10 +107,10 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * **thread_multiplier** = Kuyruk tipi otomatik aramalarda, eşzamanlı olarak, müsait temsilci sayısının kaç katı arama yapılacağını belirtir.
 * **max_thread_count:** Kampanya için, eşzamanlı maksimum çağrı sayısını belirtir. Bu parametre belirtilmezse, santralin değerleri referans alınır. (Santral ayarlarında, "Otomatik Arama Kanal Sayısı" değeri referans alınır. Bu ayar için "Otomatik Arama / Sesli Mesaj (Çoklu) modülü gereklidir.)
 * **name:** Kampanyanın adı.
-* **date_range_begin:** Kampanyanın aramaya başlayacağı tarih, YYYY-AA-GG formatında olmalıdır.
-* **date_range_end:** Opsiyonel. Kampanyanın aramaya bitiş tarihi. YYYY-AA-GG formatında olmalıdır. Gönderilmezse date_range_begin değeri kullanılır.
-* **time_range_begin:** Kampanyanın çalışma saatlerinin başlangıcı. SS:DD (veya S:DD) formatında olmalı.
-* **time_range_end:** Kampanyanın çalışma saatlerinin bitişi. SS:DD (veya S:DD) formatında olmalı.
+* **date_range_begin:** Opsiyonel. Kampanyanın aramaya başlayacağı tarih, YYYY-AA-GG formatında olmalıdır. Gönderilmezse bugün değeri kullanılır.
+* **date_range_end:** Opsiyonel. Kampanyanın arama bitiş tarihi. YYYY-AA-GG formatında olmalıdır. Gönderilmezse date_range_begin değeri kullanılır.
+* **time_range_begin:** Opsiyonel. Kampanyanın çalışma saatlerinin başlangıcı. SS:DD (veya S:DD) formatında olmalı. Gönderilmezse "00:00" değeri kullanılır.
+* **time_range_end:** Opsiyonel. Kampanyanın çalışma saatlerinin bitişi. SS:DD (veya S:DD) formatında olmalı. Gönderilmezse "23:59" değeri kullanılır.
 * **active_days:** Kampanyanın çalışma günleri. 1=Pazartesi, 7=Pazar olacak şeklinde çalışma günlerini integer array olarak verip, kampanyanın haftanın sadece belirli günleri çalışmasını sağlayabilirsiniz.
 * **ring_timeout:** Aranan numara çalarken beklenecek süre (saniye), 25 – 60 sn. arasında olabilir.
 * **cli:** Arayan numara. Karşı taraf bu numarayı görür.
