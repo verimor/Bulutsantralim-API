@@ -59,12 +59,14 @@ HTTP/1.1 200 OK
     {
         "queue_number": "200",
         "uuid": "a7713781-xxxx-44b0-xxxx-38f24c4b55bb",
+        "call_uuid": "f776683e-1bde-4b58-bc43-128b99497bd9",
         "caller_id": "905320000000",
         "joined_at": "1624947819"
     },
     {
         "queue_number": "202",
-        "uuid": "a7713781-cccc-44b0-cccc-38f24c4b55bb",
+        "uuid": "df160df9-1a39-4f3a-abe7-36921ebc53cbb",
+        "call_uuid": "98f13afd-697b-409d-8ebc-05f71290517c",
         "caller_id": "905320000001",
         "joined_at": "1624947822"
     }
