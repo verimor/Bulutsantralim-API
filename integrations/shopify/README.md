@@ -14,21 +14,19 @@ Shopify entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu s
 **Kurulum**
 ----
 * Shopify paneli üzerinden uygulama oluşturun.
-     * Ayarlar(Settings) > Uygulamalar ve satış kanalları
-(Apps and sales channels) > Uygulama geliştirin(Develop apps) butonuna tıklayın.\
-     <img src="assets/ayarlar-1.png" width="450">
+     * Ayarlar(Settings) > Uygulamalar ve satış kanalları (Apps and sales channels) > Uygulama geliştirin(Develop apps) butonuna tıklayın.\
+     ![](assets/ayarlar-1.png)
      * Özel uygulama geliştirmeye izin ver adımları takip edin.\
-     <img src="assets/ayarlar-izin.png" width="450">
+     ![](assets/ayarlar-izin.png)
      * Uygulama oluştur (Create an app) butonuna tıklanıp, uygulama adı(App name) ve geliştirici (App developer) seçilir.\
-     <img src="assets/ayarlar-detay.png" width="450">
-     * Uygulama oluştuktan sonra, Yapılandırma (Configuration) -> Admin Api entegrasyonu (Admin API integration
-) -> Yapılandır (Configure) butonuna tıklanır.\
-     <img src="assets/ayarlar-yapılandır.png" width="450">
-     * 2.1.5.	Burada siparişler(order) ve müşteriler(customer) alanındaki izinler verilmeli ve ardından Kaydet (Save) butonuna tıklanmalı.\
-     <img src="assets/ayarlar-yetki.png" width="450">
+     ![](assets/ayarlar-detay.png)
+     * Uygulama oluştuktan sonra, Yapılandırma (Configuration) -> Admin Api entegrasyonu (Admin API integration) -> Yapılandır (Configure) butonuna tıklanır.\
+     ![](assets/ayarlar-yapılandır.png)
+     * Burada siparişler(order) ve müşteriler(customer) alanındaki izinler verilmeli ve ardından Kaydet (Save) butonuna tıklanmalı.\
+     ![](assets/ayarlar-yetki.png)
      * API kimlik bilgileri (API credentials
 ) sekmesinden Uygulamayı Yükle (Install app) butonuna tıklanarak. Erişim belirteci (Access Token) kopyalanır.\
-     <img src="assets/ayarlar-api-kopyalama.png" width="450">
+     ![](assets/ayarlar-api-kopyalama.png)
 
 * Bulutsantralinizdeki ayarları tamamlayın.
      * [Santral Ayarlarım](https://oim.verimor.com.tr/switch/domain/edit) sayfasındaki E-Ticaret Entegrasyonu başlığını bulun.
