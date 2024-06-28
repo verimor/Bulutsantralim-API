@@ -37,4 +37,5 @@
 * **[T-Soft Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/tsoft)**
 * **[Ticimax Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/ticimax)**
 * **[ProjeSoft Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/projesoft)**
+* **[İkas Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/ikas)**
 * **[Shopify Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/shopify)**
