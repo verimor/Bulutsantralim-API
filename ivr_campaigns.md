@@ -81,7 +81,7 @@ Accept: */*
     "call_retries": 0,
     "phone_list": [
         { "phone": "05512369874" },
-        { phone": "05651236547" }
+        { "phone": "05651236547" }
     ]
 }
 ```
