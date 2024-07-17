@@ -5,7 +5,8 @@ Telefon kapandı (hangup) bildirimi aynı zamanda CDR bildirimidir. Telefon kapa
 aşağıdaki parametreler HTML Form Field olarak gönderilir.
 
 > **_NOT:_** Gireceğiniz url, sistemimizde bazı kontrollere sokulacaktır. Geçerli bir url olması ve test amaçlı boş post isteğine başarılı cevap vermelidir.
-  
+> ```  curl --location 'http://ornekadres.url/event' --data '{}' ```
+
 **UYGULAMANIZA GÖNDERİLECEK BİLDİRİM ÖRNEĞİ**
 
 ```json
