@@ -128,6 +128,7 @@ Kullanılacak parametreler aşağıdakilerdir. **Zorunlu** olanlar koyu olarak b
 * **is_commercial:** Opsiyonel. true | false değeri alır. Varsayılan false. Ticari gönderimlerde true olarak belirlemelisiniz.
 * **iys_recipient_type:** "BIREYSEL" yada "TACIR" olmalıdır. Ticari gönderimlerde bu alanı zorunlu olarak göndermelisiniz.
 * **iys_brand_code:** Sistemde kayıtlı ve onaylı başlıklarınızdan birinin "İYS Marka Kodu" değeri olmalıdır. Ticari gönderimlerde bu alanı zorunlu olarak göndermelisiniz.
+* **recording_enabled:** Arama başlar başlamaz kayıt yapılmasını istiyorsanız bu parametreye true vermelisiniz.
 
 **HEDEF (TARGET) SEÇENEKLERİ**
 
