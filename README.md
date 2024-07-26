@@ -33,9 +33,26 @@
 
 **Entegrasyonlar**
 ----
-* **[Opencart Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/opencart)**
-* **[T-Soft Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/tsoft)**
-* **[Ticimax Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/ticimax)**
-* **[ProjeSoft Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/projesoft)**
-* **[İkas Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/ikas)**
-* **[Shopify Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/shopify)**
+- E-Ticaret
+  - **[Opencart Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/opencart)**
+  - **[T-Soft Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/tsoft)**
+  - **[Ticimax Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/ticimax)**
+  - **[ProjeSoft Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/projesoft)**
+  - **[İkas Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/ikas)**
+  - **[Shopify Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/shopify)**
+- CRM / ERP
+  - **[Zoho](https://www.bulutsantralim.com/entegrasyonlar/zohocrm-bulutsantralim-entegrasyonu/)**
+  - **[Workcube](https://www.bulutsantralim.com/entegrasyonlar/workcube-bulutsantralim-entegrasyonu/)**
+  - **[Estesoft](https://www.bulutsantralim.com/entegrasyonlar/estesoft-bulutsantralim-entegrasyonu/)**
+  - **[KivaCRM](https://www.bulutsantralim.com/entegrasyonlar/kivacrm-bulutsantralim-entegrasyonu/)**
+  - **[MyBasicCRM](https://www.bulutsantralim.com/entegrasyonlar/#1502967588846-c703b87b-e30b)**
+  - **[Mi4biz](https://www.bulutsantralim.com/entegrasyonlar/#1502967588846-c703b87b-e30b)**
+  - **[Ofisim.com](https://www.bulutsantralim.com/entegrasyonlar/ofisim-com-bulutsantralim-entegrasyonu/)**
+  - **[Teamgram ](https://www.bulutsantralim.com/entegrasyonlar/#1502967588846-c703b87b-e30b)**
+  - **[DSC-CRM](https://www.bulutsantralim.com/entegrasyonlar/#1502967588846-c703b87b-e30b)**
+  - **[Volant Yazılım](https://www.bulutsantralim.com/entegrasyonlar/#1502967588846-c703b87b-e30b)**
+- Diğer
+  - **[Görüşme Kaydı Analizi](https://www.bulutsantralim.com/gorusme-kaydi-analizi-speech-analytics-entegrasyonu/)**
+  - **[Google Analytics](https://www.bulutsantralim.com/entegrasyonlar/#1502970320930-4f0a2cea-b291)**
+  - **[Google Drive](https://www.bulutsantralim.com/entegrasyonlar/#1502970320930-4f0a2cea-b291)**
+  - **[Genresman Restaurant & Cafe Yazılımı](https://www.bulutsantralim.com/entegrasyonlar/#1502970320930-4f0a2cea-b291)**
