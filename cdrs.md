@@ -53,7 +53,7 @@ HTTP/1.1 200 OK
 * destination_name - Gelen aramalarda dahili ismini, Giden aramalarda aranan ismini ifade eder.
 * duration – Toplam süre.
 * talk_duration - Konuşma süresi.
-* queue_wait_seconds - Saniye cinsinden kuyrukda bekleme süresi.
+* queue_wait_seconds - Kuyruk da bekleme süresi.
 * queue – Çağrı kuyrukta beklediyse ve ya cağrı qrupuna yönlendirildiyse onun numarası. 
 * result – Çağrının sonuçu. “Cevaplandı”, “Meşgul”  ve ya “Meşgule atıldı” gibi  döner.
 * missed – Kaçan çağrı ise “true” değilse  “false” döner.
@@ -161,7 +161,7 @@ HTTP/1.1 200 OK
 * end_stamp – Çağrının sonlandığı zaman. 
 * duration – Toplam süre.
 * talk_duration - Konuşma süresi.
-* queue_wait_seconds - Saniye cinsinden kuyrukda bekleme süresi.
+* queue_wait_seconds - Kuyruk da bekleme süresi.
 * recording_present – Çağrının ses kaydının olup olmadığı. “true” ya da “false” döner. 
 
 **Çağrı akışı :** 
