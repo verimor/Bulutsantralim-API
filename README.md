@@ -40,6 +40,7 @@
   - **[ProjeSoft Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/projesoft)**
   - **[İkas Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/ikas)**
   - **[Shopify Entegrasyonu](https://github.com/verimor/Bulutsantralim-API/tree/master/integrations/shopify)**
+  - **[Gelistir.org](https://www.bulutsantralim.com/entegrasyonlar/#1502967588753-08c330e6-9df7)**
 - CRM / ERP
   - **[Zoho](https://www.bulutsantralim.com/entegrasyonlar/zohocrm-bulutsantralim-entegrasyonu/)**
   - **[Workcube](https://www.bulutsantralim.com/entegrasyonlar/workcube-bulutsantralim-entegrasyonu/)**
