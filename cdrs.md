@@ -25,7 +25,7 @@ HTTP/1.1 200 OK
   "destination_name":"Dahili 1",
   "duration":"00:01:05",
   "talk_duration":"00:0:35",
-  "queue_wait_seconds":"00:02:10",
+  "queue_wait_seconds":"00:00:10",
   "queue":"201",
   "result":"Cevaplandı",
   "missed":"true",
@@ -117,7 +117,7 @@ HTTP/1.1 200 OK
   "end_stamp":"2017-08-02 13:22:09 +0300",
   "duration":"00:00:32",
   "talk_duration":"00:0:35",
-  "queue_wait_seconds": "00:02:10",
+  "queue_wait_seconds": "00:00:05",
   "recording_present":"true"
 },
 "call_flow":[{
