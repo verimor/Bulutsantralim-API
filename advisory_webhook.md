@@ -183,3 +183,30 @@ Accept: */*
 **SAHALAR**
 * announcement_id: Opsiyonel. Ses kaydı alınmadan önce okunacak anons'un ID'si. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
 * phrase: Opsiyonel. Ses kaydı alınmadan önce okunacak metin. Bu özelliğin kullanılabilmesi için TTS modülünü satın almış olmanız gerekir. En fazla 300 karakter uzunluğunda olmalıdır.
+
+----
+**UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (SPEECH TO TEXT)**
+----
+
+```json
+{
+  "speech_to_text": {
+    "announcement_id": "123",
+    "recognation_duration": 10
+  }
+}
+```
+
+**KONUŞMA ÇEVRİLDİLTEN SONRA UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ**
+```json
+GET https://musteri.adresi.com.tr/musteri.json?uuid=651f8a68-782e-11g7-a6b6-5bedc26e2ab3&cli=05301234567&cld=08505321234&step=2&musteri_no=123456&error=&result=busesçevrildi
+Host: musteri.adresi.com.tr 
+Accept: */* 
+``` 
+Görüleceği üzere tarafınıza gelen isteklerde "result" parametresi ile çevrilen ses metni bulunur. Bu aksiyonu aynı çağrı içinde 10 kez kullanım hakkına sahipsiniz. Daha sonra çağrı yedek hedefe yönlendirilir.
+
+**SAHALAR**
+* announcement_id: Karşıdaki kişinin konuşması metine çevrilmeden önce okunacak anons'un ID'si. Ses dosyası ID’lerinizi [API](https://github.com/verimor/Bulutsantralim-API/blob/master/announcements.md) ile veya [Online İşlem Merkezi]( https://oim.verimor.com.tr/switch/announcements) üzerinden görebilirsiniz.
+* recognation_duration: Karşıdaki kişinin konuşması için tanınan maksimum süre. 1 ile 10 arasında olmalıdır. Varsayılan olarak 10'dur. Sistem karşı tarafın konuşmasının bittiğini anlayıp, bu süreyi beklemeden sesi metine çevirebilmektedir. 
+
+----
