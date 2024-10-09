@@ -5,6 +5,7 @@
 * [UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (TUŞ İSTEME)](#uygulamanizin-d%C3%B6nece%C4%9Fi%CC%87-cevap-%C3%B6rnekleri%CC%87-tu%C5%9F-i%CC%87steme)
 * [TUŞLAMADAN SONRA UYGULAMANIZA GÖNDERİLECEK İSTEK ÖRNEĞİ](#tu%C5%9Flamadan-sonra-uygulamaniza-g%C3%B6nderi%CC%87lecek-i%CC%87stek-%C3%B6rne%C4%9Fi%CC%87)
 * [UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (SES KAYDI ALMA)](#uygulamanizin-d%C3%B6nece%C4%9Fi%CC%87-cevap-%C3%B6rnekleri%CC%87-ses-kaydi-alma)
+* [UYGULAMANIZIN DÖNECEĞİ CEVAP ÖRNEKLERİ (SPEECH TO TEXT)](#uygulamanizin-d%C3%B6nece%C4%9Fi%CC%87-cevap-%C3%B6rnekleri%CC%87-speech-to-text)
 
 
 ----
