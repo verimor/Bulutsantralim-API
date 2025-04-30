@@ -12,7 +12,7 @@ Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu 
 ----
 * Kullandığınız Opencart versiyonuna göre aşağıdaki dosyayı indirin, zipten çıkarıp web sunucunuzdaki public_html klasörüne (ana dizine) yükleyin.
     * Opencart v2.3.x için [tıklayınız](https://oim.verimor.com.tr/bs-opencart-v2.ocmod.zip)
-    * Opencart v3.0.x için [tıklayınız](https://oim.verimor.com.tr/bs-opencart-v3.ocmod.zip)
+    * Opencart v3.0.x ve üzeri için [tıklayınız](https://oim.verimor.com.tr/bs-opencart-v3.ocmod.zip)
 
 * Opencart yönetim paneli üzerinden API Key oluşturun.
      * Sistem > Kullanıcılar > API sayfasını açın.
@@ -20,7 +20,7 @@ Opencart entegrasyonunun amacı ve özellikleri hakkında bilgi almak için şu 
      * API anahtarı kutusunun altındaki oluştur düğmesine basın.
      * Durumu açık olarak işaretleyin.
      * Ip adresleri sekmesine tıklayın.
-     * **194.49.126.36**, **194.49.126.45**, **194.49.126.46**, **194.49.126.18** ip adreslerini ekleyin.
+     * **194.49.126.36**, **194.49.126.45**, **194.49.126.46**, **194.49.126.48**, **194.49.126.51**, **194.49.126.18** ip adreslerini ekleyin.
      * Sağ üst kısımdan kaydedin.
 
 * Bulutsantralinizdeki ayarları tamamlayın.
